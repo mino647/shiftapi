@@ -4,24 +4,6 @@ Webアプリ版のデータをデスクトップアプリ版の形式に変換�
 from dataclasses import dataclass
 from typing import List, Optional, Dict
 
-# 型定義
-@dataclass
-class ShiftCount:
-    min: int
-    max: int
-    
-    def __getitem__(self, key: str) -> int:
-        if key == 'min':
-            return self.min
-        elif key == 'max':
-            return self.max
-        raise KeyError(key)
-    
-    def get(self, key: str, default: int = 0) -> int:
-        try:
-            return self[key]
-        except KeyError:
-            return default
 
 @dataclass
 class StaffData:
@@ -30,7 +12,7 @@ class StaffData:
     is_day_shift_only: bool
     is_part_time: bool
     is_global_rule: bool
-    shift_counts: Dict[str, ShiftCount]
+    shift_counts: Dict[str, Dict[str, int]]
     preferences: str
     holiday_override: Optional[int]
     reliability_override: Optional[int]
@@ -154,35 +136,19 @@ def convert_rule_data(web_data: dict) -> dict:
         web_data: ruleDataオブジェクト
     """
     desktop_rules = {
-        # 基本設定
         "holiday_count": web_data["basicSettings"]["baseHolidays"],
         "consecutive_work_limit": web_data["basicSettings"]["consecutiveWorkDays"],
         "weekday_staff": web_data["requiredStaffCount"]["日勤"],
-        "weekday_preference_level": None,  # UIなし
+        "weekday_preference_level": None,
         "sunday_staff": web_data["requiredStaffCount"]["日曜の日勤"],
-        "sunday_preference_level": None,   # UIなし
+        "sunday_preference_level": None,
         "early_staff": web_data["requiredStaffCount"]["早番"],
         "late_staff": web_data["requiredStaffCount"]["遅番"],
         "night_staff": web_data["requiredStaffCount"]["夜勤"],
-        
-        # シフト適性の設定
-        "weekday_reliability": None,  # UIなし
-        "sunday_reliability": None,   # UIなし
-        
-        # 選好制約リスト
+        "weekday_reliability": web_data["basicSettings"]["normalShiftSuitability"] if web_data["basicSettings"]["useNormalShiftSuitability"] else None,
+        "sunday_reliability": web_data["basicSettings"]["sundayShiftSuitability"] if web_data["basicSettings"]["useSundayShiftSuitability"] else None,
         "preference_constraints": []
     }
-    
-    # patternConstraintsとoptionConstraintsを変換して追加
-    for constraint in web_data["patternConstraints"]:
-        desktop_rules["preference_constraints"].append(
-            convert_constraint(constraint, include_preference_fields=True)
-        )
-    
-    for constraint in web_data["optionConstraints"]:
-        desktop_rules["preference_constraints"].append(
-            convert_constraint(constraint, include_preference_fields=True)
-        )
     
     return {"rules": desktop_rules}
 

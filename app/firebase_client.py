@@ -10,6 +10,7 @@ from datetime import datetime
 from app.convert import convert_rule_data, convert_staffdata, convert_shiftdata, convert_weightdata
 from absl import logging as absl_logging
 from google.cloud.firestore import SERVER_TIMESTAMP
+import requests
 
 # abseilのログ初期化
 absl_logging.set_verbosity(absl_logging.INFO)
@@ -39,26 +40,17 @@ class FirestoreListener:
         doc_ref = self.db.collection('requests').document('que')
         
         def on_snapshot(doc_snapshot, changes, read_time):
+            """queドキュメントが更新されたときの処理"""
             if doc_snapshot:
                 doc = doc_snapshot[0]
                 data = doc.to_dict()
                 if data and 'json' in data:
-                    input_data = data['json']
-                    # デバッグ出力を追加
-
-                    
-                    # staffDataとruleDataとshiftDataを取得
-                    staff_data = input_data.get('staffData')
-                    rule_data = input_data.get('ruleData')
-                    shift_data = input_data.get('shiftData')
-                    
-                    if staff_data and rule_data and shift_data:
-                        converted_data = {
-                            "rules": convert_rule_data(rule_data)["rules"],
-                            "staffs": convert_staffdata(staff_data)["staffs"],
-                            "shifts": convert_shiftdata(shift_data, staff_data, rule_data),
-                            "weights": convert_weightdata(input_data)  # weightDataを変換
-                        }
+                    try:
+                        # GETからPOSTに変更
+                        response = requests.post('http://localhost:8000/generate-shift')
+                        logger.info(f"シフト生成実行: {response.status_code}")
+                    except Exception as e:
+                        logger.error(f"シフト生成呼び出しエラー: {str(e)}")
 
         
         try:
@@ -67,7 +59,7 @@ class FirestoreListener:
         except Exception as e:
             logger.error(f"リスナーの開始に失敗: {e}") 
 
-def write_result_to_firestore(solution: dict, input_data: dict) -> str:
+def write_result_to_firestore(solution, input_data: dict) -> str:
     """生成結果をFirestoreに保存する"""
     try:
         db = get_firestore_client()
@@ -83,12 +75,23 @@ def write_result_to_firestore(solution: dict, input_data: dict) -> str:
             # 最も古いドキュメントのIDを使用
             doc_id = old_results[0].id
         
-        # 結果を保存
+        # ShiftDataを必要な形式に変換
+        shifts_dict = {}
+        for entry in solution.entries:
+            if entry.staff_name not in shifts_dict:
+                shifts_dict[entry.staff_name] = [''] * 32
+            shifts_dict[entry.staff_name][entry.day] = entry.shift_type
+        
+        formatted_shifts = {
+            'year': solution.year,
+            'month': solution.month,
+            'shifts': shifts_dict
+        }
+        
         new_result = {
             'status': 'success',
             'created_at': SERVER_TIMESTAMP,
-            'input': input_data,
-            'shifts': solution
+            'edit': formatted_shifts  # editキーでラップしたシフトデータのみ
         }
         
         results_ref.document(doc_id).set(new_result)

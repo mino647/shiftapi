@@ -11,17 +11,18 @@ from app.convert import convert_rule_data, convert_staffdata, convert_shiftdata,
 import logging
 from fastapi.responses import HTMLResponse
 import json
-from .convert import StaffData, ShiftEntry, ShiftData, RuleData
+from .from_dict import StaffData, ShiftEntry, ShiftData, RuleData
 from typing import List, Optional, Dict
 from datetime import datetime
 from google.cloud import firestore
 from .generator import ShiftGenerator  # 既存のクラスをインポート
+from .from_dict import DictToInstance
+from .api_logger import api_logger
 
-# ロギングの設定
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
+
+
+# その後でloggerをインポート
+# from .generator.logger import logger
 
 app = FastAPI(
     title="シフト管理API",
@@ -43,7 +44,14 @@ firestore_listener = FirestoreListener()
 @app.on_event("startup")
 async def startup_event():
     """アプリケーション起動時にFirestoreリスナーを開始"""
-    firestore_listener.start_listening()  # これだけでOK！
+    # ロガーの初期化確認
+    api_logger.info("APIサーバー起動")
+    api_logger.debug("ログシステム初期化完了")
+    
+    # 既存の処理
+    api_logger.debug("アプリケーション起動")
+    api_logger.info("Firestoreリスナー開始")
+    firestore_listener.start_listening()
 
 @app.get("/")
 async def root():
@@ -156,32 +164,70 @@ async def generate_shift():
         doc = doc_ref.get()
         
         if doc.exists:
-            # 2. データを変換
             response_data = doc.to_dict()
             if 'json' in response_data:
-                input_data = response_data['json']
-                rule_data = convert_rule_data(input_data['ruleData'])
-                staff_data = convert_staffdata(input_data['staffData'])
-                shift_data = convert_shiftdata(input_data['shiftData'], input_data['staffData'], input_data['ruleData'])
-                weight_data = convert_weightdata(input_data)
+                # 文字列からJSONオブジェクトにパース
+                input_data = json.loads(response_data['json'])
                 
-                # シフト生成
-                generator = ShiftGenerator(weights=weight_data)
+                # 2. データの変換とインスタンス化
+                converted_data = {
+                    "staffData": convert_staffdata(input_data['staffData']),
+                    "ruleData": convert_rule_data(input_data['ruleData']),
+                    "shiftData": convert_shiftdata(
+                        input_data['shiftData'],
+                        input_data['staffData'],
+                        input_data['ruleData']
+                    ),
+                    "weightData": convert_weightdata(input_data)
+                }
+
+                # from_dictでインスタンス化
+                staff_instances = [
+                    DictToInstance.create_staff_data(staff)
+                    for staff in converted_data["staffData"]["staffs"]
+                ]
+                rule_instance = DictToInstance.create_rule_data(converted_data["ruleData"]["rules"])
+                shift_instance = DictToInstance.create_shift_data(converted_data["shiftData"])
+                weight_instance = DictToInstance.create_weight_data(converted_data["weightData"])
+
+                # 4. シフト生成
+                generator = ShiftGenerator(weights=weight_instance)
                 solution = generator.generate_shift(
-                    staff_data_list=staff_data["staffs"],
-                    rule_data=rule_data["rules"],
-                    shift_data=shift_data,
+                    staff_data_list=staff_instances,
+                    rule_data=rule_instance,
+                    shift_data=shift_instance,
                     turbo_mode=True
                 )
                 
                 if solution:
-                    # Firestoreに保存
                     result_id = write_result_to_firestore(solution, input_data)
-                    return {"status": "success", "result_id": result_id}
+                    api_logger.debug("=== ソルバー実行完了 ===")
+                    
+                    api_logger.info("シフト生成成功")
+                    
+                    # solutionを必要な形式に変換
+                    shifts_dict = {}
+                    for entry in solution.entries:
+                        if entry.staff_name not in shifts_dict:
+                            shifts_dict[entry.staff_name] = [''] * 32
+                        shifts_dict[entry.staff_name][entry.day] = entry.shift_type
+                    
+                    # editキーでラップ
+                    return {
+                        "edit": {
+                            'year': solution.year,
+                            'month': solution.month,
+                            'shifts': shifts_dict
+                        }
+                    }
+                else:
+                    api_logger.warning("シフト生成失敗（解なし）")
+                    return {"status": "warning", "message": "シフトを生成できませんでした"}
             
         return {"status": "error", "message": "データが見つかりません"}
         
     except Exception as e:
+        api_logger.error(f"全体エラー: {str(e)}")
         return {"status": "error", "message": str(e)}
 
 @app.get("/generate-shift-test")
@@ -208,18 +254,111 @@ async def generate_shift_test():
 
 @app.get("/generate-test")
 async def generate_test():
-    """シフト生成テスト用エンドポイント"""
+    """シフト生成テスト用エンドポイント（デバッグ用）"""
     try:
-        print("=== ShiftGenerator確認 ===")
-        try:
-            from .generator import ShiftGenerator
-            print("ShiftGeneratorクラス:", ShiftGenerator)  # クラスが正しくインポートされているか確認
-        except ImportError as e:
-            print("ShiftGeneratorのインポートエラー:", str(e))
-            return {"status": "error", "message": f"ShiftGeneratorのインポートに失敗: {str(e)}"}
+        api_logger.debug("=== シフト生成テスト開始 ===")
         
-        # Step 1: Firestoreデータ取得のデバッグ
-        print("=== Step 1: Firestore データ取得 ===")
+        # 1. Firestoreデータ取得
+        db = get_firestore_client()
+        doc_ref = db.collection('requests').document('que')
+        doc = doc_ref.get()
+        
+        if not doc.exists:
+            api_logger.error("Firestoreにデータが存在しません")
+            return {"status": "error", "message": "データが見つかりません"}
+            
+        response_data = doc.to_dict()
+        if 'json' not in response_data:
+            api_logger.error("JSONデータが存在しません")
+            return {"status": "error", "message": "JSONデータが見つかりません"}
+            
+        # 文字列からJSONオブジェクトにパース
+        input_data = json.loads(response_data['json'])
+        api_logger.debug(f"入力データ: {input_data.keys()}")
+
+        # 2. データ変換
+        api_logger.debug("=== データ変換開始 ===")
+        converted_data = {
+            "staffData": convert_staffdata(input_data['staffData']),
+            "ruleData": convert_rule_data(input_data['ruleData']),
+            "shiftData": convert_shiftdata(
+                input_data['shiftData'],
+                input_data['staffData'],
+                input_data['ruleData']
+            ),
+            "weightData": convert_weightdata(input_data)
+        }
+        api_logger.debug(f"変換後データ: {converted_data.keys()}")
+
+        # 3. インスタンス化
+        api_logger.debug("=== インスタンス化開始 ===")
+        try:
+            staff_instances = [
+                DictToInstance.create_staff_data(staff)
+                for staff in converted_data["staffData"]["staffs"]
+            ]
+            rule_instance = DictToInstance.create_rule_data(converted_data["ruleData"]["rules"])
+            shift_instance = DictToInstance.create_shift_data(converted_data["shiftData"])
+            weight_instance = DictToInstance.create_weight_data(converted_data["weightData"])
+            api_logger.debug("インスタンス化完了")
+        except Exception as e:
+            api_logger.error(f"インスタンス化エラー: {str(e)}")
+            raise
+
+        # シフト生成部分をより詳細にログ
+        api_logger.debug("=== ソルバー実行開始 ===")
+        generator = ShiftGenerator(weights=weight_instance)
+        
+        # ソルバーに渡す直前のデータを確認
+        api_logger.debug(f"スタッフデータ数: {len(staff_instances)}")
+        api_logger.debug(f"ルールデータ: {rule_instance}")
+        api_logger.debug(f"シフトデータ: {shift_instance}")
+        
+        # ソルバー実行（この部分で CPU 使用率が上がるはず）
+        solution = generator.generate_shift(
+            staff_data_list=staff_instances,
+            rule_data=rule_instance,
+            shift_data=shift_instance,
+            turbo_mode=True
+        )
+        api_logger.debug("=== ソルバー実行完了 ===")
+        
+        if solution:
+            api_logger.info("シフト生成成功")
+            
+            # solutionを必要な形式に変換
+            shifts_dict = {}
+            for entry in solution.entries:
+                if entry.staff_name not in shifts_dict:
+                    shifts_dict[entry.staff_name] = [''] * 32
+                shifts_dict[entry.staff_name][entry.day] = entry.shift_type
+            
+            formatted_solution = {
+                'year': solution.year,
+                'month': solution.month,
+                'shifts': shifts_dict
+            }
+            
+            return {
+                "status": "success",
+                "solution": formatted_solution,  # 変換後のデータ
+                "debug_info": {
+                    "staff_count": len(staff_instances),
+                    "converted_data": converted_data
+                }
+            }
+        else:
+            api_logger.warning("シフト生成失敗（解なし）")
+            return {"status": "warning", "message": "シフトを生成できませんでした"}
+            
+    except Exception as e:
+        api_logger.error(f"全体エラー: {str(e)}")
+        return {"status": "error", "message": str(e)}
+
+@app.get("/preview-convert", response_class=HTMLResponse)
+async def preview_convert():
+    """変換結果をプレビュー表示"""
+    try:
         db = get_firestore_client()
         doc_ref = db.collection('requests').document('que')
         doc = doc_ref.get()
@@ -228,78 +367,74 @@ async def generate_test():
             response_data = doc.to_dict()
             if 'json' in response_data:
                 input_data = response_data['json']
-                print("取得したinput_data:", input_data.keys())
                 
-                # Step 2: データ変換のデバッグ
-                print("\n=== Step 2: データ変換 ===")
-                try:
-                    rule_data = convert_rule_data(input_data['ruleData'])
-                    print("rule_data変換完了:", rule_data.keys())
-                except Exception as e:
-                    print("rule_data変換エラー:", str(e))
-
-                try:
-                    staff_data = convert_staffdata(input_data['staffData'])
-                    print("staff_data変換完了:", staff_data.keys())
-                except Exception as e:
-                    print("staff_data変換エラー:", str(e))
-
-                try:
-                    shift_data = convert_shiftdata(input_data['shiftData'], input_data['staffData'], input_data['ruleData'])
-                    print("shift_data変換完了:", shift_data.keys() if isinstance(shift_data, dict) else "非辞書型")
-                except Exception as e:
-                    print("shift_data変換エラー:", str(e))
-
-                try:
-                    weight_data = convert_weightdata(input_data)
-                    print("weight_data変換完了:", weight_data.keys())
-                except Exception as e:
-                    print("weight_data変換エラー:", str(e))
-
-                # Step 3: ShiftGenerator実行のデバッグ
-                print("\n=== Step 3: ShiftGenerator実行 ===")
-                try:
-                    print("\n=== ShiftGenerator初期化 ===")
-                    generator = ShiftGenerator(weights=weight_data['選好'])
-                    print("generator type:", type(generator))
-                    print("generator methods:", dir(generator))
-                    
-                    print("\n=== generate_shift呼び出し直前 ===")
-                    solution = generator.generate_shift(
-                        staff_data_list=staff_data["staffs"],
-                        rule_data=rule_data["rules"],
-                        shift_data=shift_data,
-                        turbo_mode=True
-                    )
-                    print("generate_shift呼び出し完了")
-                except Exception as e:
-                    print("ShiftGenerator処理エラー:", str(e))
-                    import traceback
-                    print("詳細なエラー情報:", traceback.format_exc())
-                    raise e
+                # 各種データの変換
+                rule_data = convert_rule_data(input_data.get('ruleData', {}))
+                staff_data = convert_staffdata(input_data.get('staffData', {}))
+                shift_data = convert_shiftdata(
+                    input_data.get('shiftData', {}),
+                    input_data.get('staffData', {}),
+                    input_data.get('ruleData', {})
+                )
+                weight_data = convert_weightdata(input_data)
                 
-                if solution is None:
-                    print("\nソリューションがNullです")
-                    return {
-                        "status": "warning",
-                        "message": "シフトを生成できませんでした。制約条件を確認してください。",
-                        "debug_info": {
-                            "rule_data": rule_data,
-                            "staff_data": staff_data,
-                            "shift_data": shift_data,
-                            "weight_data": weight_data
-                        }
-                    }
+                # HTML形式で整形
+                html_content = f"""
+                <html>
+                    <head>
+                        <title>データ変換プレビュー</title>
+                        <style>
+                            body {{
+                                font-family: Arial, sans-serif;
+                                margin: 20px;
+                            }}
+                            .container {{
+                                display: flex;
+                                gap: 20px;
+                            }}
+                            .data-section {{
+                                flex: 1;
+                            }}
+                            pre {{
+                                background: #f5f5f5;
+                                padding: 15px;
+                                border-radius: 5px;
+                                overflow-x: auto;
+                                white-space: pre-wrap;
+                            }}
+                            h2 {{
+                                color: #333;
+                                border-bottom: 2px solid #ddd;
+                                padding-bottom: 5px;
+                            }}
+                        </style>
+                    </head>
+                    <body>
+                        <h1>データ変換プレビュー</h1>
+                        <div class="container">
+                            <div class="data-section">
+                                <h2>元のデータ</h2>
+                                <pre>{json.dumps(input_data, indent=2, ensure_ascii=False)}</pre>
+                            </div>
+                            <div class="data-section">
+                                <h2>変換後のデータ</h2>
+                                <pre>{json.dumps({
+                                    "ruleData": rule_data,
+                                    "staffData": staff_data,
+                                    "shiftData": shift_data,
+                                    "weightData": weight_data
+                                }, indent=2, ensure_ascii=False)}</pre>
+                            </div>
+                        </div>
+                    </body>
+                </html>
+                """
+                return html_content
                 
-                return {
-                    "status": "success",
-                    "solution": solution
-                }
-        
-        return {"status": "error", "message": "データが見つかりません"}
+        return "データが見つかりません"
         
     except Exception as e:
-        print("全体エラー:", str(e))
-        return {"status": "error", "message": str(e), "traceback": str(e.__traceback__)}
+        
+        return f"エラーが発生しました: {str(e)}"
 
 __all__ = ['StaffData', 'ShiftEntry', 'ShiftData', 'RuleData'] 

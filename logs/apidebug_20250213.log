@@ -1,0 +1,302 @@
+Logger initialization test
+[2025-02-13 18:06:00] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 18:06:00] DEBUG [APIServer] Debug test message
+[2025-02-13 18:06:00] INFO [APIServer] Info test message
+[2025-02-13 18:06:00] WARNING [APIServer] Warning test message
+[2025-02-13 18:06:00] ERROR [APIServer] Error test message
+[2025-02-13 18:06:00] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 18:06:00] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 18:06:02] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 18:06:02] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 18:06:02] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 18:06:02] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 18:06:02] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 18:06:02] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 18:06:02] DEBUG [APIServer] === シフト生成開始 ===
+[2025-02-13 18:06:02] WARNING [APIServer] シフト生成失敗（解なし）
+Logger initialization test
+[2025-02-13 18:09:52] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 18:09:52] INFO [APIServer] APIサーバー起動
+[2025-02-13 18:09:52] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 18:09:52] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 18:09:52] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 18:09:55] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 18:09:55] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 18:09:55] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 18:09:55] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 18:09:55] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 18:09:55] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 18:09:55] DEBUG [APIServer] === シフト生成開始 ===
+[2025-02-13 18:09:56] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-13 18:12:48] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 18:12:48] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 18:12:48] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 18:12:48] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 18:12:48] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 18:12:48] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 18:12:48] DEBUG [APIServer] === シフト生成開始 ===
+[2025-02-13 18:12:50] WARNING [APIServer] シフト生成失敗（解なし）
+Logger initialization test
+[2025-02-13 18:15:13] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 18:15:13] INFO [APIServer] APIサーバー起動
+[2025-02-13 18:15:13] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 18:15:13] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 18:15:13] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 18:15:16] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 18:15:16] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 18:15:16] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 18:15:16] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 18:15:16] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 18:15:16] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 18:15:16] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-13 18:15:16] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-13 18:15:16] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[])
+[2025-02-13 18:15:16] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=5, entries=[ShiftEntry(staff_name='スタッフB', day=17, shift_type='日', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-13 18:15:16] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 18:15:16] WARNING [APIServer] シフト生成失敗（解なし）
+Logger initialization test
+[2025-02-13 19:51:29] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 19:51:29] INFO [APIServer] APIサーバー起動
+[2025-02-13 19:51:29] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 19:51:29] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 19:51:29] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 19:51:31] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 19:51:31] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 19:51:31] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 19:51:31] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 19:51:31] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 19:51:31] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 19:51:31] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-13 19:51:31] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-13 19:51:31] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[])
+[2025-02-13 19:51:31] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=5, entries=[ShiftEntry(staff_name='スタッフB', day=17, shift_type='日', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-13 19:51:32] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 19:51:32] WARNING [APIServer] シフト生成失敗（解なし）
+Logger initialization test
+[2025-02-13 19:52:12] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 19:52:12] INFO [APIServer] APIサーバー起動
+[2025-02-13 19:52:12] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 19:52:12] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 19:52:12] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 19:52:14] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 19:52:14] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 19:52:14] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 19:52:14] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 19:52:14] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 19:52:14] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 19:52:14] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-13 19:52:14] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-13 19:52:14] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[])
+[2025-02-13 19:52:14] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=5, entries=[ShiftEntry(staff_name='スタッフB', day=17, shift_type='日', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-13 19:52:15] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 19:52:15] WARNING [APIServer] シフト生成失敗（解なし）
+Logger initialization test
+[2025-02-13 19:52:33] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 19:52:33] INFO [APIServer] APIサーバー起動
+[2025-02-13 19:52:33] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 19:52:33] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 19:52:33] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 19:52:36] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 19:52:36] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 19:52:36] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 19:52:36] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 19:52:36] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 19:52:36] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 19:52:36] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-13 19:52:36] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-13 19:52:36] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[])
+[2025-02-13 19:52:36] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=5, entries=[ShiftEntry(staff_name='スタッフB', day=17, shift_type='日', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-13 19:52:36] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 19:52:36] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-13 20:06:52] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 20:06:52] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 20:06:52] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 20:06:52] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 20:06:52] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 20:06:52] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 20:06:52] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-13 20:06:52] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-13 20:06:52] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[])
+[2025-02-13 20:06:52] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=5, entries=[], preference_entries=[])
+[2025-02-13 20:06:52] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 20:06:52] INFO [APIServer] シフト生成成功
+[2025-02-13 20:10:01] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 20:10:01] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 20:10:01] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 20:10:01] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 20:10:01] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 20:10:01] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 20:10:01] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-13 20:10:01] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-13 20:10:01] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[])
+[2025-02-13 20:10:01] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=5, entries=[ShiftEntry(staff_name='スタッフC', day=10, shift_type='▲', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-13 20:10:02] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 20:10:02] INFO [APIServer] シフト生成成功
+[2025-02-13 20:11:19] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 20:11:19] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 20:11:19] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 20:11:19] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 20:11:19] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 20:11:19] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 20:11:19] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-13 20:11:19] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-13 20:11:19] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[])
+[2025-02-13 20:11:19] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=5, entries=[ShiftEntry(staff_name='スタッフC', day=10, shift_type='▲', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-13 20:11:20] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 20:11:20] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 20:42:53] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 20:42:53] INFO [APIServer] APIサーバー起動
+[2025-02-13 20:42:53] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 20:42:53] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 20:42:53] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 20:42:55] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 20:42:55] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 20:42:55] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 20:42:55] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 20:42:55] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 20:42:55] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 20:42:55] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-13 20:42:55] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-13 20:42:55] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[])
+[2025-02-13 20:42:55] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=5, entries=[ShiftEntry(staff_name='スタッフC', day=10, shift_type='▲', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-13 20:42:56] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 20:42:56] INFO [APIServer] シフト生成成功
+[2025-02-13 20:43:03] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 20:43:03] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 20:43:03] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 20:43:03] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 20:43:03] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 20:43:03] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 20:43:03] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-13 20:43:03] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-13 20:43:03] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[])
+[2025-02-13 20:43:03] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=5, entries=[ShiftEntry(staff_name='スタッフC', day=10, shift_type='▲', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-13 20:43:04] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 20:43:04] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 20:45:20] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 20:45:20] INFO [APIServer] APIサーバー起動
+[2025-02-13 20:45:20] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 20:45:20] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 20:45:20] INFO [APIServer] Firestoreリスナー開始
+Logger initialization test
+[2025-02-13 20:46:06] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 20:46:06] INFO [APIServer] APIサーバー起動
+[2025-02-13 20:46:06] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 20:46:06] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 20:46:06] INFO [APIServer] Firestoreリスナー開始
+Logger initialization test
+[2025-02-13 20:52:42] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 20:52:42] INFO [APIServer] APIサーバー起動
+[2025-02-13 20:52:42] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 20:52:42] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 20:52:42] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 20:52:45] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 20:52:45] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 20:55:41] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 20:55:41] INFO [APIServer] APIサーバー起動
+[2025-02-13 20:55:41] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 20:55:41] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 20:55:41] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 20:55:44] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 20:55:44] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 20:58:30] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 20:58:30] INFO [APIServer] APIサーバー起動
+[2025-02-13 20:58:30] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 20:58:30] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 20:58:30] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 20:58:33] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 20:58:33] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 21:02:39] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 21:02:39] INFO [APIServer] APIサーバー起動
+[2025-02-13 21:02:39] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 21:02:39] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 21:02:39] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 21:02:42] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 21:02:42] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 21:13:26] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 21:13:26] INFO [APIServer] APIサーバー起動
+[2025-02-13 21:13:26] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 21:13:26] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 21:13:26] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 21:13:29] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 21:13:29] INFO [APIServer] シフト生成成功
+[2025-02-13 21:41:50] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-13 21:43:21] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-13 21:47:16] ERROR [APIServer] 全体エラー: string indices must be integers
+[2025-02-13 21:50:57] ERROR [APIServer] 全体エラー: string indices must be integers
+[2025-02-13 21:53:07] ERROR [APIServer] 全体エラー: string indices must be integers
+[2025-02-13 21:54:47] ERROR [APIServer] 全体エラー: string indices must be integers
+Logger initialization test
+[2025-02-13 21:55:07] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 21:55:07] INFO [APIServer] APIサーバー起動
+[2025-02-13 21:55:07] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 21:55:07] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 21:55:07] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 21:55:09] ERROR [APIServer] 全体エラー: string indices must be integers
+Logger initialization test
+[2025-02-13 21:55:53] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 21:55:53] INFO [APIServer] APIサーバー起動
+[2025-02-13 21:55:53] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 21:55:53] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 21:55:53] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 21:55:56] ERROR [APIServer] 全体エラー: string indices must be integers
+Logger initialization test
+[2025-02-13 21:56:38] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 21:56:38] INFO [APIServer] APIサーバー起動
+[2025-02-13 21:56:38] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 21:56:38] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 21:56:38] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 21:56:40] ERROR [APIServer] 全体エラー: string indices must be integers
+[2025-02-13 22:03:44] ERROR [APIServer] 全体エラー: string indices must be integers
+[2025-02-13 22:04:36] ERROR [APIServer] 全体エラー: string indices must be integers
+[2025-02-13 22:08:33] ERROR [APIServer] 全体エラー: string indices must be integers
+Logger initialization test
+[2025-02-13 22:08:45] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 22:08:45] INFO [APIServer] APIサーバー起動
+[2025-02-13 22:08:45] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 22:08:45] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 22:08:45] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 22:08:47] DEBUG [APIServer] Parsed input_data: {'ruleData': {'basicSettings': {'year': 2025, 'month': 1, 'publicHolidays': 8, 'baseHolidays': 8, 'consecutiveWorkDays': 5, 'normalShiftSuitability': 140, 'sundayShiftSuitability': 110, 'useNormalShiftSuitability': False, 'useSundayShiftSuitability': False}, 'patternConstraints': [], 'optionConstraints': [], 'sortableConstraints': [], 'requiredStaffCount': {'早番': 2, '日勤': 2.5, '遅番': 2, '夜勤': 2, '日曜の日勤': 1}, 'globalConstraints': [], 'staffConstraints': {}}, 'staffData': {'staffList': []}, 'shiftData': {'searchTime': 30, 'entries': []}, 'editData': {'year': 2025, 'month': 1, 'shifts': {}}, 'settings': {'shiftTypes': [{'id': 1, 'name': '早番', 'shortName': '▲', 'order': 1, 'requiresStaffCount': True, 'requiresShiftCount': True, 'isPartialList': True, 'defaultShiftCount': {'min': 0, 'max': 0}}, {'id': 2, 'name': '日勤', 'shortName': '日', 'order': 2, 'requiresStaffCount': True, 'requiresShiftCount': True, 'isPartialList': True, 'defaultShiftCount': {'min': 0, 'max': 0}}, {'id': 3, 'name': '遅番', 'shortName': '▼', 'order': 3, 'requiresStaffCount': True, 'requiresShiftCount': True, 'isPartialList': True, 'defaultShiftCount': {'min': 0, 'max': 0}}, {'id': 4, 'name': '夜勤', 'shortName': '／', 'order': 4, 'requiresStaffCount': True, 'requiresShiftCount': True, 'isPartialList': True, 'defaultShiftCount': {'min': 0, 'max': 0}}, {'id': 5, 'name': '明け', 'shortName': '×', 'order': 5, 'requiresStaffCount': False, 'requiresShiftCount': False, 'isPartialList': False, 'defaultShiftCount': {'min': 0, 'max': 0}}, {'id': 6, 'name': '休み', 'shortName': '公', 'order': 6, 'requiresStaffCount': False, 'requiresShiftCount': False, 'isPartialList': True, 'defaultShiftCount': {'min': 0, 'max': 0}}]}, 'weightData': {'連続勤務': 50, '日勤帯連勤': 50, '連続休暇': 50, '連休保証': 50, '曜日希望': 50, '勤務希望': 50, 'シフトパターン': 50, 'ペアリング': 50, 'セパレート': 50, 'カスタムプリセット': 50}}
+[2025-02-13 22:08:47] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-13 22:11:42] DEBUG [APIServer] Parsed input_data: {'ruleData': {'basicSettings': {'year': 2025, 'month': 1, 'publicHolidays': 8, 'baseHolidays': 8, 'consecutiveWorkDays': 5, 'normalShiftSuitability': 140, 'sundayShiftSuitability': 110, 'useNormalShiftSuitability': False, 'useSundayShiftSuitability': False}, 'patternConstraints': [], 'optionConstraints': [], 'sortableConstraints': [], 'requiredStaffCount': {'早番': 2, '日勤': 2.5, '遅番': 2, '夜勤': 2, '日曜の日勤': 1}, 'globalConstraints': [], 'staffConstraints': {}}, 'staffData': {'staffList': []}, 'shiftData': {'searchTime': 30, 'entries': []}, 'editData': {'year': 2025, 'month': 1, 'shifts': {}}, 'settings': {'shiftTypes': [{'id': 1, 'name': '早番', 'shortName': '▲', 'order': 1, 'requiresStaffCount': True, 'requiresShiftCount': True, 'isPartialList': True, 'defaultShiftCount': {'min': 0, 'max': 0}}, {'id': 2, 'name': '日勤', 'shortName': '日', 'order': 2, 'requiresStaffCount': True, 'requiresShiftCount': True, 'isPartialList': True, 'defaultShiftCount': {'min': 0, 'max': 0}}, {'id': 3, 'name': '遅番', 'shortName': '▼', 'order': 3, 'requiresStaffCount': True, 'requiresShiftCount': True, 'isPartialList': True, 'defaultShiftCount': {'min': 0, 'max': 0}}, {'id': 4, 'name': '夜勤', 'shortName': '／', 'order': 4, 'requiresStaffCount': True, 'requiresShiftCount': True, 'isPartialList': True, 'defaultShiftCount': {'min': 0, 'max': 0}}, {'id': 5, 'name': '明け', 'shortName': '×', 'order': 5, 'requiresStaffCount': False, 'requiresShiftCount': False, 'isPartialList': False, 'defaultShiftCount': {'min': 0, 'max': 0}}, {'id': 6, 'name': '休み', 'shortName': '公', 'order': 6, 'requiresStaffCount': False, 'requiresShiftCount': False, 'isPartialList': True, 'defaultShiftCount': {'min': 0, 'max': 0}}]}, 'weightData': {'連続勤務': 50, '日勤帯連勤': 50, '連続休暇': 50, '連休保証': 50, '曜日希望': 50, '勤務希望': 50, 'シフトパターン': 50, 'ペアリング': 50, 'セパレート': 50, 'カスタムプリセット': 50}}
+[2025-02-13 22:11:42] WARNING [APIServer] シフト生成失敗（解なし）
+Logger initialization test
+[2025-02-13 22:11:51] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 22:11:51] INFO [APIServer] APIサーバー起動
+[2025-02-13 22:11:51] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 22:11:51] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 22:11:51] INFO [APIServer] Firestoreリスナー開始
+Logger initialization test
+[2025-02-13 22:13:02] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 22:13:02] INFO [APIServer] APIサーバー起動
+[2025-02-13 22:13:02] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 22:13:02] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 22:13:02] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 22:13:04] ERROR [APIServer] 全体エラー: string indices must be integers
+[2025-02-13 22:19:25] ERROR [APIServer] 全体エラー: string indices must be integers
+[2025-02-13 22:21:11] ERROR [APIServer] 全体エラー: string indices must be integers
+[2025-02-13 22:23:13] ERROR [APIServer] 全体エラー: string indices must be integers
+[2025-02-13 22:23:37] ERROR [APIServer] 全体エラー: string indices must be integers
+Logger initialization test
+[2025-02-13 22:26:51] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 22:26:51] INFO [APIServer] APIサーバー起動
+[2025-02-13 22:26:51] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 22:26:51] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 22:26:51] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 22:26:53] ERROR [APIServer] 全体エラー: string indices must be integers
+Logger initialization test
+[2025-02-13 22:30:13] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 22:30:13] INFO [APIServer] APIサーバー起動
+[2025-02-13 22:30:13] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 22:30:13] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 22:30:13] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 22:30:16] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-13 22:30:42] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-13 22:31:00] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 22:31:00] INFO [APIServer] シフト生成成功

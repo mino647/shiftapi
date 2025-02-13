@@ -1,0 +1,24 @@
+Logger initialization test
+[2025-02-13 18:03:27] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\api_20250213.log
+[2025-02-13 18:03:27] DEBUG [APIServer] Debug test message
+[2025-02-13 18:03:27] INFO [APIServer] Info test message
+[2025-02-13 18:03:27] WARNING [APIServer] Warning test message
+[2025-02-13 18:03:27] ERROR [APIServer] Error test message
+[2025-02-13 18:03:27] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 18:03:27] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 18:03:29] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 18:03:29] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 18:03:29] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 18:03:29] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 18:03:29] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 18:03:29] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 18:03:29] DEBUG [APIServer] === シフト生成開始 ===
+[2025-02-13 18:03:30] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-13 18:05:44] DEBUG [APIServer] === シフト生成テスト開始 ===
+[2025-02-13 18:05:44] DEBUG [APIServer] 入力データ: dict_keys(['weightData', 'settings', 'staffData', 'ruleData', 'shiftData', 'editData'])
+[2025-02-13 18:05:44] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-13 18:05:44] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-13 18:05:44] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-13 18:05:44] DEBUG [APIServer] インスタンス化完了
+[2025-02-13 18:05:44] DEBUG [APIServer] === シフト生成開始 ===
+[2025-02-13 18:05:44] WARNING [APIServer] シフト生成失敗（解なし）

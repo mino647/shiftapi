@@ -6,7 +6,8 @@ import logging
 from typing import Dict, List
 from ortools.sat.python import cp_model
 from .logger import logger
-from ..main import StaffData, ShiftData, RuleData
+from ..from_dict import StaffData, ShiftData, RuleData, ShiftCount
+from ..from_dict import StaffData, ShiftData, RuleData, ShiftCount
 from datetime import datetime
 import math
 from .mapping import (
@@ -142,11 +143,8 @@ class BasicLibrary:
 
         if self.shift_data and self.shift_data.entries:
             for entry in self.shift_data.entries:
-                # day-1 は0-indexedに変換するため
                 c_shift_required=self.model.Add(self.shifts[(entry.staff_name, entry.day-1, entry.shift_type)] == 1)
                 c_shift_required.WithName(f"【希望シフト】{entry.staff_name}, {entry.day}日, {entry.shift_type}")
-                logger.debug(f"希望シフト制約を追加: {entry.staff_name}, {entry.day}日, {entry.shift_type}")
-      
 
     def add_work_count_limit(self):
         """スタッフの勤務回数制限 (必須制約)"""
@@ -172,13 +170,10 @@ class BasicLibrary:
         """シフト適性の必須制約と選好制約を設定する"""
         logger.debug("=== シフト適性の制約設定開始 ===")
 
-        # 必須制約のチェック
         if (self.rule_data.weekday_reliability is None
             and self.rule_data.sunday_reliability is None):
-            logger.debug("必須の目標値が未設定のためスキップ")
             return
 
-        # 各日のシフト適性を計算・制約設定
         for day in range(self.days_in_month):
             weekday = datetime(self.year, self.month, day+1).weekday()
             is_sunday = weekday == 6
@@ -207,7 +202,6 @@ class BasicLibrary:
             if target_reliability is not None:
                 c_rel = self.model.Add(daily_sum >= target_reliability)
                 c_rel.WithName(f"【シフト適性_必須】{day+1}日目(目標:{target_reliability})")
-                logger.debug(f"必須制約を追加: {day+1}日目, 目標値{target_reliability}")
 
             # 2. 選好制約の処理
             for constraint in self.rule_data.preference_constraints:
@@ -228,7 +222,6 @@ class BasicLibrary:
                         # 必須制約として処理
                         c = self.model.Add(daily_sum >= target_value)
                         c.WithName(f"【シフト適性_必須(preference)】{day+1}日目(目標:{target_value})")
-                        logger.debug(f"必須制約(preference)を追加: {day+1}日目, 目標値{target_value}")
                     
                     elif constraint.type == "選好":
                         # 選好制約として処理
@@ -243,11 +236,6 @@ class BasicLibrary:
                         
                         # 目的関数に負の重みを追加
                         self.objective_terms.append(penalty * (-weight))
-                        
-                        logger.debug(
-                            f"選好制約を追加: {day+1}日目({constraint.sub_category}), "
-                            f"目標値{target_value}, 重み{-weight}"
-                        )
 
         logger.debug("=== シフト適性の制約設定完了 ===")
 
@@ -255,7 +243,6 @@ class BasicLibrary:
         """制約: ☆シフトは希望シフトとして指定された場合のみ使用可能"""
         logger.debug("=== ☆シフト制約の設定 ===")
 
-        # ☆シフトの制約（インデントを修正）
         for staff in self.staff_list:
             for day in range(self.days_in_month):
                 # ☆シフトが指定されていない場合は禁止
@@ -348,8 +335,6 @@ class BasicLibrary:
                     # 目的関数にペナルティ項を追加
                     penalty_term = self.shifts[(staff, day, '_')] * -10000
                     self.objective_terms.append(penalty_term)
-                    logger.debug(f"{staff}の{day + 1}日目: アンダースコアペナルティ(-10000)を追加")
-
     def calculate_reliability(self, day):
         """日ごとの適性値合計を計算する共通処理"""
         weekday = datetime(self.year, self.month, day+1).weekday()
@@ -442,15 +427,7 @@ class BasicLibrary:
         logger.debug("=== 選好制約: 数字付きシフトの処理 ===")
         
         for entry in self.shift_data.preference_entries:
-            # その日のそのスタッフのシフト変数を取得
             shift_var = self.shifts[(entry.staff_name, entry.day - 1, entry.shift_type)]
-            
-            # 選好制約の重みを目的関数に追加
-            self.objective_terms.append(shift_var * entry.weight)
-            logger.debug(
-                f"選好制約を追加: {entry.staff_name}, "
-                f"{entry.day}日目, {entry.shift_type}, "
-                f"重み={entry.weight}"
-            )
-
+            weight = getattr(entry, 'weight', 1)
+            self.objective_terms.append(shift_var * weight)
 
