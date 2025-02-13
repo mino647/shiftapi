@@ -65,12 +65,12 @@ class ShiftData:
     entries: List[ShiftEntry]
     preference_entries: List
 
-def convert_constraint(constraint: dict, include_preference_fields: bool = False) -> dict:
+def convert_constraint(constraint: dict, include_preference_fields: bool = False) -> Optional[dict]:
     """制約を変換する"""
     # カテゴリごとの制約マッピング定義
     CONSTRAINT_MAPPINGS = {
         # value2までのパターン
-        ( "勤務希望", "カスタムプリセット"): {
+        ("勤務希望", "カスタムプリセット"): {
             "type": "type",
             "category": "category",
             "sub_category": "value1",
@@ -110,13 +110,23 @@ def convert_constraint(constraint: dict, include_preference_fields: bool = False
     }
 
     # カテゴリに応じたマッピングを適用
+    result = None
     for categories, mapping in CONSTRAINT_MAPPINGS.items():
         if constraint["category"] in categories:
             result = {
-                key: constraint[value] if value else ""
-                for key, value in mapping.items()
+                "type": constraint["type"],
+                "category": constraint["category"],
+                "sub_category": constraint["value1"],
+                "count": constraint["value2"] if "value2" in constraint else "",
+                "final": constraint["value3"] if "value3" in constraint else "",
+                "target": (constraint["value4"] if "value4" in constraint and constraint["value4"] else
+                          constraint["value3"] if "value3" in constraint and constraint["value3"] else
+                          constraint["value2"] if "value2" in constraint and constraint["value2"] else "")
             }
             break
+    
+    if result is None:
+        return None
     
     # preference_constraints用のフィールドを追加
     if include_preference_fields:
@@ -149,6 +159,11 @@ def convert_rule_data(web_data: dict) -> dict:
         "sunday_reliability": web_data["basicSettings"]["sundayShiftSuitability"] if web_data["basicSettings"]["useSundayShiftSuitability"] else None,
         "preference_constraints": []
     }
+    
+    # そのままpatternConstraintsとoptionConstraintsを参照
+    for constraint in web_data.get("patternConstraints", []) + web_data.get("optionConstraints", []):
+        converted = convert_constraint(constraint, include_preference_fields=True)
+        desktop_rules["preference_constraints"].append(converted)
     
     return {"rules": desktop_rules}
 
@@ -219,8 +234,8 @@ def convert_staffdata(web_data: dict) -> dict:
                 "夜勤": staff["shift_count"]["夜勤"]
             },
             "preferences": "",  # 空欄固定
-            "holiday_override": None if staff["holiday_overwrite"] is False else staff["holiday_overwrite"],
-            "reliability_override": None if staff["reliability_overwrite"] is False else staff["reliability_overwrite"],
+            "holiday_override": staff["holidayCount"] if staff["holiday_overwrite"] else None,
+            "reliability_override": staff["shiftSuitability"] if staff["reliability_overwrite"] else None,
             "constraints": []
         }
         

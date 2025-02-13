@@ -79,8 +79,8 @@ def write_result_to_firestore(solution, input_data: dict) -> str:
         shifts_dict = {}
         for entry in solution.entries:
             if entry.staff_name not in shifts_dict:
-                shifts_dict[entry.staff_name] = [''] * 32
-            shifts_dict[entry.staff_name][entry.day] = entry.shift_type
+                shifts_dict[entry.staff_name] = [''] * 31
+            shifts_dict[entry.staff_name][entry.day - 1] = entry.shift_type
         
         formatted_shifts = {
             'year': solution.year,

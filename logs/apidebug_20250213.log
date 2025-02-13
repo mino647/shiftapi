@@ -300,3 +300,102 @@ Logger initialization test
 [2025-02-13 22:30:42] WARNING [APIServer] シフト生成失敗（解なし）
 [2025-02-13 22:31:00] DEBUG [APIServer] === ソルバー実行完了 ===
 [2025-02-13 22:31:00] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 22:37:01] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 22:37:02] INFO [APIServer] APIサーバー起動
+[2025-02-13 22:37:02] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 22:37:02] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 22:37:02] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 22:37:05] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 22:37:05] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 22:38:23] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 22:38:23] INFO [APIServer] APIサーバー起動
+[2025-02-13 22:38:23] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 22:38:23] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 22:38:23] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 22:38:27] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 22:38:27] INFO [APIServer] シフト生成成功
+[2025-02-13 22:39:13] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 22:39:13] INFO [APIServer] シフト生成成功
+[2025-02-13 22:44:54] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 22:44:54] INFO [APIServer] シフト生成成功
+[2025-02-13 22:46:05] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 22:46:05] INFO [APIServer] シフト生成成功
+[2025-02-13 22:46:53] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 22:46:53] INFO [APIServer] シフト生成成功
+[2025-02-13 22:47:18] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 22:47:18] INFO [APIServer] シフト生成成功
+[2025-02-13 23:10:00] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:10:00] INFO [APIServer] シフト生成成功
+[2025-02-13 23:11:53] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:11:53] INFO [APIServer] シフト生成成功
+[2025-02-13 23:14:00] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:14:00] INFO [APIServer] シフト生成成功
+[2025-02-13 23:15:46] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:15:46] INFO [APIServer] シフト生成成功
+[2025-02-13 23:16:09] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:16:09] INFO [APIServer] シフト生成成功
+[2025-02-13 23:17:15] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:17:15] INFO [APIServer] シフト生成成功
+[2025-02-13 23:18:39] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:18:39] INFO [APIServer] シフト生成成功
+[2025-02-13 23:19:20] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:19:20] INFO [APIServer] シフト生成成功
+[2025-02-13 23:22:50] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:22:50] INFO [APIServer] シフト生成成功
+[2025-02-13 23:24:22] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:24:22] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 23:36:13] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 23:36:13] INFO [APIServer] APIサーバー起動
+[2025-02-13 23:36:13] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 23:36:13] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 23:36:13] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 23:36:17] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:36:17] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 23:37:32] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 23:37:32] INFO [APIServer] APIサーバー起動
+[2025-02-13 23:37:32] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 23:37:32] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 23:37:32] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 23:37:35] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:37:35] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 23:38:49] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 23:38:49] INFO [APIServer] APIサーバー起動
+[2025-02-13 23:38:49] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 23:38:49] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 23:38:49] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 23:38:52] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:38:52] INFO [APIServer] シフト生成成功
+[2025-02-13 23:40:29] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:40:29] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 23:40:43] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 23:40:43] INFO [APIServer] APIサーバー起動
+[2025-02-13 23:40:43] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 23:40:43] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 23:40:43] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 23:40:46] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:40:46] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 23:45:05] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 23:45:05] INFO [APIServer] APIサーバー起動
+[2025-02-13 23:45:05] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 23:45:05] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 23:45:05] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 23:45:23] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-13 23:45:23] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-13 23:52:54] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250213.log
+[2025-02-13 23:52:54] INFO [APIServer] APIサーバー起動
+[2025-02-13 23:52:54] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-13 23:52:54] DEBUG [APIServer] アプリケーション起動
+[2025-02-13 23:52:54] INFO [APIServer] Firestoreリスナー開始
+[2025-02-13 23:52:56] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-14 00:04:28] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-14 00:04:28] INFO [APIServer] シフト生成成功
+[2025-02-14 00:05:44] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-14 00:05:44] INFO [APIServer] シフト生成成功

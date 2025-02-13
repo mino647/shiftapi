@@ -1,0 +1,75 @@
+Logger initialization test
+[2025-02-14 00:07:30] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250214.log
+[2025-02-14 00:07:30] INFO [APIServer] APIサーバー起動
+[2025-02-14 00:07:30] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-14 00:07:30] DEBUG [APIServer] アプリケーション起動
+[2025-02-14 00:07:30] INFO [APIServer] Firestoreリスナー開始
+[2025-02-14 00:07:48] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-14 00:07:48] INFO [APIServer] シフト生成成功
+[2025-02-14 00:07:59] WARNING [APIServer] シフト生成失敗（解なし）
+Logger initialization test
+[2025-02-14 00:09:25] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250214.log
+[2025-02-14 00:09:25] INFO [APIServer] APIサーバー起動
+[2025-02-14 00:09:25] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-14 00:09:25] DEBUG [APIServer] アプリケーション起動
+[2025-02-14 00:09:25] INFO [APIServer] Firestoreリスナー開始
+[2025-02-14 00:09:27] ERROR [APIServer] 全体エラー: 'PreferenceConstraint' object is not subscriptable
+Logger initialization test
+[2025-02-14 00:09:46] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250214.log
+[2025-02-14 00:09:46] INFO [APIServer] APIサーバー起動
+[2025-02-14 00:09:46] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-14 00:09:46] DEBUG [APIServer] アプリケーション起動
+[2025-02-14 00:09:46] INFO [APIServer] Firestoreリスナー開始
+[2025-02-14 00:09:48] WARNING [APIServer] シフト生成失敗（解なし）
+Logger initialization test
+[2025-02-14 00:50:16] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250214.log
+[2025-02-14 00:50:16] INFO [APIServer] APIサーバー起動
+[2025-02-14 00:50:16] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-14 00:50:16] DEBUG [APIServer] アプリケーション起動
+[2025-02-14 00:50:16] INFO [APIServer] Firestoreリスナー開始
+[2025-02-14 00:50:19] WARNING [APIServer] シフト生成失敗（解なし）
+Logger initialization test
+[2025-02-14 00:52:43] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250214.log
+[2025-02-14 00:52:43] INFO [APIServer] APIサーバー起動
+[2025-02-14 00:52:43] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-14 00:52:43] DEBUG [APIServer] アプリケーション起動
+[2025-02-14 00:52:43] INFO [APIServer] Firestoreリスナー開始
+[2025-02-14 00:53:01] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-14 00:53:01] INFO [APIServer] シフト生成成功
+[2025-02-14 01:00:02] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-14 01:00:02] INFO [APIServer] シフト生成成功
+[2025-02-14 01:01:11] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-14 01:01:11] INFO [APIServer] シフト生成成功
+[2025-02-14 01:05:19] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-14 01:05:19] INFO [APIServer] シフト生成成功
+[2025-02-14 01:06:22] WARNING [APIServer] シフト生成失敗（解なし）
+Logger initialization test
+[2025-02-14 01:09:19] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250214.log
+[2025-02-14 01:09:19] INFO [APIServer] APIサーバー起動
+[2025-02-14 01:09:19] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-14 01:09:19] DEBUG [APIServer] アプリケーション起動
+[2025-02-14 01:09:19] INFO [APIServer] Firestoreリスナー開始
+[2025-02-14 01:09:22] WARNING [APIServer] シフト生成失敗（解なし）
+Logger initialization test
+[2025-02-14 01:41:47] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250214.log
+[2025-02-14 01:41:47] INFO [APIServer] APIサーバー起動
+[2025-02-14 01:41:47] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-14 01:41:47] DEBUG [APIServer] アプリケーション起動
+[2025-02-14 01:41:47] INFO [APIServer] Firestoreリスナー開始
+[2025-02-14 01:41:50] ERROR [APIServer] 全体エラー: 'holidayCount'
+Logger initialization test
+[2025-02-14 01:43:07] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250214.log
+[2025-02-14 01:43:07] INFO [APIServer] APIサーバー起動
+[2025-02-14 01:43:07] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-14 01:43:07] DEBUG [APIServer] アプリケーション起動
+[2025-02-14 01:43:07] INFO [APIServer] Firestoreリスナー開始
+[2025-02-14 01:43:10] ERROR [APIServer] 全体エラー: 'holidayCount'
+Logger initialization test
+[2025-02-14 01:44:30] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250214.log
+[2025-02-14 01:44:30] INFO [APIServer] APIサーバー起動
+[2025-02-14 01:44:30] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-14 01:44:30] DEBUG [APIServer] アプリケーション起動
+[2025-02-14 01:44:30] INFO [APIServer] Firestoreリスナー開始
+[2025-02-14 01:44:33] ERROR [APIServer] 全体エラー: 'holidayCount'
+[2025-02-14 01:48:26] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-14 01:48:26] INFO [APIServer] シフト生成成功

@@ -330,8 +330,8 @@ async def generate_test():
             shifts_dict = {}
             for entry in solution.entries:
                 if entry.staff_name not in shifts_dict:
-                    shifts_dict[entry.staff_name] = [''] * 32
-                shifts_dict[entry.staff_name][entry.day] = entry.shift_type
+                    shifts_dict[entry.staff_name] = [''] * 31
+                shifts_dict[entry.staff_name][entry.day - 1] = entry.shift_type
             
             formatted_solution = {
                 'year': solution.year,
@@ -355,9 +355,9 @@ async def generate_test():
         api_logger.error(f"全体エラー: {str(e)}")
         return {"status": "error", "message": str(e)}
 
-@app.get("/preview-convert", response_class=HTMLResponse)
+@app.get("/preview-convert")
 async def preview_convert():
-    """変換結果をプレビュー表示"""
+    """データ変換のプレビュー"""
     try:
         db = get_firestore_client()
         doc_ref = db.collection('requests').document('que')
@@ -366,20 +366,29 @@ async def preview_convert():
         if doc.exists:
             response_data = doc.to_dict()
             if 'json' in response_data:
-                input_data = response_data['json']
+                # 文字列からJSONオブジェクトにパース
+                input_data = json.loads(response_data['json'])
                 
-                # 各種データの変換
-                rule_data = convert_rule_data(input_data.get('ruleData', {}))
-                staff_data = convert_staffdata(input_data.get('staffData', {}))
+                # データ変換
+                rule_data = convert_rule_data(input_data['ruleData'])
+                staff_data = convert_staffdata(input_data['staffData'])
                 shift_data = convert_shiftdata(
-                    input_data.get('shiftData', {}),
-                    input_data.get('staffData', {}),
-                    input_data.get('ruleData', {})
+                    input_data['shiftData'],
+                    input_data['staffData'],
+                    input_data['ruleData']
                 )
                 weight_data = convert_weightdata(input_data)
                 
-                # HTML形式で整形
+                # 変換後のデータをそのまま表示
+                converted_data = {
+                    "rules": rule_data["rules"],
+                    "staffs": staff_data["staffs"],
+                    "shifts": shift_data,
+                    "weights": weight_data
+                }
+                
                 html_content = f"""
+                <!DOCTYPE html>
                 <html>
                     <head>
                         <title>データ変換プレビュー</title>
@@ -418,23 +427,17 @@ async def preview_convert():
                             </div>
                             <div class="data-section">
                                 <h2>変換後のデータ</h2>
-                                <pre>{json.dumps({
-                                    "ruleData": rule_data,
-                                    "staffData": staff_data,
-                                    "shiftData": shift_data,
-                                    "weightData": weight_data
-                                }, indent=2, ensure_ascii=False)}</pre>
+                                <pre>{json.dumps(converted_data, indent=2, ensure_ascii=False)}</pre>
                             </div>
                         </div>
                     </body>
                 </html>
                 """
-                return html_content
-                
+                return HTMLResponse(content=html_content, media_type="text/html")
+            
         return "データが見つかりません"
         
     except Exception as e:
-        
         return f"エラーが発生しました: {str(e)}"
 
 __all__ = ['StaffData', 'ShiftEntry', 'ShiftData', 'RuleData'] 
