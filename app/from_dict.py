@@ -31,6 +31,28 @@ class ShiftCount:
         return getattr(self, key, default)
 
 @dataclass
+class StaffConstraint:
+    """スタッフの制約を表すデータクラス"""
+    type: str
+    category: str
+    sub_category: str
+    count: str
+    target: str
+    times: str
+
+@dataclass
+class RuleConstraint:
+    """ルールの制約を表すデータクラス"""
+    type: str
+    category: str
+    sub_category: str
+    count: str
+    final: str
+    target: str
+    weight: int
+    times: str
+
+@dataclass
 class StaffData:
     """スタッフ情報を表すデータクラス"""
     name: str
@@ -42,19 +64,7 @@ class StaffData:
     preferences: str
     holiday_override: Optional[bool]
     reliability_override: Optional[int]
-    constraints: List['Constraint']
-
-@dataclass
-class Constraint:
-    """制約を表すデータクラス"""
-    type: str
-    category: str
-    sub_category: str
-    count: str
-    final: str
-    target: str
-    weight: int
-    times: str
+    constraints: List[StaffConstraint]
 
 @dataclass
 class RuleData:
@@ -70,7 +80,7 @@ class RuleData:
     night_staff: int
     weekday_reliability: Optional[int]
     sunday_reliability: Optional[int]
-    preference_constraints: List[Constraint]
+    preference_constraints: List[RuleConstraint]
 
 @dataclass
 class ShiftEntry:
@@ -112,9 +122,21 @@ class DictToInstance:
     """辞書データからインスタンスを生成するクラス"""
     
     @staticmethod
-    def create_constraint(data: Dict) -> Constraint:
-        """辞書からConstraintインスタンスを生成"""
-        return Constraint(
+    def create_staff_constraint(data: Dict) -> StaffConstraint:
+        """辞書からStaffConstraintインスタンスを生成"""
+        return StaffConstraint(
+            type=data["type"],
+            category=data["category"],
+            sub_category=data["sub_category"],
+            count=data.get("count", ""),
+            target=data["target"],
+            times=data.get("times", "")
+        )
+
+    @staticmethod
+    def create_rule_constraint(data: Dict) -> RuleConstraint:
+        """辞書からRuleConstraintインスタンスを生成"""
+        return RuleConstraint(
             type=data["type"],
             category=data["category"],
             sub_category=data["sub_category"],
@@ -147,7 +169,7 @@ class DictToInstance:
             holiday_override=data["holiday_override"],
             reliability_override=data["reliability_override"],
             constraints=[
-                DictToInstance.create_constraint(c)
+                DictToInstance.create_staff_constraint(c)
                 for c in data.get("constraints", [])
             ]
         )
@@ -168,7 +190,7 @@ class DictToInstance:
             weekday_reliability=data["weekday_reliability"],
             sunday_reliability=data["sunday_reliability"],
             preference_constraints=[
-                DictToInstance.create_constraint(c)
+                DictToInstance.create_rule_constraint(c)
                 for c in data.get("preference_constraints", [])
             ]
         )

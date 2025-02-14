@@ -1,0 +1,36 @@
+Logger initialization test
+[2025-02-15 00:07:46] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250215.log
+[2025-02-15 00:07:46] INFO [APIServer] APIサーバー起動
+[2025-02-15 00:07:46] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-15 00:07:46] DEBUG [APIServer] アプリケーション起動
+[2025-02-15 00:07:46] INFO [APIServer] Firestoreリスナー開始
+[2025-02-15 00:07:54] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-15 00:07:54] INFO [APIServer] シフト生成成功
+[2025-02-15 00:09:33] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-15 00:09:33] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-15 02:12:22] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250215.log
+[2025-02-15 02:12:22] INFO [APIServer] APIサーバー起動
+[2025-02-15 02:12:22] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-15 02:12:22] DEBUG [APIServer] アプリケーション起動
+[2025-02-15 02:12:22] INFO [APIServer] Firestoreリスナー開始
+[2025-02-15 02:12:26] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-15 02:12:26] INFO [APIServer] シフト生成成功
+[2025-02-15 02:14:11] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-15 02:14:11] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-15 02:21:09] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250215.log
+[2025-02-15 02:21:09] INFO [APIServer] APIサーバー起動
+[2025-02-15 02:21:09] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-15 02:21:09] DEBUG [APIServer] アプリケーション起動
+[2025-02-15 02:21:09] INFO [APIServer] Firestoreリスナー開始
+[2025-02-15 02:21:27] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-15 02:21:27] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-15 03:04:09] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250215.log
+[2025-02-15 03:04:09] INFO [APIServer] APIサーバー起動
+[2025-02-15 03:04:09] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-15 03:04:09] DEBUG [APIServer] アプリケーション起動
+[2025-02-15 03:04:09] INFO [APIServer] Firestoreリスナー開始
+[2025-02-15 03:04:12] INFO [APIServer] 事前チェックでエラーが検出されたため、シフト生成を中止します。
+[2025-02-15 03:04:50] INFO [APIServer] 事前チェックでエラーが検出されたため、シフト生成を中止します。

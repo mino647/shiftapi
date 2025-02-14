@@ -11,6 +11,7 @@ from app.convert import convert_rule_data, convert_staffdata, convert_shiftdata,
 from absl import logging as absl_logging
 from google.cloud.firestore import SERVER_TIMESTAMP
 import requests
+from google.cloud.firestore import transactional
 
 # abseilのログ初期化
 absl_logging.set_verbosity(absl_logging.INFO)
@@ -100,3 +101,38 @@ def write_result_to_firestore(solution, input_data: dict) -> str:
     except Exception as e:
         logger.error(f"Firestoreへの書き込みに失敗: {e}")
         raise 
+
+def write_notification(message: str) -> None:
+    """制約違反などの通知メッセージをFirestoreに保存する"""
+    try:
+        db = get_firestore_client()
+        notifications_ref = db.collection('notifications').document('current')
+        
+        @transactional
+        def update_in_transaction(transaction, doc_ref):
+            doc = doc_ref.get(transaction=transaction)
+            
+            # 現在のIDを取得（ドキュメントが存在しない場合は0）
+            current_id = 0
+            if doc.exists:
+                # 既存のフィールドから最大のIDを取得
+                fields = doc.to_dict()
+                if fields:
+                    current_id = max(fields.get('id', 0), 0)
+            
+            # 新しいメッセージを追加
+            new_id = current_id + 1
+            transaction.set(doc_ref, {
+                'id': new_id,
+                'date': SERVER_TIMESTAMP,
+                'msg': message
+            })
+        
+        # トランザクションを実行
+        transaction = db.transaction()
+        update_in_transaction(transaction, notifications_ref)
+        
+        logger.info(f"通知を保存しました: {message}")
+        
+    except Exception as e:
+        logger.error(f"通知の保存に失敗: {str(e)}") 

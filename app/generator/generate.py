@@ -7,7 +7,7 @@ from typing import Dict, List, Optional
 from ortools.sat.python import cp_model
 from datetime import datetime
 from .logger import logger, log_function
-from ..main import StaffData, ShiftData, ShiftEntry, RuleData
+from ..from_dict import StaffData, ShiftData, RuleData, ShiftEntry
 import calendar
 from dataclasses import dataclass
 import time

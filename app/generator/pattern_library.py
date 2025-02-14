@@ -6,7 +6,7 @@ import logging
 from typing import Dict, List
 from ortools.sat.python import cp_model
 from .logger import logger
-from ..main import StaffData, ShiftData, RuleData
+from ..from_dict import StaffData, ShiftData, RuleData, ShiftEntry
 from datetime import datetime
 from .mapping import (
     SHIFT_TYPES,

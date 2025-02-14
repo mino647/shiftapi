@@ -6,6 +6,28 @@ from typing import List, Optional, Dict
 
 
 @dataclass
+class StaffConstraint:
+    """スタッフの制約を表すデータクラス"""
+    type: str
+    category: str
+    sub_category: str
+    count: str      # 一部のカテゴリでは使用されない
+    target: str
+    times: str      # 一部のカテゴリで使用
+
+@dataclass
+class RuleConstraint:
+    """ルールの制約を表すデータクラス"""
+    type: str
+    category: str
+    sub_category: str
+    count: str
+    final: str
+    target: str
+    weight: int
+    times: str
+
+@dataclass
 class StaffData:
     name: str
     role: str
@@ -16,7 +38,7 @@ class StaffData:
     preferences: str
     holiday_override: Optional[int]
     reliability_override: Optional[int]
-    constraints: List
+    constraints: List[StaffConstraint]  # StaffConstraintを使用
 
 @dataclass
 class PreferenceConstraint:
@@ -42,7 +64,7 @@ class RuleData:
     night_staff: float
     weekday_reliability: Optional[int]
     sunday_reliability: Optional[int]
-    preference_constraints: List[PreferenceConstraint]
+    preference_constraints: List[RuleConstraint]  # RuleConstraintを使用
 
     def __post_init__(self):
         # 文字列で来た場合は整数に変換

@@ -18,6 +18,7 @@ from google.cloud import firestore
 from .generator import ShiftGenerator  # 既存のクラスをインポート
 from .from_dict import DictToInstance
 from .api_logger import api_logger
+from .generator.main_prefix import PrefixManager  # 追加
 
 
 
@@ -190,6 +191,19 @@ async def generate_shift():
                 shift_instance = DictToInstance.create_shift_data(converted_data["shiftData"])
                 weight_instance = DictToInstance.create_weight_data(converted_data["weightData"])
 
+                # 事前チェックを追加
+                pre_check = PrefixManager(
+                    year=shift_instance.year,
+                    month=shift_instance.month,
+                    rule_data=rule_instance
+                )
+                if not pre_check.check_constraints(
+                    staff_data_list=staff_instances,
+                    shift_data=shift_instance
+                ):
+                    api_logger.info("事前チェックでエラーが検出されたため、シフト生成を中止します。")
+                    return {"status": "error", "message": "事前チェックで制約違反が検出されました"}
+
                 # 4. シフト生成
                 generator = ShiftGenerator(weights=weight_instance)
                 solution = generator.generate_shift(
@@ -304,6 +318,21 @@ async def generate_test():
         except Exception as e:
             api_logger.error(f"インスタンス化エラー: {str(e)}")
             raise
+
+        # 事前チェックを追加
+        api_logger.debug("=== 事前チェック開始 ===")
+        pre_check = PrefixManager(
+            year=shift_instance.year,
+            month=shift_instance.month,
+            rule_data=rule_instance
+        )
+        if not pre_check.check_constraints(
+            staff_data_list=staff_instances,
+            shift_data=shift_instance
+        ):
+            api_logger.info("事前チェックでエラーが検出されたため、シフト生成を中止します。")
+            return {"status": "error", "message": "事前チェックで制約違反が検出されました"}
+        api_logger.debug("=== 事前チェック完了 ===")
 
         # シフト生成部分をより詳細にログ
         api_logger.debug("=== ソルバー実行開始 ===")
