@@ -17,6 +17,7 @@ import multiprocessing
 import sys
 from multiprocessing import Process, Queue
 from queue import Empty
+from ..firebase_client import write_solution_printer_log  # 追加
 
 # ==== 修正ここから ====
 # QTimer / QEventLoop を使うために PyQt6.QtCore からインポート
@@ -90,6 +91,9 @@ class SolutionPrinter(cp_model.CpSolverSolutionCallback):
         
         # コンソールには直接出力
         print(message)
+        
+        # Firestoreに書き込み
+        write_solution_printer_log(message)
         
         # UIには progress_callback 経由で出力
         if self.progress_callback:
@@ -284,17 +288,17 @@ class ShiftGenerator:
             month = shift_data.month if shift_data else datetime.now().month
             _, days_in_month = calendar.monthrange(year, month)
 
-            # ログ出力（省略せず既存機能保持）
-            logger.info("=== シフト生成パラメータ ===")
-            logger.info(f"対象期間: {year}年{month}月 (日数:{days_in_month})")
-            logger.info(f"基本公休日数: {rule_data.holiday_count}日")
-            logger.info(f"連続勤務制限: {rule_data.consecutive_work_limit}日")
-            logger.info(f"必要人数:")
-            logger.info(f"  - 通常日勤: {rule_data.weekday_staff}人")
-            logger.info(f"  - 日曜日勤: {rule_data.sunday_staff}人")
-            logger.info("=== スタッフ情報 ===")
-            logger.info(f"総スタッフ数: {len(staff_data_list)}名")
-            
+            # 初期パラメータのログをFirestoreに書き込み
+            write_solution_printer_log("=== シフト生成パラメータ ===", reset=True)
+            write_solution_printer_log(f"対象期間: {year}年{month}月 (日数:{days_in_month})")
+            write_solution_printer_log(f"基本公休日数: {rule_data.holiday_count}日")
+            write_solution_printer_log(f"連続勤務制限: {rule_data.consecutive_work_limit}日")
+            write_solution_printer_log(f"必要人数:")
+            write_solution_printer_log(f"  - 通常日勤: {rule_data.weekday_staff}人")
+            write_solution_printer_log(f"  - 日曜日勤: {rule_data.sunday_staff}人")
+            write_solution_printer_log("=== スタッフ情報 ===")
+            write_solution_printer_log(f"総スタッフ数: {len(staff_data_list)}名")
+
             model = cp_model.CpModel()
             shifts = {}
             for st in staff_list:
@@ -360,17 +364,16 @@ class ShiftGenerator:
             if turbo_mode:
                 # ターボモード（シングルプロセス）
                 solver.parameters.num_search_workers = min(available_threads, 12)
-                logger.info(f"ターボモード: {solver.parameters.num_search_workers}スレッドで実行")
+                write_solution_printer_log(f"ターボモード: {solver.parameters.num_search_workers}スレッドで実行")
                 solver.parameters.max_time_in_seconds = shift_data.search_time
                 status = solver.Solve(model, solution_printer)
-
             else:
                 # バランスモード（マルチプロセス）
                 if available_threads <= 2:
                     solver.parameters.num_search_workers = 1
                 else:
                     solver.parameters.num_search_workers = min(available_threads, 12) - 1
-                logger.info(f"バランスモード: {solver.parameters.num_search_workers}スレッドで実行")
+                write_solution_printer_log(f"バランスモード: {solver.parameters.num_search_workers}スレッドで実行")
                 
                 # ==== 修正ここから ====
                 result_queue = Queue()
@@ -418,12 +421,14 @@ class ShiftGenerator:
                                 result_type, result_value = result_queue.get_nowait()
                             except Empty:
                                 result_type, result_value = ('error', f'予期せぬ終了。ステータス: {STATUS_MAP.get(cp_model.MODEL_INVALID, "不明なエラー")}')
+                                write_solution_printer_log(result_value)  # エラーメッセージを追加
                             event_loop.quit()
                     except Exception as ex:
                         logger.error(f"進捗処理エラー: {str(ex)}")
                         poll_timer.stop()
                         solver_process.join()
                         result_type, result_value = ('error', str(ex))
+                        write_solution_printer_log(f"エラーが発生: {str(ex)}")  # エラーメッセージを追加
                         event_loop.quit()
 
                 poll_timer.timeout.connect(poll_subprocess)

@@ -6,7 +6,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 import logging
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from app.convert import convert_rule_data, convert_staffdata, convert_shiftdata, convert_weightdata
 from absl import logging as absl_logging
 from google.cloud.firestore import SERVER_TIMESTAMP
@@ -42,14 +42,16 @@ class FirestoreListener:
         
         def on_snapshot(doc_snapshot, changes, read_time):
             """queドキュメントが更新されたときの処理"""
+            logger.info("Firestoreのqueドキュメントの変更を検知しました")
+            
             if doc_snapshot:
                 doc = doc_snapshot[0]
                 data = doc.to_dict()
                 if data and 'json' in data:
                     try:
-                        # GETからPOSTに変更
-                        response = requests.post('http://localhost:8000/generate-shift')
-                        logger.info(f"シフト生成実行: {response.status_code}")
+                        logger.info("FastAPIへのリクエストを開始します")
+                        response = requests.post('http://127.0.0.1:8000/generate-shift')
+                        logger.info(f"FastAPIからのレスポンス受信: {response.status_code}")
                     except Exception as e:
                         logger.error(f"シフト生成呼び出しエラー: {str(e)}")
 
@@ -111,21 +113,24 @@ def write_notification(message: str) -> None:
         @transactional
         def update_in_transaction(transaction, doc_ref):
             doc = doc_ref.get(transaction=transaction)
+            current_data = doc.to_dict() or {'notifications': []}
+            notifications = current_data.get('notifications', [])
             
-            # 現在のIDを取得（ドキュメントが存在しない場合は0）
-            current_id = 0
-            if doc.exists:
-                # 既存のフィールドから最大のIDを取得
-                fields = doc.to_dict()
-                if fields:
-                    current_id = max(fields.get('id', 0), 0)
+            # JST (UTC+9) のタイムスタンプを生成
+            jst = timezone(timedelta(hours=9))
+            current_time = datetime.now(jst)
             
-            # 新しいメッセージを追加
-            new_id = current_id + 1
-            transaction.set(doc_ref, {
-                'id': new_id,
-                'date': SERVER_TIMESTAMP,
+            notifications.append({
+                'id': len(notifications) + 1,
+                'date': current_time,
                 'msg': message
+            })
+            
+            if len(notifications) > 10:
+                notifications = notifications[-10:]
+            
+            transaction.set(doc_ref, {
+                'notifications': notifications
             })
         
         # トランザクションを実行
@@ -136,3 +141,45 @@ def write_notification(message: str) -> None:
         
     except Exception as e:
         logger.error(f"通知の保存に失敗: {str(e)}") 
+
+def write_solution_printer_log(message: str, reset: bool = False) -> None:
+    """SolutionPrinterのログをFirestoreに保存する"""
+    try:
+        db = get_firestore_client()
+        progress_ref = db.collection('progress').document('solutions')
+        
+        if reset:
+            # 新しいセッション開始時は配列をリセット
+            progress_ref.set({
+                'solutions': []
+            })
+            logger.info("進捗ログをリセットしました")
+            return
+        
+        # 新しいメッセージを追加
+        jst = timezone(timedelta(hours=9))
+        current_time = datetime.now(jst)
+        
+        # 現在の配列を取得（ドキュメントが存在しない場合は作成）
+        doc = progress_ref.get()
+        if not doc.exists:
+            progress_ref.set({'solutions': []})
+            solutions = []
+        else:
+            solutions = doc.to_dict().get('solutions', [])
+        
+        solutions.append({
+            'id': len(solutions) + 1,
+            'date': current_time,
+            'msg': message
+        })
+        
+        # 更新された配列をセット
+        progress_ref.set({
+            'solutions': solutions
+        })
+        
+        logger.info(f"進捗を保存しました: {message}")
+        
+    except Exception as e:
+        logger.error(f"進捗の保存に失敗: {str(e)}") 

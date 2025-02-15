@@ -225,23 +225,5 @@ class DictToInstance:
 
     @staticmethod
     def create_weight_data(data: Dict) -> Dict:
-        """辞書からWeightDataを生成（辞書構造を維持）"""
-        preference_data = data["選好"]
-        return {
-            "選好": {
-                "曜日希望": preference_data["曜日希望"],
-                "勤務希望": preference_data["勤務希望"],
-                "連続休暇": preference_data["連続休暇"],
-                "連続勤務": preference_data["連続勤務"],
-                "日勤帯連勤": preference_data["日勤帯連勤"],
-                "連休保証": preference_data["連休保証"],
-                "シフトパターン": preference_data["シフトパターン"],
-                "ペアリング": preference_data["ペアリング"],
-                "セパレート": preference_data["セパレート"],
-                "カスタムプリセット": preference_data["カスタムプリセット"],
-                "シフトバランス": preference_data["シフトバランス"],
-                "夜勤ペア重複": preference_data["夜勤ペア重複"],
-                "夜勤ペア重複3回以上": preference_data["夜勤ペア重複3回以上"],
-                "同一勤務の3連続": preference_data["同一勤務の3連続"]
-            }
-        } 
+        """辞書からWeightDataを生成（そのまま返す）"""
+        return data 

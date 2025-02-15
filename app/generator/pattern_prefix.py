@@ -5,7 +5,7 @@ pattern_prefix.py
 """
 
 from typing import List, Optional
-from PyQt6.QtWidgets import QMessageBox
+# from PyQt6.QtWidgets import QMessageBox  # この行を削除
 from datetime import datetime
 import calendar
 import math
@@ -295,7 +295,7 @@ class PatternPrefix:
                             f"・{constraint.sub_category}の{constraint.target}の最大回数: {target_max}回\n"
                             f"・必要回数: 全て"
                         )
-                        QMessageBox.critical(None, "エラー", error_msg)
+                        write_notification(error_msg)
                         return True
                 else:
                     # 回数指定がある場合
@@ -318,7 +318,7 @@ class PatternPrefix:
                             f"・{constraint.sub_category}の{constraint.target}の最大回数: {target_max}回\n"
                             f"・必要回数: {timecombo}回"
                         )
-                        QMessageBox.critical(None, "エラー", error_msg)
+                        write_notification(error_msg)
                         return True
 
         return False
@@ -335,7 +335,7 @@ class PatternPrefix:
                         f"スタッフ「{staff.name}」の{constraint.category}制約で指定された\n"
                         f"スタッフ「{constraint.sub_category}」が存在しません。"
                     )
-                    QMessageBox.critical(None, "エラー", error_msg)
+                    write_notification(error_msg)
                     return True
                 
         return False
@@ -365,7 +365,8 @@ class PatternPrefix:
                         f"スタッフ「{staff.name}」は夜勤の最大回数が0回に設定されていますが、\n"
                         f"{days}日に夜勤明け(×)が入っています。"
                     )
-                    QMessageBox.critical(None, "夜勤パターンエラー", msg)
+                    logger.error(msg)
+                    write_notification(msg)
                     return True
 
         # 以下、既存の夜勤パターンチェック
@@ -380,7 +381,8 @@ class PatternPrefix:
             if 1 in days and days[1] == '×':
                 if 2 in days and days[2] != '公':
                     msg = f"スタッフ「{staff}」の月初パターンが不正です：\n1日目が夜勤明け(×)の場合、2日目は公休である必要があります。"
-                    QMessageBox.critical(None, "夜勤パターンエラー", msg)
+                    logger.error(msg)
+                    write_notification(msg)
                     return True
 
             # 通常の夜勤パターンチェック
@@ -389,20 +391,23 @@ class PatternPrefix:
                     # 夜勤の翌日が入力済みで、×以外ならエラー
                     if day + 1 in days and days[day + 1] != '×':
                         msg = f"スタッフ「{staff}」の{day}日目の夜勤パターンが不正です：\n夜勤(／)の翌日は夜勤明け(×)である必要があります。"
-                        QMessageBox.critical(None, "夜勤パターンエラー", msg)
+                        logger.error(msg)
+                        write_notification(msg)
                         return True
                     
                     # 夜勤の2日後が入力済みで、公休以外ならエラー
                     if day + 2 in days and days[day + 2] != '公':
                         msg = f"スタッフ「{staff}」の{day}日目の夜勤パターンが不正です：\n夜勤明け(×)の翌日は公休である必要があります。"
-                        QMessageBox.critical(None, "夜勤パターンエラー", msg)
+                        logger.error(msg)
+                        write_notification(msg)
                         return True
 
                 elif days[day] == '×':
                     # 夜勤明けの前日が入力済みで、／以外ならエラー
                     if day - 1 in days and days[day - 1] != '／':
                         msg = f"スタッフ「{staff}」の{day}日目の夜勤パターンが不正です：\n夜勤明け(×)の前日は夜勤(／)である必要があります。"
-                        QMessageBox.critical(None, "夜勤パターンエラー", msg)
+                        logger.error(msg)
+                        write_notification(msg)
                         return True
 
         return False
@@ -429,7 +434,7 @@ class PatternPrefix:
                             f"・{from_shift1}→{to_shift1}のパターンが\n"
                             f"・{sub_cat1}と{sub_cat2}の両方で指定されています"
                         )
-                        QMessageBox.critical(None, "シフトパターン制約エラー", msg)
+                        logger.error(msg)
                         write_notification(msg)
                         return True
 
@@ -450,7 +455,7 @@ class PatternPrefix:
                                 f"・{from_shift1}→{to_shift1}のパターンが\n"
                                 f"・{sub_cat1}と{sub_cat2}の両方で指定されています"
                             )
-                            QMessageBox.critical(None, "シフトパターン制約エラー", msg)
+                            logger.error(msg)
                             write_notification(msg)
                             return True
 
@@ -473,7 +478,7 @@ class PatternPrefix:
                                     f"・グローバル制約：{g_from}→{g_to}を{g_sub}\n"
                                     f"・個人の制約：{s_from}→{s_to}を{s_sub}"
                                 )
-                                QMessageBox.critical(None, "シフトパターン制約エラー", msg)
+                                logger.error(msg)
                                 write_notification(msg)
                                 return True
 
@@ -514,7 +519,7 @@ class PatternPrefix:
                                     f"スタッフ「{staff_name}」の{entries[i].day}日→{entries[i+1].day}日のシフトが\n"
                                     f"グローバル制約（{g_from}→{g_to}を回避）に違反しています"
                                 )
-                                QMessageBox.critical(None, "シフトパターン制約エラー", msg)
+                                logger.error(msg)
                                 write_notification(msg)
                                 return True
                     
@@ -535,7 +540,7 @@ class PatternPrefix:
                                 f"スタッフ「{staff_name}」の{entries[i].day}日→{entries[i+1].day}日のシフトが\n"
                                 f"個人制約（{s_from}→{s_to}を嫌悪）に違反しています"
                             )
-                            QMessageBox.critical(None, "シフトパターン制約エラー", msg)
+                            logger.error(msg)
                             write_notification(msg)
                             return True
 
@@ -609,7 +614,7 @@ class PatternPrefix:
                                 f"・{shift_type}シフトのペアが{pair_count}回発生しており\n"
                                 f"・制約（{target_count}回以上を禁止）に違反します"
                             )
-                            QMessageBox.critical(None, "ペア重複制約エラー", msg)
+                            logger.error(msg)
                             write_notification(msg)
                             return True
 
@@ -638,7 +643,7 @@ class PatternPrefix:
                                     f"・{shift_type}シフトのペアが{pair_count}回発生しており\n"
                                     f"・制約（{target_count}回丁度を禁止）に違反します"
                                 )
-                                QMessageBox.critical(None, "ペア重複制約エラー", msg)
+                                logger.error(msg)
                                 write_notification(msg)
                                 return True
 
@@ -861,7 +866,7 @@ class PatternPrefix:
                             f"・{from_shift}の最小回数（{from_min}回）が\n"
                             f"・{to_shift}の最大回数（{to_max}回）を超過しています"
                         )
-                        QMessageBox.critical(None, "シフトパターン制約エラー", msg)
+                        logger.error(msg)
                         write_notification(msg)
                         return True
 
@@ -898,7 +903,7 @@ class PatternPrefix:
                                 f"・{from1}→{to1}を{sub1}\n"
                                 f"・{from2}→{to2}を{sub2}"
                             )
-                            QMessageBox.critical(None, "シフトパターン制約エラー", msg)
+                            logger.error(msg)
                             write_notification(msg)
                             return True
                     
@@ -910,7 +915,7 @@ class PatternPrefix:
                             f"・{from2}→{to2}を{sub2}\n"
                             f"（同じシフトから異なるシフトへの{sub1}は設定できません）"
                         )
-                        QMessageBox.critical(None, "シフトパターン制約エラー", msg)
+                        logger.error(msg)
                         write_notification(msg)
                         return True
 
@@ -934,7 +939,7 @@ class PatternPrefix:
                                     f"・{from1}→{to1}を{sub1}\n"
                                     f"・{from2}→{to2}を{sub2}"
                                 )
-                                QMessageBox.critical(None, "シフトパターン制約エラー", msg)
+                                logger.error(msg)
                                 write_notification(msg)
                                 return True
                         
@@ -946,7 +951,7 @@ class PatternPrefix:
                                 f"・{from2}→{to2}を{sub2}\n"
                                 f"（同じシフトから異なるシフトへの{sub1}は設定できません）"
                             )
-                            QMessageBox.critical(None, "シフトパターン制約エラー", msg)
+                            logger.error(msg)
                             write_notification(msg)
                             return True
 
@@ -963,7 +968,7 @@ class PatternPrefix:
                                         f"・グローバル制約：{g_from}→{g_to}を{g_sub}\n"
                                         f"・個人の制約：{s_from}→{s_to}を{s_sub}"
                                     )
-                                    QMessageBox.critical(None, "シフトパターン制約エラー", msg)
+                                    logger.error(msg)
                                     write_notification(msg)
                                     return True
                             
@@ -976,7 +981,7 @@ class PatternPrefix:
                                         f"・個人の制約：{s_from}→{s_to}を{s_sub}\n"
                                         f"（同じシフトから異なるシフトへの同種の制約は設定できません）"
                                     )
-                                    QMessageBox.critical(None, "シフトパターン制約エラー", msg)
+                                    logger.error(msg)
                                     write_notification(msg)
                                     return True
 

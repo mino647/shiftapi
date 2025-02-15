@@ -19,7 +19,7 @@ from .generator import ShiftGenerator  # 既存のクラスをインポート
 from .from_dict import DictToInstance
 from .api_logger import api_logger
 from .generator.main_prefix import PrefixManager  # 追加
-
+from .firebase_client import write_solution_printer_log
 
 
 # その後でloggerをインポート
@@ -159,6 +159,8 @@ async def view_convert():
 async def generate_shift():
     """シフトを生成するエンドポイント"""
     try:
+        api_logger.info("シフト生成リクエストを受信")  # 追加
+        
         # 1. Firestoreからデータ取得
         db = get_firestore_client()
         doc_ref = db.collection('requests').document('que')
@@ -168,9 +170,11 @@ async def generate_shift():
             response_data = doc.to_dict()
             if 'json' in response_data:
                 # 文字列からJSONオブジェクトにパース
+                api_logger.info("JSONデータの変換を開始")  # 追加
                 input_data = json.loads(response_data['json'])
                 
                 # 2. データの変換とインスタンス化
+                api_logger.info("データの変換を開始")  # 追加
                 converted_data = {
                     "staffData": convert_staffdata(input_data['staffData']),
                     "ruleData": convert_rule_data(input_data['ruleData']),
@@ -181,8 +185,10 @@ async def generate_shift():
                     ),
                     "weightData": convert_weightdata(input_data)
                 }
+                api_logger.info("データ変換完了")  # 追加
 
                 # from_dictでインスタンス化
+                api_logger.info("インスタンス化を開始")  # 追加
                 staff_instances = [
                     DictToInstance.create_staff_data(staff)
                     for staff in converted_data["staffData"]["staffs"]
@@ -190,8 +196,10 @@ async def generate_shift():
                 rule_instance = DictToInstance.create_rule_data(converted_data["ruleData"]["rules"])
                 shift_instance = DictToInstance.create_shift_data(converted_data["shiftData"])
                 weight_instance = DictToInstance.create_weight_data(converted_data["weightData"])
+                api_logger.info("インスタンス化完了")  # 追加
 
                 # 事前チェックを追加
+                api_logger.info("事前チェックを開始")  # 追加
                 pre_check = PrefixManager(
                     year=shift_instance.year,
                     month=shift_instance.month,
@@ -201,8 +209,9 @@ async def generate_shift():
                     staff_data_list=staff_instances,
                     shift_data=shift_instance
                 ):
-                    api_logger.info("事前チェックでエラーが検出されたため、シフト生成を中止します。")
+                    api_logger.info("事前チェックでエラーが検出されました")  # 追加
                     return {"status": "error", "message": "事前チェックで制約違反が検出されました"}
+                api_logger.info("事前チェック完了")  # 追加
 
                 # 4. シフト生成
                 generator = ShiftGenerator(weights=weight_instance)
@@ -217,7 +226,7 @@ async def generate_shift():
                     result_id = write_result_to_firestore(solution, input_data)
                     api_logger.debug("=== ソルバー実行完了 ===")
                     
-                    api_logger.info("シフト生成成功")
+                    write_solution_printer_log("シフト生成が完了しました")  # 成功メッセージ
                     
                     # solutionを必要な形式に変換
                     shifts_dict = {}
@@ -235,7 +244,7 @@ async def generate_shift():
                         }
                     }
                 else:
-                    api_logger.warning("シフト生成失敗（解なし）")
+                    write_solution_printer_log("シフトを生成できませんでした（制約を満たす解が見つかりません）")  # 失敗メッセージ
                     return {"status": "warning", "message": "シフトを生成できませんでした"}
             
         return {"status": "error", "message": "データが見つかりません"}
