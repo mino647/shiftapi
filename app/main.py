@@ -6,7 +6,7 @@ Firestoreとの接続やルーティングの設定を行います。
 """
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .firebase_client import FirestoreListener, get_firestore_client, write_result_to_firestore
+from .firebase_client import FirestoreListener, get_firestore_client, write_result_to_firestore, DebugFirestoreListener
 from app.convert import convert_rule_data, convert_staffdata, convert_shiftdata, convert_weightdata
 import logging
 from fastapi.responses import HTMLResponse
@@ -41,6 +41,8 @@ app.add_middleware(
 
 # Firestoreリスナーのインスタンス
 firestore_listener = FirestoreListener()
+# デバッグ用リスナーのインスタンス（新規）
+debug_listener = DebugFirestoreListener()
 
 @app.on_event("startup")
 async def startup_event():
@@ -53,6 +55,10 @@ async def startup_event():
     api_logger.debug("アプリケーション起動")
     api_logger.info("Firestoreリスナー開始")
     firestore_listener.start_listening()
+    
+    # デバッグ用リスナーの開始（追加）
+    api_logger.info("デバッグ用Firestoreリスナー開始")
+    debug_listener.start_listening()
 
 @app.get("/")
 async def root():
@@ -223,7 +229,7 @@ async def generate_shift():
                 )
                 
                 if solution:
-                    result_id = write_result_to_firestore(solution, input_data)
+                    write_result_to_firestore(solution, input_data)  # 戻り値は使用しないので代入を省略
                     api_logger.debug("=== ソルバー実行完了 ===")
                     
                     write_solution_printer_log("シフト生成が完了しました")  # 成功メッセージ
@@ -244,7 +250,8 @@ async def generate_shift():
                         }
                     }
                 else:
-                    write_solution_printer_log("シフトを生成できませんでした（制約を満たす解が見つかりません）")  # 失敗メッセージ
+                    api_logger.warning("シフト生成失敗（解なし）")
+                    write_solution_printer_log(f"解が見つかりませんでした：status = INFEASIBLE")  # solutionがNoneの場合は直接INFEASIBLEと表示
                     return {"status": "warning", "message": "シフトを生成できませんでした"}
             
         return {"status": "error", "message": "データが見つかりません"}
@@ -364,6 +371,9 @@ async def generate_test():
         if solution:
             api_logger.info("シフト生成成功")
             
+            # Firestoreに結果を書き込む
+            write_result_to_firestore(solution, input_data)  # 戻り値は使用しないので代入を省略
+            
             # solutionを必要な形式に変換
             shifts_dict = {}
             for entry in solution.entries:
@@ -387,6 +397,7 @@ async def generate_test():
             }
         else:
             api_logger.warning("シフト生成失敗（解なし）")
+            write_solution_printer_log(f"解が見つかりませんでした：status = INFEASIBLE")  # solutionがNoneの場合は直接INFEASIBLEと表示
             return {"status": "warning", "message": "シフトを生成できませんでした"}
             
     except Exception as e:
@@ -477,5 +488,118 @@ async def preview_convert():
         
     except Exception as e:
         return f"エラーが発生しました: {str(e)}"
+
+# デバッグ用の新規エンドポイント
+@app.post("/debug-test")
+async def debug_test():
+    """デバッグ機能の動作確認用エンドポイント"""
+    api_logger.info("デバッグテストエンドポイントにアクセスがありました")
+    return {"message": "デバッグテスト OK"}
+
+@app.post("/debug-generate-shift")
+async def debug_generate_shift():
+    try:
+        api_logger.info("デバッグ用シフト生成リクエストを受信")
+        
+        # Firestoreからデバッグ用のデータを取得
+        db = get_firestore_client()
+        doc_ref = db.collection('debug').document('que')
+        doc = doc_ref.get()
+        
+        if not doc.exists:
+            return {"status": "error", "message": "デバッグデータが見つかりません"}
+            
+        response_data = doc.to_dict()
+        if 'json' not in response_data:
+            return {"status": "error", "message": "JSONデータが見つかりません"}
+            
+        # 文字列からJSONオブジェクトにパース
+        input_data = json.loads(response_data['json'])
+        api_logger.info(f"パースしたJSONデータのキー: {input_data.keys()}")
+        
+        # データ変換
+        api_logger.debug("=== データ変換開始 ===")
+        converted_data = {
+            "staffData": convert_staffdata(input_data['staffData']),
+            "ruleData": convert_rule_data(input_data['rule_data']),
+            "shiftData": convert_shiftdata(
+                input_data['shift_data'],
+                input_data['staffData'],
+                input_data['rule_data']
+            ),
+            "weightData": convert_weightdata(input_data)
+        }
+        api_logger.debug(f"変換後データ: {converted_data.keys()}")
+
+        # インスタンス化
+        api_logger.debug("=== インスタンス化開始 ===")
+        try:
+            staff_instances = [
+                DictToInstance.create_staff_data(staff)
+                for staff in converted_data["staffData"]["staffs"]
+            ]
+            rule_instance = DictToInstance.create_rule_data(converted_data["ruleData"]["rules"])
+            shift_instance = DictToInstance.create_shift_data(converted_data["shiftData"])
+            weight_instance = DictToInstance.create_weight_data(converted_data["weightData"])
+            api_logger.debug("インスタンス化完了")
+
+            # ここから共通のソルバー処理
+            api_logger.debug("=== ソルバー実行開始 ===")
+            generator = ShiftGenerator(weights=weight_instance)
+            
+            # ソルバーに渡す直前のデータを確認
+            api_logger.debug(f"スタッフデータ数: {len(staff_instances)}")
+            api_logger.debug(f"ルールデータ: {rule_instance}")
+            api_logger.debug(f"シフトデータ: {shift_instance}")
+            
+            # ソルバー実行
+            solution = generator.generate_shift(
+                staff_data_list=staff_instances,
+                rule_data=rule_instance,
+                shift_data=shift_instance,
+                active_constraints=input_data.get('active_constraints', []),
+                turbo_mode=True
+            )
+            api_logger.debug("=== ソルバー実行完了 ===")
+            
+            if solution:
+                api_logger.info("シフト生成成功")
+                write_solution_printer_log("シフト生成が完了しました")
+                
+                write_result_to_firestore(solution, input_data)  # この行を追加！
+                
+                # solutionを必要な形式に変換
+                shifts_dict = {}
+                for entry in solution.entries:
+                    if entry.staff_name not in shifts_dict:
+                        shifts_dict[entry.staff_name] = [''] * 31
+                    shifts_dict[entry.staff_name][entry.day - 1] = entry.shift_type
+                
+                formatted_solution = {
+                    'year': solution.year,
+                    'month': solution.month,
+                    'shifts': shifts_dict
+                }
+                
+                return {
+                    "status": "success",
+                    "solution": formatted_solution,
+                    "debug_info": {
+                        "staff_count": len(staff_instances),
+                        "converted_data": converted_data
+                    }
+                }
+            else:
+                api_logger.warning("シフト生成失敗（解なし）")
+                write_solution_printer_log(f"解が見つかりませんでした：status = INFEASIBLE")  # solutionがNoneの場合は直接INFEASIBLEと表示
+                return {"status": "warning", "message": "シフトを生成できませんでした"}
+                
+        except Exception as e:
+            api_logger.error(f"インスタンス化エラー: {str(e)}")
+            raise
+            
+    except Exception as e:
+        api_logger.error(f"デバッグ生成中にエラー: {str(e)}")
+        return {"status": "error", "message": str(e)}
 
 __all__ = ['StaffData', 'ShiftEntry', 'ShiftData', 'RuleData'] 

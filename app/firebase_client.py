@@ -35,6 +35,8 @@ class FirestoreListener:
     def __init__(self):
         self.db = get_firestore_client()
         self.watch = None
+        # アプリケーション起動時のタイムスタンプを保持
+        self.start_time = datetime.now(timezone(timedelta(hours=9)))
     
     def start_listening(self):
         """queドキュメントの監視を開始"""
@@ -42,19 +44,27 @@ class FirestoreListener:
         
         def on_snapshot(doc_snapshot, changes, read_time):
             """queドキュメントが更新されたときの処理"""
-            logger.info("Firestoreのqueドキュメントの変更を検知しました")
-            
-            if doc_snapshot:
-                doc = doc_snapshot[0]
-                data = doc.to_dict()
-                if data and 'json' in data:
-                    try:
-                        logger.info("FastAPIへのリクエストを開始します")
-                        response = requests.post('http://127.0.0.1:8000/generate-shift')
-                        logger.info(f"FastAPIからのレスポンス受信: {response.status_code}")
-                    except Exception as e:
-                        logger.error(f"シフト生成呼び出しエラー: {str(e)}")
+            if not doc_snapshot:
+                return
 
+            doc = doc_snapshot[0]
+            data = doc.to_dict()
+            
+            # ドキュメントの更新時刻を確認
+            update_time = doc.update_time.astimezone(timezone(timedelta(hours=9)))
+            
+            # アプリケーション起動後の更新のみ処理
+            if update_time <= self.start_time:
+                logger.info("アプリケーション起動前のデータのため、処理をスキップします")
+                return
+                
+            if data and 'json' in data:
+                try:
+                    logger.info("FastAPIへのリクエストを開始します")
+                    response = requests.post('http://127.0.0.1:8000/generate-shift')
+                    logger.info(f"FastAPIからのレスポンス受信: {response.status_code}")
+                except Exception as e:
+                    logger.error(f"シフト生成呼び出しエラー: {str(e)}")
         
         try:
             self.watch = doc_ref.on_snapshot(on_snapshot)
@@ -62,21 +72,62 @@ class FirestoreListener:
         except Exception as e:
             logger.error(f"リスナーの開始に失敗: {e}") 
 
+class DebugFirestoreListener:
+    """デバッグ用のFirestoreリスナー"""
+    def __init__(self):
+        self.db = get_firestore_client()
+        self.debug_watch = None
+        self.start_time = datetime.now(timezone(timedelta(hours=9)))
+    
+    def start_listening(self):
+        """デバッグ用queドキュメントの監視を開始"""
+        debug_ref = self.db.collection('debug').document('que')
+        
+        def on_debug_snapshot(doc_snapshot, changes, read_time):
+            """デバッグ用queドキュメントが更新されたときの処理"""
+            if not doc_snapshot:
+                return
+
+            doc = doc_snapshot[0]
+            update_time = doc.update_time.astimezone(timezone(timedelta(hours=9)))
+            
+            if update_time <= self.start_time:
+                logger.info("アプリケーション起動前のデータのため、処理をスキップします")
+                return
+                
+            if doc_snapshot:
+                doc = doc_snapshot[0]
+                data = doc.to_dict()
+                if data:
+                    try:
+                        response = requests.post('http://127.0.0.1:8000/debug-generate-shift')
+                        logger.info(f"デバッグ用FastAPIからのレスポンス受信: {response.status_code}")
+                    except Exception as e:
+                        logger.error(f"デバッグ用シフト生成呼び出しエラー: {str(e)}")
+        
+        try:
+            self.debug_watch = debug_ref.on_snapshot(on_debug_snapshot)
+            logger.info("デバッグ用Firestoreリスナーを開始しました")
+        except Exception as e:
+            logger.error(f"デバッグ用リスナーの開始に失敗: {e}")
+
 def write_result_to_firestore(solution, input_data: dict) -> str:
     """生成結果をFirestoreに保存する"""
     try:
         db = get_firestore_client()
         results_ref = db.collection('results')
         
-        # ドキュメントID生成
-        timestamp = datetime.now().strftime('%Y-%m%d-%H%M')
-        doc_id = timestamp
+        # 全ての結果を取得して古いものを削除
+        all_results = results_ref.get()
+        sorted_results = sorted(all_results, key=lambda x: x.id, reverse=True)  # IDで降順ソート
+        if len(sorted_results) >= 10:
+            # 10件を超える古いドキュメントを削除
+            for old_doc in sorted_results[9:]:  # 最新の10件以外を削除
+                old_doc.reference.delete()
         
-        # 古い結果をチェック（10件以上ある場合）
-        old_results = results_ref.order_by('created_at').limit(11).get()
-        if len(old_results) >= 10:
-            # 最も古いドキュメントのIDを使用
-            doc_id = old_results[0].id
+        # ドキュメントID生成
+        timestamp = datetime.now().strftime('%Y-%m%d-%H%M%S')  # %Sで秒を追加
+        doc_id = timestamp
         
         # ShiftDataを必要な形式に変換
         shifts_dict = {}
@@ -162,12 +213,7 @@ def write_solution_printer_log(message: str, reset: bool = False) -> None:
         
         # 現在の配列を取得（ドキュメントが存在しない場合は作成）
         doc = progress_ref.get()
-        if not doc.exists:
-            progress_ref.set({'solutions': []})
-            solutions = []
-        else:
-            solutions = doc.to_dict().get('solutions', [])
-        
+        solutions = doc.to_dict().get('solutions', [])
         solutions.append({
             'id': len(solutions) + 1,
             'date': current_time,

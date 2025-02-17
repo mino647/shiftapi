@@ -211,3 +211,724 @@ Logger initialization test
 [2025-02-16 22:07:03] INFO [APIServer] インスタンス化完了
 [2025-02-16 22:07:03] INFO [APIServer] 事前チェックを開始
 [2025-02-16 22:07:03] INFO [APIServer] 事前チェックでエラーが検出されました
+Logger initialization test
+[2025-02-16 22:10:09] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:10:09] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:10:09] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:10:09] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:10:09] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:10:10] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:10:10] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:10:10] INFO [APIServer] データの変換を開始
+[2025-02-16 22:10:10] INFO [APIServer] データ変換完了
+[2025-02-16 22:10:10] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:10:10] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:10:10] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:10:10] INFO [APIServer] 事前チェックでエラーが検出されました
+Logger initialization test
+[2025-02-16 22:13:49] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:13:49] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:13:49] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:13:49] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:13:49] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:13:49] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:13:50] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:13:50] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:13:50] INFO [APIServer] データの変換を開始
+[2025-02-16 22:13:50] INFO [APIServer] データ変換完了
+[2025-02-16 22:13:50] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:13:50] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:13:50] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:13:50] INFO [APIServer] 事前チェックでエラーが検出されました
+Logger initialization test
+[2025-02-16 22:15:37] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:15:37] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:15:37] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:15:37] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:15:37] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:15:37] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:15:37] INFO [APIServer] デバッグテストエンドポイントにアクセスがありました
+[2025-02-16 22:15:37] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:15:37] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:15:37] INFO [APIServer] データの変換を開始
+[2025-02-16 22:15:37] INFO [APIServer] データ変換完了
+[2025-02-16 22:15:37] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:15:37] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:15:37] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:15:37] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 22:15:42] INFO [APIServer] デバッグテストエンドポイントにアクセスがありました
+Logger initialization test
+[2025-02-16 22:16:54] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:16:54] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:16:54] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:16:54] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:16:54] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:16:54] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:16:54] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:16:54] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:16:54] INFO [APIServer] データの変換を開始
+[2025-02-16 22:16:54] INFO [APIServer] データ変換完了
+[2025-02-16 22:16:54] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:16:54] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:16:54] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:16:54] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 22:16:54] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:17:11] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+Logger initialization test
+[2025-02-16 22:18:02] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:18:02] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:18:02] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:18:02] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:18:02] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:18:02] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:18:02] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:18:02] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:18:02] INFO [APIServer] データの変換を開始
+[2025-02-16 22:18:02] INFO [APIServer] データ変換完了
+[2025-02-16 22:18:02] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:18:02] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:18:02] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:18:03] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 22:18:03] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:18:03] INFO [APIServer] 受信したデータ: {'json': '{"staff_data_list":[{"id":1,"name":"スタッフA","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":2,"name":"スタッフB","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":3,"name":"スタッフC","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":4,"name":"スタッフD","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":5,"name":"スタッフE","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":6,"name":"スタッフF","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":7,"name":"スタッフG","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":8,"name":"スタッフH","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":9,"name":"スタッフI","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":10,"name":"スタッフJ","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":11,"name":"スタッフK","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":12,"name":"スタッフL","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":13,"name":"スタッフM","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":14,"name":"スタッフN","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]},{"id":15,"name":"スタッフO","role":"一般職員","is_day_shift_only":false,"is_part_time":false,"is_global_rule":false,"shift_count":{"早番":{"min":0,"max":10},"日勤":{"min":0,"max":10},"遅番":{"min":0,"max":10},"夜勤":{"min":0,"max":10},"明け":{"min":0,"max":0},"休み":{"min":0,"max":0}},"holiday_overwrite":false,"reliability_overwrite":false,"constraints":[]}],"rule_data":{"basicSettings":{"year":2025,"month":3,"publicHolidays":8,"baseHolidays":10,"consecutiveWorkDays":5,"normalShiftSuitability":140,"sundayShiftSuitability":110,"useNormalShiftSuitability":false,"useSundayShiftSuitability":false},"patternConstraints":[{"id":"7711f781-9539-4991-a804-8b4cfa595d64","type":"選好","category":"シフトパターン","value1":"推奨","value2":"早番","value3":"早番","value4":"","weight":50,"times":"全員"}],"optionConstraints":[{"id":"0b23592f-b5aa-4c98-9a08-fdf3ebda1985","type":"選好","category":"連続休暇","value1":"推奨","value2":"二連休","value3":"丁度","value4":"","weight":50,"times":"全員"}],"sortableConstraints":[],"requiredStaffCount":{"早番":2,"日勤":2.5,"遅番":2,"夜勤":2,"日曜の日勤":1},"globalConstraints":[],"staffConstraints":{}},"shift_data":{"searchTime":15,"entries":[{"staff_name":"スタッフA","day":12,"shift_type":"日"},{"staff_name":"スタッフA","day":17,"shift_type":"▲"}]},"active_constraints":["add_one_shift_per_day","add_underscore_penalty_to_objective","add_required_staff","add_monthly_holiday_limit","add_night_pattern","add_work_count_limit","add_star_shift_constraint","add_reliability_constraint","add_under_shift_constraint","add_consecutive_work_limit","add_global_standard_reliability","add_numbered_shift_preference","add_global_consecutive_work","add_global_consecutive_dayshift_work","add_global_holiday_pattern_constraint","add_global_holiday_guarantee_constraint","add_global_shift_pattern_constraint","add_shift_balance_constraints","add_global_consecutive_shift","add_pair_overlap_constraints","add_global_custom_reliability","add_shift_count","add_holiday_override","add_reliability_override","add_global_rule","add_shift_type","add_weekday_constraint","add_local_consecutive_work","add_local_consecutive_dayshift_work","add_holiday_pattern_constraint","add_local_holiday_guarantee_constraint","add_local_shift_pattern_constraint","add_pairing_constraint","add_separate_constraint","add_custom_preset_constraint"],"turbo_mode":true}', 'time': DatetimeWithNanoseconds(2025, 2, 16, 13, 17, 15, 295000, tzinfo=datetime.timezone.utc)}
+Logger initialization test
+[2025-02-16 22:21:06] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:21:06] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:21:06] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:21:06] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:21:06] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:21:06] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:21:07] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:21:07] ERROR [APIServer] デバッグ生成中にエラー: 'staffData'
+[2025-02-16 22:21:07] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:21:07] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:21:07] INFO [APIServer] データの変換を開始
+[2025-02-16 22:21:07] INFO [APIServer] データ変換完了
+[2025-02-16 22:21:07] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:21:07] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:21:07] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:21:07] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 22:21:18] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:21:18] ERROR [APIServer] デバッグ生成中にエラー: 'staffData'
+Logger initialization test
+[2025-02-16 22:23:11] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:23:11] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:23:11] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:23:11] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:23:11] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:23:11] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:23:12] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:23:12] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['staff_data_list', 'rule_data', 'shift_data', 'active_constraints', 'turbo_mode'])
+[2025-02-16 22:23:12] ERROR [APIServer] デバッグ生成中にエラー: list indices must be integers or slices, not str
+[2025-02-16 22:23:12] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:23:12] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:23:12] INFO [APIServer] データの変換を開始
+[2025-02-16 22:23:12] INFO [APIServer] データ変換完了
+[2025-02-16 22:23:12] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:23:12] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:23:12] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:23:12] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 22:23:23] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:23:23] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['staff_data_list', 'rule_data', 'shift_data', 'active_constraints', 'turbo_mode'])
+[2025-02-16 22:23:23] ERROR [APIServer] デバッグ生成中にエラー: list indices must be integers or slices, not str
+Logger initialization test
+[2025-02-16 22:24:26] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:24:26] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:24:26] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:24:26] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:24:26] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:24:26] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:24:27] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:24:27] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['staff_data_list', 'rule_data', 'shift_data', 'active_constraints', 'turbo_mode'])
+[2025-02-16 22:24:27] INFO [APIServer] staff_data_listの中身: [{'id': 1, 'name': 'スタッフA', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 2, 'name': 'スタッフB', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 3, 'name': 'スタッフC', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 4, 'name': 'スタッフD', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 5, 'name': 'スタッフE', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 6, 'name': 'スタッフF', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 7, 'name': 'スタッフG', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 8, 'name': 'スタッフH', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 9, 'name': 'スタッフI', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 10, 'name': 'スタッフJ', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 11, 'name': 'スタッフK', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 12, 'name': 'スタッフL', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 13, 'name': 'スタッフM', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 14, 'name': 'スタッフN', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 15, 'name': 'スタッフO', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}]
+[2025-02-16 22:24:27] INFO [APIServer] convert_staffdataに渡すデータ: [{'id': 1, 'name': 'スタッフA', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 2, 'name': 'スタッフB', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 3, 'name': 'スタッフC', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 4, 'name': 'スタッフD', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 5, 'name': 'スタッフE', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 6, 'name': 'スタッフF', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 7, 'name': 'スタッフG', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 8, 'name': 'スタッフH', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 9, 'name': 'スタッフI', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 10, 'name': 'スタッフJ', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 11, 'name': 'スタッフK', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 12, 'name': 'スタッフL', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 13, 'name': 'スタッフM', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 14, 'name': 'スタッフN', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 15, 'name': 'スタッフO', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}]
+[2025-02-16 22:24:27] ERROR [APIServer] デバッグ生成中にエラー: 'staffList'
+[2025-02-16 22:24:27] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:24:27] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:24:27] INFO [APIServer] データの変換を開始
+[2025-02-16 22:24:27] INFO [APIServer] データ変換完了
+[2025-02-16 22:24:27] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:24:27] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:24:27] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:24:27] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 22:24:32] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:24:32] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['staff_data_list', 'rule_data', 'shift_data', 'active_constraints', 'turbo_mode'])
+[2025-02-16 22:24:32] INFO [APIServer] staff_data_listの中身: [{'id': 1, 'name': 'スタッフA', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 2, 'name': 'スタッフB', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 3, 'name': 'スタッフC', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 4, 'name': 'スタッフD', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 5, 'name': 'スタッフE', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 6, 'name': 'スタッフF', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 7, 'name': 'スタッフG', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 8, 'name': 'スタッフH', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 9, 'name': 'スタッフI', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 10, 'name': 'スタッフJ', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 11, 'name': 'スタッフK', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 12, 'name': 'スタッフL', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 13, 'name': 'スタッフM', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 14, 'name': 'スタッフN', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 15, 'name': 'スタッフO', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}]
+[2025-02-16 22:24:32] INFO [APIServer] convert_staffdataに渡すデータ: [{'id': 1, 'name': 'スタッフA', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 2, 'name': 'スタッフB', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 3, 'name': 'スタッフC', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 4, 'name': 'スタッフD', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 5, 'name': 'スタッフE', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 6, 'name': 'スタッフF', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 7, 'name': 'スタッフG', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 8, 'name': 'スタッフH', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 9, 'name': 'スタッフI', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 10, 'name': 'スタッフJ', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 11, 'name': 'スタッフK', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 12, 'name': 'スタッフL', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 13, 'name': 'スタッフM', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 14, 'name': 'スタッフN', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 15, 'name': 'スタッフO', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}]
+[2025-02-16 22:24:32] ERROR [APIServer] デバッグ生成中にエラー: 'staffList'
+Logger initialization test
+[2025-02-16 22:25:21] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:25:21] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:25:21] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:25:21] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:25:21] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:25:21] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:25:21] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:25:21] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:25:21] INFO [APIServer] データの変換を開始
+[2025-02-16 22:25:21] INFO [APIServer] データ変換完了
+[2025-02-16 22:25:21] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:25:21] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:25:21] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:25:21] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 22:25:21] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:25:21] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['staff_data_list', 'rule_data', 'shift_data', 'active_constraints', 'turbo_mode'])
+[2025-02-16 22:25:21] INFO [APIServer] staff_data_listの中身: [{'id': 1, 'name': 'スタッフA', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 2, 'name': 'スタッフB', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 3, 'name': 'スタッフC', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 4, 'name': 'スタッフD', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 5, 'name': 'スタッフE', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 6, 'name': 'スタッフF', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 7, 'name': 'スタッフG', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 8, 'name': 'スタッフH', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 9, 'name': 'スタッフI', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 10, 'name': 'スタッフJ', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 11, 'name': 'スタッフK', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 12, 'name': 'スタッフL', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 13, 'name': 'スタッフM', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 14, 'name': 'スタッフN', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 15, 'name': 'スタッフO', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}]
+[2025-02-16 22:25:21] ERROR [APIServer] デバッグ生成中にエラー: list indices must be integers or slices, not str
+Logger initialization test
+[2025-02-16 22:33:35] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:33:35] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:33:35] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:33:35] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:33:35] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:33:35] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:33:35] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:33:35] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:33:35] INFO [APIServer] データの変換を開始
+[2025-02-16 22:33:35] INFO [APIServer] データ変換完了
+[2025-02-16 22:33:35] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:33:35] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:33:35] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:33:35] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 22:33:35] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:33:35] INFO [APIServer] staff_data_listの中身: [{'id': 1, 'name': 'スタッフA', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 2, 'name': 'スタッフB', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 3, 'name': 'スタッフC', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 4, 'name': 'スタッフD', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 5, 'name': 'スタッフE', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 6, 'name': 'スタッフF', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 7, 'name': 'スタッフG', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 8, 'name': 'スタッフH', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 9, 'name': 'スタッフI', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 10, 'name': 'スタッフJ', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 11, 'name': 'スタッフK', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 12, 'name': 'スタッフL', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 13, 'name': 'スタッフM', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 14, 'name': 'スタッフN', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 15, 'name': 'スタッフO', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}]
+[2025-02-16 22:33:35] INFO [APIServer] データのインスタンス化を開始
+[2025-02-16 22:33:51] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:33:51] INFO [APIServer] staff_data_listの中身: [{'id': 1, 'name': 'スタッフA', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 2, 'name': 'スタッフB', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 3, 'name': 'スタッフC', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 4, 'name': 'スタッフD', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 5, 'name': 'スタッフE', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 6, 'name': 'スタッフF', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 7, 'name': 'スタッフG', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 8, 'name': 'スタッフH', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 9, 'name': 'スタッフI', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 10, 'name': 'スタッフJ', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 11, 'name': 'スタッフK', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 12, 'name': 'スタッフL', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 13, 'name': 'スタッフM', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 14, 'name': 'スタッフN', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 15, 'name': 'スタッフO', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}]
+[2025-02-16 22:33:51] INFO [APIServer] データのインスタンス化を開始
+Logger initialization test
+[2025-02-16 22:36:50] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:36:50] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:36:50] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:36:50] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:36:50] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:36:50] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:36:51] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:36:51] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:36:51] INFO [APIServer] データの変換を開始
+[2025-02-16 22:36:51] INFO [APIServer] データ変換完了
+[2025-02-16 22:36:51] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:36:51] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:36:51] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:36:51] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 22:36:51] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:36:51] INFO [APIServer] staff_data_listの中身: [{'id': 1, 'name': 'スタッフA', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 2, 'name': 'スタッフB', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 3, 'name': 'スタッフC', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 4, 'name': 'スタッフD', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 5, 'name': 'スタッフE', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 6, 'name': 'スタッフF', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 7, 'name': 'スタッフG', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 8, 'name': 'スタッフH', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 9, 'name': 'スタッフI', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 10, 'name': 'スタッフJ', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 11, 'name': 'スタッフK', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 12, 'name': 'スタッフL', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 13, 'name': 'スタッフM', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 14, 'name': 'スタッフN', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 15, 'name': 'スタッフO', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}]
+[2025-02-16 22:36:51] ERROR [APIServer] デバッグ生成中にエラー: list indices must be integers or slices, not str
+[2025-02-16 22:43:07] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:43:07] INFO [APIServer] staff_data_listの中身: [{'id': 1, 'name': 'スタッフA', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 2, 'name': 'スタッフB', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 3, 'name': 'スタッフC', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 4, 'name': 'スタッフD', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 5, 'name': 'スタッフE', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 6, 'name': 'スタッフF', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 7, 'name': 'スタッフG', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 8, 'name': 'スタッフH', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 9, 'name': 'スタッフI', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 10, 'name': 'スタッフJ', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 11, 'name': 'スタッフK', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 12, 'name': 'スタッフL', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 13, 'name': 'スタッフM', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 14, 'name': 'スタッフN', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 15, 'name': 'スタッフO', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}]
+[2025-02-16 22:43:07] ERROR [APIServer] デバッグ生成中にエラー: list indices must be integers or slices, not str
+[2025-02-16 22:49:04] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:49:04] INFO [APIServer] staff_data_listの中身: [{'id': 1, 'name': 'スタッフA', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 2, 'name': 'スタッフB', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 3, 'name': 'スタッフC', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 4, 'name': 'スタッフD', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 5, 'name': 'スタッフE', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 6, 'name': 'スタッフF', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 7, 'name': 'スタッフG', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 8, 'name': 'スタッフH', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 9, 'name': 'スタッフI', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 10, 'name': 'スタッフJ', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 11, 'name': 'スタッフK', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 12, 'name': 'スタッフL', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 13, 'name': 'スタッフM', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 14, 'name': 'スタッフN', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 15, 'name': 'スタッフO', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}]
+[2025-02-16 22:49:04] ERROR [APIServer] デバッグ生成中にエラー: list indices must be integers or slices, not str
+[2025-02-16 22:49:21] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:49:25] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:49:25] INFO [APIServer] staff_data_listの中身: [{'id': 1, 'name': 'スタッフA', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 2, 'name': 'スタッフB', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 3, 'name': 'スタッフC', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 4, 'name': 'スタッフD', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 5, 'name': 'スタッフE', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 6, 'name': 'スタッフF', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 7, 'name': 'スタッフG', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 8, 'name': 'スタッフH', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 9, 'name': 'スタッフI', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 10, 'name': 'スタッフJ', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 11, 'name': 'スタッフK', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 12, 'name': 'スタッフL', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 13, 'name': 'スタッフM', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 14, 'name': 'スタッフN', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 15, 'name': 'スタッフO', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}]
+[2025-02-16 22:49:25] ERROR [APIServer] デバッグ生成中にエラー: list indices must be integers or slices, not str
+[2025-02-16 22:50:26] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:50:26] INFO [APIServer] staff_data_listの中身: [{'id': 1, 'name': 'スタッフA', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 2, 'name': 'スタッフB', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 3, 'name': 'スタッフC', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 4, 'name': 'スタッフD', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 5, 'name': 'スタッフE', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 6, 'name': 'スタッフF', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 7, 'name': 'スタッフG', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 8, 'name': 'スタッフH', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 9, 'name': 'スタッフI', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 10, 'name': 'スタッフJ', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 11, 'name': 'スタッフK', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 12, 'name': 'スタッフL', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 13, 'name': 'スタッフM', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 14, 'name': 'スタッフN', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}, {'id': 15, 'name': 'スタッフO', 'role': '一般職員', 'is_day_shift_only': False, 'is_part_time': False, 'is_global_rule': False, 'shift_count': {'早番': {'min': 0, 'max': 10}, '日勤': {'min': 0, 'max': 10}, '遅番': {'min': 0, 'max': 10}, '夜勤': {'min': 0, 'max': 10}, '明け': {'min': 0, 'max': 0}, '休み': {'min': 0, 'max': 0}}, 'holiday_overwrite': False, 'reliability_overwrite': False, 'constraints': []}]
+[2025-02-16 22:50:26] ERROR [APIServer] デバッグ生成中にエラー: list indices must be integers or slices, not str
+[2025-02-16 22:51:09] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:51:09] ERROR [APIServer] デバッグ生成中にエラー: 'staff_data_list'
+Logger initialization test
+[2025-02-16 22:52:19] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:52:19] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:52:19] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:52:19] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:52:19] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:52:19] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:52:20] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:52:20] ERROR [APIServer] デバッグ生成中にエラー: 'staff_data_list'
+[2025-02-16 22:52:20] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:52:20] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:52:20] INFO [APIServer] データの変換を開始
+[2025-02-16 22:52:20] INFO [APIServer] データ変換完了
+[2025-02-16 22:52:20] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:52:20] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:52:20] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:52:20] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 22:52:31] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:52:31] ERROR [APIServer] デバッグ生成中にエラー: 'staff_data_list'
+Logger initialization test
+[2025-02-16 22:53:04] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:53:04] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:53:04] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:53:04] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:53:04] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:53:04] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:53:04] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:53:04] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:53:04] INFO [APIServer] データの変換を開始
+[2025-02-16 22:53:04] INFO [APIServer] データ変換完了
+[2025-02-16 22:53:04] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:53:04] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:53:04] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:53:04] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 22:53:04] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:53:04] ERROR [APIServer] デバッグ生成中にエラー: 'staff_data_list'
+Logger initialization test
+[2025-02-16 22:56:24] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:56:25] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:56:25] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:56:25] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:56:25] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:56:25] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:56:25] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:56:25] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:56:25] INFO [APIServer] データの変換を開始
+[2025-02-16 22:56:25] INFO [APIServer] データ変換完了
+[2025-02-16 22:56:25] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:56:25] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:56:25] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:56:25] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 22:56:25] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:56:25] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'staffData'])
+[2025-02-16 22:56:25] INFO [APIServer] データのインスタンス化を開始
+Logger initialization test
+[2025-02-16 22:57:55] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 22:57:55] INFO [APIServer] APIサーバー起動
+[2025-02-16 22:57:55] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 22:57:55] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 22:57:55] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 22:57:55] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 22:57:55] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:57:55] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'staffData'])
+[2025-02-16 22:57:55] INFO [APIServer] データのインスタンス化を開始
+[2025-02-16 22:57:55] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 22:57:55] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 22:57:55] INFO [APIServer] データの変換を開始
+[2025-02-16 22:57:55] INFO [APIServer] データ変換完了
+[2025-02-16 22:57:55] INFO [APIServer] インスタンス化を開始
+[2025-02-16 22:57:55] INFO [APIServer] インスタンス化完了
+[2025-02-16 22:57:55] INFO [APIServer] 事前チェックを開始
+[2025-02-16 22:57:55] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 22:58:07] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 22:58:07] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'staffData'])
+[2025-02-16 22:58:07] INFO [APIServer] データのインスタンス化を開始
+Logger initialization test
+[2025-02-16 23:00:34] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 23:00:34] INFO [APIServer] APIサーバー起動
+[2025-02-16 23:00:34] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 23:00:34] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 23:00:34] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 23:00:34] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 23:00:35] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 23:00:35] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 23:00:35] INFO [APIServer] データの変換を開始
+[2025-02-16 23:00:35] INFO [APIServer] データ変換完了
+[2025-02-16 23:00:35] INFO [APIServer] インスタンス化を開始
+[2025-02-16 23:00:35] INFO [APIServer] インスタンス化完了
+[2025-02-16 23:00:35] INFO [APIServer] 事前チェックを開始
+[2025-02-16 23:00:35] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 23:00:35] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:00:35] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'staffData'])
+[2025-02-16 23:00:35] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:00:35] ERROR [APIServer] デバッグ生成中にエラー: 'weightData'
+[2025-02-16 23:00:49] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:00:49] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'staffData'])
+[2025-02-16 23:00:49] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:00:49] ERROR [APIServer] デバッグ生成中にエラー: 'weightData'
+[2025-02-16 23:01:03] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:01:03] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'staffData'])
+[2025-02-16 23:01:03] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:01:03] ERROR [APIServer] デバッグ生成中にエラー: 'weightData'
+[2025-02-16 23:09:52] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:09:52] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:09:52] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:09:52] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:09:52] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:09:52] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:09:52] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:09:52] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:09:52] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:09:52] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[ShiftEntry(staff_name='スタッフA', day=12, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=17, shift_type='▲', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-16 23:10:08] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:10:08] INFO [APIServer] シフト生成成功
+[2025-02-16 23:10:45] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 23:10:45] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 23:10:45] INFO [APIServer] データの変換を開始
+[2025-02-16 23:10:45] INFO [APIServer] データ変換完了
+[2025-02-16 23:10:45] INFO [APIServer] インスタンス化を開始
+[2025-02-16 23:10:45] INFO [APIServer] インスタンス化完了
+[2025-02-16 23:10:45] INFO [APIServer] 事前チェックを開始
+[2025-02-16 23:10:45] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 23:10:55] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:10:55] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:10:55] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:10:55] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:10:55] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:10:55] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:10:55] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:10:55] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:10:55] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:10:55] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[ShiftEntry(staff_name='スタッフA', day=12, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=17, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=11, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=13, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=14, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=15, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=16, shift_type='日', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-16 23:10:56] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:10:56] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-16 23:11:23] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:11:23] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:11:23] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:11:23] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:11:23] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:11:23] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:11:23] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:11:23] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:11:23] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:11:23] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-16 23:11:39] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:11:39] INFO [APIServer] シフト生成成功
+Logger initialization test
+[2025-02-16 23:28:03] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 23:28:03] INFO [APIServer] APIサーバー起動
+[2025-02-16 23:28:03] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 23:28:03] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 23:28:03] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 23:28:03] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 23:28:03] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 23:28:03] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 23:28:03] INFO [APIServer] データの変換を開始
+[2025-02-16 23:28:03] INFO [APIServer] データ変換完了
+[2025-02-16 23:28:03] INFO [APIServer] インスタンス化を開始
+[2025-02-16 23:28:03] INFO [APIServer] インスタンス化完了
+[2025-02-16 23:28:03] INFO [APIServer] 事前チェックを開始
+[2025-02-16 23:28:03] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 23:28:03] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:28:03] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:28:03] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:28:03] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:28:03] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:28:03] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:28:03] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:28:03] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:28:03] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:28:03] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-16 23:28:19] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:28:19] INFO [APIServer] シフト生成成功
+[2025-02-16 23:28:37] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:28:37] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:28:37] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:28:37] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:28:37] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:28:37] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:28:37] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:28:37] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:28:37] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:28:37] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[ShiftEntry(staff_name='スタッフA', day=12, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=17, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=11, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=13, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=14, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=15, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=16, shift_type='日', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-16 23:28:38] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:28:38] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-16 23:28:38] ERROR [APIServer] インスタンス化エラー: 'NoneType' object has no attribute 'status'
+[2025-02-16 23:28:38] ERROR [APIServer] デバッグ生成中にエラー: 'NoneType' object has no attribute 'status'
+Logger initialization test
+[2025-02-16 23:30:28] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 23:30:28] INFO [APIServer] APIサーバー起動
+[2025-02-16 23:30:28] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 23:30:28] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 23:30:28] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 23:30:28] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 23:30:29] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:30:29] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:30:29] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:30:29] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:30:29] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:30:29] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:30:29] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:30:29] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:30:29] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:30:29] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[ShiftEntry(staff_name='スタッフA', day=12, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=17, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=11, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=13, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=14, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=15, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=16, shift_type='日', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-16 23:30:30] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:30:30] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-16 23:30:30] ERROR [APIServer] インスタンス化エラー: 'NoneType' object has no attribute 'status'
+[2025-02-16 23:30:30] ERROR [APIServer] デバッグ生成中にエラー: 'NoneType' object has no attribute 'status'
+[2025-02-16 23:30:30] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 23:30:30] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 23:30:30] INFO [APIServer] データの変換を開始
+[2025-02-16 23:30:30] INFO [APIServer] データ変換完了
+[2025-02-16 23:30:30] INFO [APIServer] インスタンス化を開始
+[2025-02-16 23:30:30] INFO [APIServer] インスタンス化完了
+[2025-02-16 23:30:30] INFO [APIServer] 事前チェックを開始
+[2025-02-16 23:30:30] INFO [APIServer] 事前チェックでエラーが検出されました
+Logger initialization test
+[2025-02-16 23:30:54] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 23:30:54] INFO [APIServer] APIサーバー起動
+[2025-02-16 23:30:54] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 23:30:54] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 23:30:54] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 23:30:54] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 23:30:54] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:30:54] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:30:54] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:30:54] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:30:54] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:30:54] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:30:54] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:30:54] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:30:54] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:30:54] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[ShiftEntry(staff_name='スタッフA', day=12, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=17, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=11, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=13, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=14, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=15, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=16, shift_type='日', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-16 23:30:55] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:30:55] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-16 23:30:55] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 23:30:55] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 23:30:55] INFO [APIServer] データの変換を開始
+[2025-02-16 23:30:55] INFO [APIServer] データ変換完了
+[2025-02-16 23:30:55] INFO [APIServer] インスタンス化を開始
+[2025-02-16 23:30:55] INFO [APIServer] インスタンス化完了
+[2025-02-16 23:30:55] INFO [APIServer] 事前チェックを開始
+[2025-02-16 23:30:55] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 23:31:23] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:31:23] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:31:23] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:31:23] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:31:23] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:31:23] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:31:23] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:31:23] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:31:23] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:31:23] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-16 23:31:39] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:31:39] INFO [APIServer] シフト生成成功
+[2025-02-16 23:32:42] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:32:42] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:32:42] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:32:42] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:32:42] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:32:42] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:32:42] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:32:42] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:32:42] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:32:42] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[ShiftEntry(staff_name='スタッフA', day=17, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=13, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=14, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=15, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=16, shift_type='日', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-16 23:32:58] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:32:58] INFO [APIServer] シフト生成成功
+[2025-02-16 23:46:53] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:46:53] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:46:53] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:46:53] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:46:53] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:46:53] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:46:53] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:46:53] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:46:53] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:46:53] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[ShiftEntry(staff_name='スタッフA', day=12, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=17, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=11, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=13, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=14, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=15, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=16, shift_type='日', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-16 23:46:54] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:46:54] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-16 23:49:09] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:49:09] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:49:09] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:49:09] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:49:09] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:49:09] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:49:09] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:49:09] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:49:09] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:49:09] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[ShiftEntry(staff_name='スタッフA', day=12, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=17, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=11, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=13, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=14, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=15, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=16, shift_type='日', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-02-16 23:49:10] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:49:10] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-16 23:50:37] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:50:37] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:50:37] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:50:37] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:50:37] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:50:37] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:50:37] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:50:37] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:50:37] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=4, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:50:37] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-16 23:50:39] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:50:39] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-16 23:50:44] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:50:44] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:50:44] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:50:44] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:50:44] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:50:44] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:50:44] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:50:44] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:50:44] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=4, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:50:44] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-16 23:50:45] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:50:45] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-16 23:50:55] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:50:55] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:50:55] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:50:55] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:50:55] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:50:55] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:50:55] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:50:55] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:50:55] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=4, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:50:55] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-16 23:51:11] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:51:11] INFO [APIServer] シフト生成成功
+[2025-02-16 23:51:15] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:51:15] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:51:15] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:51:15] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:51:15] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:51:15] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:51:15] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:51:15] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:51:15] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=4, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:51:15] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-16 23:51:31] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:51:31] INFO [APIServer] シフト生成成功
+[2025-02-16 23:51:35] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:51:35] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:51:35] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:51:35] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:51:35] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:51:35] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:51:35] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:51:35] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:51:35] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=4, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:51:35] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-16 23:51:37] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:51:37] WARNING [APIServer] シフト生成失敗（解なし）
+Logger initialization test
+[2025-02-16 23:53:08] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 23:53:08] INFO [APIServer] APIサーバー起動
+[2025-02-16 23:53:08] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 23:53:08] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 23:53:08] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 23:53:08] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 23:53:08] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:53:08] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:53:08] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:53:08] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:53:08] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:53:08] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:53:08] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:53:08] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:53:08] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=4, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:53:08] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-16 23:53:24] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:53:24] INFO [APIServer] シフト生成成功
+[2025-02-16 23:53:24] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 23:53:24] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 23:53:24] INFO [APIServer] データの変換を開始
+[2025-02-16 23:53:24] INFO [APIServer] データ変換完了
+[2025-02-16 23:53:24] INFO [APIServer] インスタンス化を開始
+[2025-02-16 23:53:24] INFO [APIServer] インスタンス化完了
+[2025-02-16 23:53:24] INFO [APIServer] 事前チェックを開始
+[2025-02-16 23:53:25] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 23:53:43] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:53:43] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:53:43] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:53:43] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:53:43] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:53:43] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:53:43] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:53:43] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:53:43] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=4, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:53:43] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-16 23:53:46] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:53:46] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-16 23:53:46] ERROR [APIServer] インスタンス化エラー: 'NoneType' object has no attribute 'status'
+[2025-02-16 23:53:46] ERROR [APIServer] デバッグ生成中にエラー: 'NoneType' object has no attribute 'status'
+Logger initialization test
+[2025-02-16 23:54:45] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250216.log
+[2025-02-16 23:54:45] INFO [APIServer] APIサーバー起動
+[2025-02-16 23:54:45] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-16 23:54:45] DEBUG [APIServer] アプリケーション起動
+[2025-02-16 23:54:45] INFO [APIServer] Firestoreリスナー開始
+[2025-02-16 23:54:45] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-16 23:54:45] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-16 23:54:45] INFO [APIServer] JSONデータの変換を開始
+[2025-02-16 23:54:45] INFO [APIServer] データの変換を開始
+[2025-02-16 23:54:45] INFO [APIServer] データ変換完了
+[2025-02-16 23:54:45] INFO [APIServer] インスタンス化を開始
+[2025-02-16 23:54:45] INFO [APIServer] インスタンス化完了
+[2025-02-16 23:54:45] INFO [APIServer] 事前チェックを開始
+[2025-02-16 23:54:45] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-16 23:54:45] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:54:45] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:54:45] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:54:45] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:54:45] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:54:45] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:54:45] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:54:45] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:54:45] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=4, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:54:45] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-16 23:54:47] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:54:47] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-16 23:54:54] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:54:54] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:54:54] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:54:54] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:54:54] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:54:54] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:54:54] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:54:54] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:54:54] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=4, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:54:54] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-16 23:54:56] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:54:56] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-16 23:55:06] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-16 23:55:06] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-16 23:55:06] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-16 23:55:06] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-16 23:55:06] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-16 23:55:06] DEBUG [APIServer] インスタンス化完了
+[2025-02-16 23:55:06] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-16 23:55:06] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-16 23:55:06] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=4, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-16 23:55:06] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-16 23:55:22] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-16 23:55:22] INFO [APIServer] シフト生成成功
+[2025-02-17 01:01:19] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-17 01:01:19] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-17 01:01:19] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-17 01:01:19] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-17 01:01:19] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-17 01:01:19] DEBUG [APIServer] インスタンス化完了
+[2025-02-17 01:01:19] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-17 01:01:19] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-17 01:01:19] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-17 01:01:19] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-17 01:01:36] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-17 01:01:36] INFO [APIServer] シフト生成成功
+[2025-02-17 01:02:00] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-17 01:02:00] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-17 01:02:00] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-17 01:02:00] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-17 01:02:00] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-17 01:02:00] DEBUG [APIServer] インスタンス化完了
+[2025-02-17 01:02:00] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-17 01:02:00] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-17 01:02:00] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-17 01:02:00] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-17 01:02:16] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-17 01:02:16] INFO [APIServer] シフト生成成功
+[2025-02-17 01:06:29] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-17 01:06:29] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-17 01:06:29] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-17 01:06:29] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-17 01:06:29] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-17 01:06:29] DEBUG [APIServer] インスタンス化完了
+[2025-02-17 01:06:29] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-17 01:06:29] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-17 01:06:29] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-17 01:06:29] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-17 01:06:45] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-17 01:06:45] INFO [APIServer] シフト生成成功
+[2025-02-17 01:07:38] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-17 01:07:38] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-17 01:07:38] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-17 01:07:38] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-17 01:07:38] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-17 01:07:38] DEBUG [APIServer] インスタンス化完了
+[2025-02-17 01:07:38] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-17 01:07:38] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-17 01:07:38] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-17 01:07:38] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-17 01:07:54] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-17 01:07:54] INFO [APIServer] シフト生成成功
+[2025-02-17 01:08:19] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-02-17 01:08:19] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-02-17 01:08:19] DEBUG [APIServer] === データ変換開始 ===
+[2025-02-17 01:08:19] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-02-17 01:08:19] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-02-17 01:08:19] DEBUG [APIServer] インスタンス化完了
+[2025-02-17 01:08:19] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-02-17 01:08:19] DEBUG [APIServer] スタッフデータ数: 15
+[2025-02-17 01:08:19] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=5, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=50, times='全員')])
+[2025-02-17 01:08:19] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=3, search_time=15, entries=[], preference_entries=[])
+[2025-02-17 01:08:34] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-17 01:08:34] INFO [APIServer] シフト生成成功

@@ -336,7 +336,7 @@ class ShiftGenerator:
             else:
                 constraints_to_apply = active_constraints  # まずこれを代入
                 logger.info(f"デバッグモード: 以下の制約のみを適用: {constraints_to_apply}")
-
+                write_solution_printer_log("=== デバッグモード ===") 
             for constraint in constraints_to_apply:
                 if hasattr(clib, constraint):
                   
