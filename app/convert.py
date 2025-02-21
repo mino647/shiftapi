@@ -202,7 +202,7 @@ def convert_staff_constraint(constraint: dict) -> dict:
         },
         
         # value3までのパターン（timesなし）
-        ("シフトパターン", "連続勤務", "日勤帯連勤", "連続休暇", "連休保証", "シフトバランス"): {
+        ("シフトパターン", "連続勤務", "日勤帯連勤", "連続休暇", "シフトバランス"): {
             "type": "type",
             "category": "category",
             "sub_category": "value1",
@@ -218,7 +218,13 @@ def convert_staff_constraint(constraint: dict) -> dict:
             "count": "value2",
             "target": "value3",
             "times": "value4"
-        }
+        },
+        ("連休保証"): {
+            "type": "type",
+            "category": "category",
+            "sub_category": "value2",
+            "target": "value3"
+        },
     }
     
     # カテゴリに応じたマッピングを適用

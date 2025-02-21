@@ -1,0 +1,228 @@
+Logger initialization test
+[2025-02-21 09:04:22] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250221.log
+[2025-02-21 09:04:22] INFO [APIServer] APIサーバー起動
+[2025-02-21 09:04:22] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-21 09:04:22] DEBUG [APIServer] アプリケーション起動
+[2025-02-21 09:04:22] INFO [APIServer] Firestoreリスナー開始
+[2025-02-21 09:04:22] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-21 09:07:09] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:07:09] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:07:09] INFO [APIServer] データの変換を開始
+[2025-02-21 09:07:09] INFO [APIServer] データ変換完了
+[2025-02-21 09:07:09] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:07:09] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:07:09] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:07:09] ERROR [APIServer] 全体エラー: ''
+[2025-02-21 09:07:17] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:07:17] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:07:17] INFO [APIServer] データの変換を開始
+[2025-02-21 09:07:17] INFO [APIServer] データ変換完了
+[2025-02-21 09:07:17] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:07:17] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:07:17] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:07:17] ERROR [APIServer] 全体エラー: ''
+Logger initialization test
+[2025-02-21 09:08:10] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250221.log
+[2025-02-21 09:08:10] INFO [APIServer] APIサーバー起動
+[2025-02-21 09:08:10] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-21 09:08:10] DEBUG [APIServer] アプリケーション起動
+[2025-02-21 09:08:10] INFO [APIServer] Firestoreリスナー開始
+[2025-02-21 09:08:10] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-21 09:08:13] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:08:13] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:08:13] INFO [APIServer] データの変換を開始
+[2025-02-21 09:08:13] INFO [APIServer] データ変換完了
+[2025-02-21 09:08:13] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:08:13] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:08:13] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:08:13] ERROR [APIServer] 全体エラー: ''
+Logger initialization test
+[2025-02-21 09:09:35] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250221.log
+[2025-02-21 09:09:35] INFO [APIServer] APIサーバー起動
+[2025-02-21 09:09:35] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-21 09:09:35] DEBUG [APIServer] アプリケーション起動
+[2025-02-21 09:09:35] INFO [APIServer] Firestoreリスナー開始
+[2025-02-21 09:09:35] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-21 09:09:38] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:09:38] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:09:38] INFO [APIServer] データの変換を開始
+[2025-02-21 09:09:38] INFO [APIServer] データ変換完了
+[2025-02-21 09:09:38] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:09:38] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:09:38] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:09:38] ERROR [APIServer] 全体エラー: ''
+Logger initialization test
+[2025-02-21 09:16:41] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250221.log
+[2025-02-21 09:16:41] INFO [APIServer] APIサーバー起動
+[2025-02-21 09:16:41] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-21 09:16:41] DEBUG [APIServer] アプリケーション起動
+[2025-02-21 09:16:41] INFO [APIServer] Firestoreリスナー開始
+[2025-02-21 09:16:41] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-21 09:16:47] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:16:47] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:16:47] INFO [APIServer] データの変換を開始
+[2025-02-21 09:16:47] INFO [APIServer] データ変換完了
+[2025-02-21 09:16:47] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:16:47] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:16:47] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:16:47] ERROR [APIServer] 全体エラー: ''
+[2025-02-21 09:16:55] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:16:55] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:16:55] INFO [APIServer] データの変換を開始
+[2025-02-21 09:16:55] INFO [APIServer] データ変換完了
+[2025-02-21 09:16:55] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:16:55] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:16:55] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:16:55] ERROR [APIServer] 全体エラー: ''
+Logger initialization test
+[2025-02-21 09:19:40] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250221.log
+[2025-02-21 09:19:40] INFO [APIServer] APIサーバー起動
+[2025-02-21 09:19:40] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-21 09:19:40] DEBUG [APIServer] アプリケーション起動
+[2025-02-21 09:19:40] INFO [APIServer] Firestoreリスナー開始
+[2025-02-21 09:19:40] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-02-21 09:19:46] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:19:46] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:19:46] INFO [APIServer] データの変換を開始
+[2025-02-21 09:19:46] INFO [APIServer] データ変換完了
+[2025-02-21 09:19:46] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:19:46] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:19:46] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:19:46] ERROR [APIServer] 全体エラー: ''
+[2025-02-21 09:20:23] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:20:23] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:20:23] INFO [APIServer] データの変換を開始
+[2025-02-21 09:20:23] INFO [APIServer] データ変換完了
+[2025-02-21 09:20:23] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:20:23] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:20:23] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:20:23] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-02-21 09:20:28] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:20:28] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:20:28] INFO [APIServer] データの変換を開始
+[2025-02-21 09:20:28] INFO [APIServer] データ変換完了
+[2025-02-21 09:20:28] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:20:28] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:20:28] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:20:28] ERROR [APIServer] 全体エラー: ''
+[2025-02-21 09:21:13] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:21:13] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:21:13] INFO [APIServer] データの変換を開始
+[2025-02-21 09:21:13] INFO [APIServer] データ変換完了
+[2025-02-21 09:21:13] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:21:13] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:21:13] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:21:13] INFO [APIServer] 事前チェック完了
+[2025-02-21 09:22:18] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-21 09:23:34] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:23:34] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:23:34] INFO [APIServer] データの変換を開始
+[2025-02-21 09:23:34] INFO [APIServer] データ変換完了
+[2025-02-21 09:23:34] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:23:34] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:23:34] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:23:34] ERROR [APIServer] 全体エラー: ''
+[2025-02-21 09:23:55] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:23:55] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:23:55] INFO [APIServer] データの変換を開始
+[2025-02-21 09:23:55] INFO [APIServer] データ変換完了
+[2025-02-21 09:23:55] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:23:55] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:23:55] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:23:55] ERROR [APIServer] 全体エラー: ''
+[2025-02-21 09:29:16] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:29:16] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:29:16] INFO [APIServer] データの変換を開始
+[2025-02-21 09:29:16] INFO [APIServer] データ変換完了
+[2025-02-21 09:29:16] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:29:16] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:29:16] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:29:16] INFO [APIServer] 事前チェック完了
+[2025-02-21 09:29:32] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-21 09:32:23] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:32:23] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:32:23] INFO [APIServer] データの変換を開始
+[2025-02-21 09:32:23] INFO [APIServer] データ変換完了
+[2025-02-21 09:32:23] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:32:23] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:32:23] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:32:23] INFO [APIServer] 事前チェック完了
+[2025-02-21 09:32:59] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-21 09:35:37] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:35:37] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:35:37] INFO [APIServer] データの変換を開始
+[2025-02-21 09:35:37] INFO [APIServer] データ変換完了
+[2025-02-21 09:35:37] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:35:37] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:35:37] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:35:37] INFO [APIServer] 事前チェック完了
+[2025-02-21 09:36:12] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-21 09:37:03] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:37:03] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:37:03] INFO [APIServer] データの変換を開始
+[2025-02-21 09:37:03] INFO [APIServer] データ変換完了
+[2025-02-21 09:37:03] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:37:03] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:37:03] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:37:03] ERROR [APIServer] 全体エラー: ''
+[2025-02-21 09:37:42] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:37:42] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:37:42] INFO [APIServer] データの変換を開始
+[2025-02-21 09:37:42] INFO [APIServer] データ変換完了
+[2025-02-21 09:37:42] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:37:42] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:37:42] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:37:42] ERROR [APIServer] 全体エラー: ''
+[2025-02-21 09:47:47] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:47:47] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:47:47] INFO [APIServer] データの変換を開始
+[2025-02-21 09:47:47] INFO [APIServer] データ変換完了
+[2025-02-21 09:47:47] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:47:47] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:47:47] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:47:47] ERROR [APIServer] 全体エラー: ''
+[2025-02-21 09:51:20] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:51:20] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:51:20] INFO [APIServer] データの変換を開始
+[2025-02-21 09:51:20] INFO [APIServer] データ変換完了
+[2025-02-21 09:51:20] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:51:20] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:51:20] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:51:20] INFO [APIServer] 事前チェック完了
+[2025-02-21 09:51:56] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-02-21 09:54:26] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:54:26] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:54:26] INFO [APIServer] データの変換を開始
+[2025-02-21 09:54:26] INFO [APIServer] データ変換完了
+[2025-02-21 09:54:26] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:54:26] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:54:26] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:54:26] INFO [APIServer] 事前チェック完了
+[2025-02-21 09:55:01] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-21 09:55:18] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:55:18] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:55:18] INFO [APIServer] データの変換を開始
+[2025-02-21 09:55:18] INFO [APIServer] データ変換完了
+[2025-02-21 09:55:18] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:55:18] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:55:18] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:55:18] INFO [APIServer] 事前チェック完了
+[2025-02-21 09:55:53] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-21 09:56:26] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:56:26] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:56:26] INFO [APIServer] データの変換を開始
+[2025-02-21 09:56:26] INFO [APIServer] データ変換完了
+[2025-02-21 09:56:26] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:56:26] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:56:26] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:56:26] INFO [APIServer] 事前チェック完了
+[2025-02-21 09:57:01] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-02-21 09:57:12] INFO [APIServer] シフト生成リクエストを受信
+[2025-02-21 09:57:13] INFO [APIServer] JSONデータの変換を開始
+[2025-02-21 09:57:13] INFO [APIServer] データの変換を開始
+[2025-02-21 09:57:13] INFO [APIServer] データ変換完了
+[2025-02-21 09:57:13] INFO [APIServer] インスタンス化を開始
+[2025-02-21 09:57:13] INFO [APIServer] インスタンス化完了
+[2025-02-21 09:57:13] INFO [APIServer] 事前チェックを開始
+[2025-02-21 09:57:13] INFO [APIServer] 事前チェック完了
+[2025-02-21 09:57:48] DEBUG [APIServer] === ソルバー実行完了 ===

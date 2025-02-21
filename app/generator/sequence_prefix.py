@@ -89,6 +89,7 @@ class SequencePrefix:
             work_days = []
             remaining_holidays = staff.holiday_override or self.rule_data.holiday_count
             
+            # シフトデータを配列に変換
             for day in range(1, self.month_days + 1):
                 entry = next(
                     (e for e in shift_data.entries 
@@ -104,46 +105,51 @@ class SequencePrefix:
                 else:
                     work_days.append(1)  # 確定勤務
             
-            confirmed_consecutive = 0
-            blank_consecutive = 0
-            work_limit_plus_one = self.rule_data.consecutive_work_limit + 1
-            total_long_blank_slots = 0  # work_limit+1以上の連続空欄を合算
-            
-            for status in work_days:
-                if status == 1:  # 確定勤務
-                    confirmed_consecutive += 1
-                    if confirmed_consecutive >= work_limit_plus_one:
-                        msg = f"スタッフ「{staff.name}」に{work_limit_plus_one}日以上の連続勤務があります。"
+            # 連続勤務チェックの改善
+            work_limit = self.rule_data.consecutive_work_limit
+            i = 0
+            while i < len(work_days):
+                # 空欄または勤務を見つけた場合
+                if work_days[i] >= 0:  # 0:空欄 or 1:勤務
+                    consecutive_count = 0
+                    blank_count = 0
+                    start_day = i + 1  # 区間の開始日
+                    
+                    # 連続する空欄または勤務をカウント
+                    while i < len(work_days) and work_days[i] >= 0:
+                        if work_days[i] == 0:
+                            blank_count += 1
+                        else:  # work_days[i] == 1
+                            consecutive_count += 1
+                        i += 1
+                    
+                    total_span = blank_count + consecutive_count
+                    
+                    # 連続勤務制限違反のチェック
+                    if consecutive_count > work_limit:
+                        msg = (
+                            f"スタッフ「{staff.name}」に{consecutive_count}日の連続勤務があります。\n"
+                            f"（{start_day}日目から）"
+                        )
                         logger.error(msg)
                         write_notification(msg)
                         return True
-                elif status == 0:  # 空欄
-                    blank_consecutive += 1
-                    confirmed_consecutive = 0
-                else:  # 休み
-                    confirmed_consecutive = 0
-                    # work_limit+1以上の連続空欄があれば合算
-                    if blank_consecutive >= work_limit_plus_one:
-                        total_long_blank_slots += blank_consecutive
-                    blank_consecutive = 0
-            
-            # 最後の連続空欄も確認
-            if blank_consecutive >= work_limit_plus_one:
-                total_long_blank_slots += blank_consecutive
-            
-            # 合算した連続空欄から必要な休み日数を計算
-            if total_long_blank_slots > 0:
-                needed_holidays = total_long_blank_slots // work_limit_plus_one
-                if needed_holidays > remaining_holidays:
-                    msg = (
-                        f"スタッフ「{staff.name}」の連続空欄の合計{total_long_blank_slots}日に対して、\n"
-                        f"残り休み{remaining_holidays}日では連続勤務制限を守れません。\n"
-                        f"（{work_limit_plus_one}日ごとに1回の休みが必要で、最低{needed_holidays}日の休みが必要です）"
-                    )
-                    logger.error(msg)
-                    write_notification(msg)
-                    return True
-            
+                    
+                    # 空欄を含む区間で制限違反の可能性をチェック
+                    if total_span > work_limit:
+                        needed_holidays = total_span // (work_limit + 1)
+                        if needed_holidays > remaining_holidays:
+                            msg = (
+                                f"スタッフ「{staff.name}」の{start_day}日目からの区間で連続勤務制限違反の可能性があります：\n"
+                                f"・区間長: {total_span}日（空欄{blank_count}日＋確定勤務{consecutive_count}日）\n"
+                                f"・必要な休み日数: {needed_holidays}日\n"
+                                f"・残り休み日数: {remaining_holidays}日"
+                            )
+                            logger.error(msg)
+                            write_notification(msg)
+                            return True
+                else:
+                    i += 1
         return False
 
     def validate_consecutive_holiday_constraints(
