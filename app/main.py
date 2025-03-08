@@ -229,10 +229,13 @@ async def generate_shift():
                 )
                 
                 if solution:
-                    write_result_to_firestore(solution, input_data)  # 戻り値は使用しないので代入を省略
+                    # 目的関数値を取得して保存時に渡す
+                    objective_value = generator.last_objective_value
+                    write_result_to_firestore(solution, input_data, objective_value)
                     api_logger.debug("=== ソルバー実行完了 ===")
                     
-                    write_solution_printer_log("シフト生成が完了しました")  # 成功メッセージ
+                    # 成功メッセージと目的関数値をログに出力
+                    write_solution_printer_log("シフト生成が完了しました")
                     
                     # solutionを必要な形式に変換
                     shifts_dict = {}

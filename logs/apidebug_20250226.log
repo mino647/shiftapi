@@ -1,0 +1,14 @@
+Logger initialization test
+[2025-02-26 13:14:53] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250226.log
+[2025-02-26 13:14:53] INFO [APIServer] APIサーバー起動
+[2025-02-26 13:14:53] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-26 13:14:53] DEBUG [APIServer] アプリケーション起動
+[2025-02-26 13:14:53] INFO [APIServer] Firestoreリスナー開始
+[2025-02-26 13:14:53] INFO [APIServer] デバッグ用Firestoreリスナー開始
+Logger initialization test
+[2025-02-26 13:15:15] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250226.log
+[2025-02-26 13:15:15] INFO [APIServer] APIサーバー起動
+[2025-02-26 13:15:15] DEBUG [APIServer] ログシステム初期化完了
+[2025-02-26 13:15:15] DEBUG [APIServer] アプリケーション起動
+[2025-02-26 13:15:15] INFO [APIServer] Firestoreリスナー開始
+[2025-02-26 13:15:15] INFO [APIServer] デバッグ用Firestoreリスナー開始

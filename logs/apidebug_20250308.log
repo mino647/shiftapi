@@ -1,0 +1,128 @@
+Logger initialization test
+[2025-03-08 06:29:33] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250308.log
+[2025-03-08 06:29:33] INFO [APIServer] APIサーバー起動
+[2025-03-08 06:29:33] DEBUG [APIServer] ログシステム初期化完了
+[2025-03-08 06:29:33] DEBUG [APIServer] アプリケーション起動
+[2025-03-08 06:29:33] INFO [APIServer] Firestoreリスナー開始
+[2025-03-08 06:29:33] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-03-08 06:29:50] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-08 06:29:50] INFO [APIServer] JSONデータの変換を開始
+[2025-03-08 06:29:50] INFO [APIServer] データの変換を開始
+[2025-03-08 06:29:50] INFO [APIServer] データ変換完了
+[2025-03-08 06:29:50] INFO [APIServer] インスタンス化を開始
+[2025-03-08 06:29:50] INFO [APIServer] インスタンス化完了
+[2025-03-08 06:29:50] INFO [APIServer] 事前チェックを開始
+[2025-03-08 06:29:50] INFO [APIServer] 事前チェック完了
+[2025-03-08 06:29:56] DEBUG [APIServer] === ソルバー実行完了 ===
+Logger initialization test
+[2025-03-08 06:31:15] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250308.log
+[2025-03-08 06:31:15] INFO [APIServer] APIサーバー起動
+[2025-03-08 06:31:15] DEBUG [APIServer] ログシステム初期化完了
+[2025-03-08 06:31:15] DEBUG [APIServer] アプリケーション起動
+[2025-03-08 06:31:15] INFO [APIServer] Firestoreリスナー開始
+[2025-03-08 06:31:15] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-03-08 06:31:43] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-08 06:31:43] INFO [APIServer] JSONデータの変換を開始
+[2025-03-08 06:31:43] INFO [APIServer] データの変換を開始
+[2025-03-08 06:31:43] INFO [APIServer] データ変換完了
+[2025-03-08 06:31:43] INFO [APIServer] インスタンス化を開始
+[2025-03-08 06:31:43] INFO [APIServer] インスタンス化完了
+[2025-03-08 06:31:43] INFO [APIServer] 事前チェックを開始
+[2025-03-08 06:31:43] INFO [APIServer] 事前チェック完了
+[2025-03-08 06:31:50] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-08 06:49:22] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-08 06:49:22] INFO [APIServer] JSONデータの変換を開始
+[2025-03-08 06:49:22] INFO [APIServer] データの変換を開始
+[2025-03-08 06:49:22] INFO [APIServer] データ変換完了
+[2025-03-08 06:49:22] INFO [APIServer] インスタンス化を開始
+[2025-03-08 06:49:22] INFO [APIServer] インスタンス化完了
+[2025-03-08 06:49:22] INFO [APIServer] 事前チェックを開始
+[2025-03-08 06:49:22] INFO [APIServer] 事前チェック完了
+[2025-03-08 06:49:24] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-08 06:50:20] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-08 06:50:20] INFO [APIServer] JSONデータの変換を開始
+[2025-03-08 06:50:20] INFO [APIServer] データの変換を開始
+[2025-03-08 06:50:20] INFO [APIServer] データ変換完了
+[2025-03-08 06:50:20] INFO [APIServer] インスタンス化を開始
+[2025-03-08 06:50:20] INFO [APIServer] インスタンス化完了
+[2025-03-08 06:50:20] INFO [APIServer] 事前チェックを開始
+[2025-03-08 06:50:20] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-03-08 06:50:35] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-08 06:50:35] INFO [APIServer] JSONデータの変換を開始
+[2025-03-08 06:50:35] INFO [APIServer] データの変換を開始
+[2025-03-08 06:50:35] INFO [APIServer] データ変換完了
+[2025-03-08 06:50:35] INFO [APIServer] インスタンス化を開始
+[2025-03-08 06:50:35] INFO [APIServer] インスタンス化完了
+[2025-03-08 06:50:35] INFO [APIServer] 事前チェックを開始
+[2025-03-08 06:50:35] INFO [APIServer] 事前チェック完了
+[2025-03-08 06:50:36] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-08 06:51:19] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-08 06:51:19] INFO [APIServer] JSONデータの変換を開始
+[2025-03-08 06:51:19] INFO [APIServer] データの変換を開始
+[2025-03-08 06:51:19] INFO [APIServer] データ変換完了
+[2025-03-08 06:51:19] INFO [APIServer] インスタンス化を開始
+[2025-03-08 06:51:19] INFO [APIServer] インスタンス化完了
+[2025-03-08 06:51:19] INFO [APIServer] 事前チェックを開始
+[2025-03-08 06:51:19] INFO [APIServer] 事前チェック完了
+[2025-03-08 06:51:23] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-08 06:51:44] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-08 06:51:44] INFO [APIServer] JSONデータの変換を開始
+[2025-03-08 06:51:44] INFO [APIServer] データの変換を開始
+[2025-03-08 06:51:44] INFO [APIServer] データ変換完了
+[2025-03-08 06:51:44] INFO [APIServer] インスタンス化を開始
+[2025-03-08 06:51:44] INFO [APIServer] インスタンス化完了
+[2025-03-08 06:51:44] INFO [APIServer] 事前チェックを開始
+[2025-03-08 06:51:44] INFO [APIServer] 事前チェック完了
+[2025-03-08 06:51:47] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-08 06:52:09] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-08 06:52:09] INFO [APIServer] JSONデータの変換を開始
+[2025-03-08 06:52:09] INFO [APIServer] データの変換を開始
+[2025-03-08 06:52:09] INFO [APIServer] データ変換完了
+[2025-03-08 06:52:09] INFO [APIServer] インスタンス化を開始
+[2025-03-08 06:52:09] INFO [APIServer] インスタンス化完了
+[2025-03-08 06:52:09] INFO [APIServer] 事前チェックを開始
+[2025-03-08 06:52:09] INFO [APIServer] 事前チェック完了
+[2025-03-08 06:52:10] DEBUG [APIServer] === ソルバー実行完了 ===
+Logger initialization test
+[2025-03-08 15:36:08] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250308.log
+[2025-03-08 15:36:08] INFO [APIServer] APIサーバー起動
+[2025-03-08 15:36:08] DEBUG [APIServer] ログシステム初期化完了
+[2025-03-08 15:36:08] DEBUG [APIServer] アプリケーション起動
+[2025-03-08 15:36:08] INFO [APIServer] Firestoreリスナー開始
+[2025-03-08 15:36:08] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-03-08 15:36:35] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-08 15:36:35] INFO [APIServer] JSONデータの変換を開始
+[2025-03-08 15:36:35] INFO [APIServer] データの変換を開始
+[2025-03-08 15:36:35] INFO [APIServer] データ変換完了
+[2025-03-08 15:36:35] INFO [APIServer] インスタンス化を開始
+[2025-03-08 15:36:35] INFO [APIServer] インスタンス化完了
+[2025-03-08 15:36:35] INFO [APIServer] 事前チェックを開始
+[2025-03-08 15:36:35] INFO [APIServer] 事前チェック完了
+[2025-03-08 15:36:38] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-08 15:40:08] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-08 15:40:08] INFO [APIServer] JSONデータの変換を開始
+[2025-03-08 15:40:08] INFO [APIServer] データの変換を開始
+[2025-03-08 15:40:08] INFO [APIServer] データ変換完了
+[2025-03-08 15:40:08] INFO [APIServer] インスタンス化を開始
+[2025-03-08 15:40:08] INFO [APIServer] インスタンス化完了
+[2025-03-08 15:40:08] INFO [APIServer] 事前チェックを開始
+[2025-03-08 15:40:08] INFO [APIServer] 事前チェック完了
+[2025-03-08 15:40:12] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-08 15:40:17] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-08 15:40:17] INFO [APIServer] JSONデータの変換を開始
+[2025-03-08 15:40:17] INFO [APIServer] データの変換を開始
+[2025-03-08 15:40:17] INFO [APIServer] データ変換完了
+[2025-03-08 15:40:17] INFO [APIServer] インスタンス化を開始
+[2025-03-08 15:40:17] INFO [APIServer] インスタンス化完了
+[2025-03-08 15:40:17] INFO [APIServer] 事前チェックを開始
+[2025-03-08 15:40:17] INFO [APIServer] 事前チェック完了
+[2025-03-08 15:40:20] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-08 15:40:36] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-08 15:40:36] INFO [APIServer] JSONデータの変換を開始
+[2025-03-08 15:40:36] INFO [APIServer] データの変換を開始
+[2025-03-08 15:40:36] INFO [APIServer] データ変換完了
+[2025-03-08 15:40:36] INFO [APIServer] インスタンス化を開始
+[2025-03-08 15:40:36] INFO [APIServer] インスタンス化完了
+[2025-03-08 15:40:36] INFO [APIServer] 事前チェックを開始
+[2025-03-08 15:40:36] INFO [APIServer] 事前チェック完了
+[2025-03-08 15:40:39] DEBUG [APIServer] === ソルバー実行完了 ===

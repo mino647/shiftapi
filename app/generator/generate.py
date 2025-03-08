@@ -78,12 +78,17 @@ class SolutionPrinter(cp_model.CpSolverSolutionCallback):
         self.__solutions = 0
         self.__start_time = time.time()
         self.progress_callback = progress_callback
+        # 最適な目的関数値を保存する変数を追加
+        self.best_objective_value = None
 
     def on_solution_callback(self):
         self.__solutions += 1
         current_time = time.time()
         elapsed_time = current_time - self.__start_time
         objective_val = self.ObjectiveValue()
+        # 目的関数値を更新
+        self.best_objective_value = objective_val
+        
         message = (
             f"解 {self.__solutions} が見つかりました "
             f"(経過時間: {elapsed_time:.1f}秒, 目的関数値: {objective_val:.0f})"
@@ -164,6 +169,9 @@ class ShiftGenerator:
         }
         if weights:
             self.CONSTRAINT_WEIGHTS = weights
+        
+        # 目的関数値を保持するインスタンス変数を追加
+        self.last_objective_value = None
 
     def get_weekday_array(self, year: int, month: int, days_in_month: int) -> List[int]:
         """月の日付配列を曜日配列に変換（0=月曜、6=日曜）"""
@@ -367,6 +375,12 @@ class ShiftGenerator:
                 write_solution_printer_log(f"ターボモード: {solver.parameters.num_search_workers}スレッドで実行")
                 solver.parameters.max_time_in_seconds = shift_data.search_time
                 status = solver.Solve(model, solution_printer)
+                
+                # 目的関数値を取得して保存
+                if status in (cp_model.OPTIMAL, cp_model.FEASIBLE):
+                    self.last_objective_value = solution_printer.best_objective_value
+                else:
+                    self.last_objective_value = None
             else:
                 # バランスモード（マルチプロセス）
                 if available_threads <= 2:
@@ -503,4 +517,5 @@ class ShiftGenerator:
             logger.error(f"エラーが発生: {str(e)}")
             if progress_callback:
                 progress_callback(f"エラーが発生: {str(e)}")
+            self.last_objective_value = None  # エラー時は目的関数値をNoneに設定
             return None

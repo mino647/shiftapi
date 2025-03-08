@@ -12,6 +12,7 @@ from absl import logging as absl_logging
 from google.cloud.firestore import SERVER_TIMESTAMP
 import requests
 from google.cloud.firestore import transactional
+from typing import Optional
 
 # abseilのログ初期化
 absl_logging.set_verbosity(absl_logging.INFO)
@@ -111,22 +112,33 @@ class DebugFirestoreListener:
         except Exception as e:
             logger.error(f"デバッグ用リスナーの開始に失敗: {e}")
 
-def write_result_to_firestore(solution, input_data: dict) -> str:
+def write_result_to_firestore(solution, input_data: dict, objective_value: Optional[float] = None) -> str:
     """生成結果をFirestoreに保存する"""
     try:
         db = get_firestore_client()
         results_ref = db.collection('results')
         
-        # 全ての結果を取得して古いものを削除
+        # 全ての結果を取得
         all_results = results_ref.get()
-        sorted_results = sorted(all_results, key=lambda x: x.id, reverse=True)  # IDで降順ソート
-        if len(sorted_results) >= 10:
-            # 10件を超える古いドキュメントを削除
-            for old_doc in sorted_results[9:]:  # 最新の10件以外を削除
+        
+        # 各ドキュメントのデータを安全に取得して判定
+        unlocked_docs = []
+        for doc in all_results:
+            doc_dict = doc.to_dict()
+            if doc_dict and not doc_dict.get('isLocked', False):
+                unlocked_docs.append(doc)
+        
+        # ロックされていないものだけを日付降順でソート
+        sorted_unlocked = sorted(unlocked_docs, key=lambda x: x.id, reverse=True)
+        
+        # 保存件数を15件に増やす
+        if len(sorted_unlocked) >= 15:
+            # 最新の15件以外のロックされていないドキュメントを削除
+            for old_doc in sorted_unlocked[15:]:
                 old_doc.reference.delete()
         
         # ドキュメントID生成
-        timestamp = datetime.now().strftime('%Y-%m%d-%H%M%S')  # %Sで秒を追加
+        timestamp = datetime.now().strftime('%Y-%m%d-%H%M%S')
         doc_id = timestamp
         
         # ShiftDataを必要な形式に変換
@@ -145,15 +157,20 @@ def write_result_to_firestore(solution, input_data: dict) -> str:
         new_result = {
             'status': 'success',
             'created_at': SERVER_TIMESTAMP,
-            'edit': formatted_shifts  # editキーでラップしたシフトデータのみ
+            'edit': formatted_shifts,  # editキーでラップしたシフトデータ
+            'isLocked': False  # デフォルトではロックしない状態で保存
         }
+        
+        # 目的関数値が提供されている場合は追加
+        if objective_value is not None:
+            new_result['objective_value'] = objective_value
         
         results_ref.document(doc_id).set(new_result)
         return doc_id
         
     except Exception as e:
         logger.error(f"Firestoreへの書き込みに失敗: {e}")
-        raise 
+        raise
 
 def write_notification(message: str) -> None:
     """制約違反などの通知メッセージをFirestoreに保存する"""
