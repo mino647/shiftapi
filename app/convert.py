@@ -102,7 +102,7 @@ def convert_constraint(constraint: dict, include_preference_fields: bool = False
         },
         
         # value3までのパターン
-        ("シフトパターン", "連続勤務", "日勤帯連勤", "連続休暇", "連休保証", "シフトバランス"): {
+        ("シフトパターン", "連続勤務", "日勤帯連勤", "連続休暇", "連休保証", "シフトバランス", "シフト間隔"): {
             "type": "type",
             "category": "category",
             "sub_category": "value1",
@@ -194,7 +194,7 @@ def convert_staff_constraint(constraint: dict) -> dict:
     # スタッフ用の制約マッピング定義
     STAFF_CONSTRAINT_MAPPINGS = {
         # value2までのパターン（countなし）
-        ("勤務希望", "カスタムプリセット"): {
+        ("勤務希望", "カスタムプリセット", "出シフト"): {
             "type": "type",
             "category": "category",
             "sub_category": "value1",
@@ -202,7 +202,7 @@ def convert_staff_constraint(constraint: dict) -> dict:
         },
         
         # value3までのパターン（timesなし）
-        ("シフトパターン", "連続勤務", "日勤帯連勤", "連続休暇", "シフトバランス"): {
+        ("シフトパターン", "連続勤務", "日勤帯連勤", "連続休暇", "シフトバランス", "シフト間隔"): {
             "type": "type",
             "category": "category",
             "sub_category": "value1",
@@ -331,6 +331,7 @@ def convert_weightdata(web_data: dict) -> dict:
             "ペアリング": web_data["weightData"]["ペアリング"],
             "セパレート": web_data["weightData"]["セパレート"],
             "カスタムプリセット": web_data["weightData"]["カスタムプリセット"],
+            "シフト間隔": web_data["weightData"]["シフト間隔"],
             # 固定値
             "シフトバランス": 300,
             "夜勤ペア重複": -3000,

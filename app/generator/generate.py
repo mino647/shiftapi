@@ -34,9 +34,10 @@ from .mapping import (
 from .basic_library import BasicLibrary
 from .pattern_library import PatternLibrary
 from .sequence_library import SequenceLibrary
+from .alternative_library import AlternativeLibrary
 
 
-class ShiftConstraintLibrary(BasicLibrary, PatternLibrary, SequenceLibrary):
+class ShiftConstraintLibrary(BasicLibrary, PatternLibrary, SequenceLibrary, AlternativeLibrary):
     """制約ライブラリを統合するクラス"""
     def __init__(
         self,
@@ -146,6 +147,8 @@ class ShiftGenerator:
         "add_custom_preset_constraint",
         "add_local_holiday_guarantee_constraint",
         "add_global_holiday_guarantee_constraint",
+        "add_local_shift_interval_constraint", 
+        "add_specific_day_shift_constraint"
     ]
 
     def __init__(self, weights: Optional[Dict] = None):

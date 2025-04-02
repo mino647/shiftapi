@@ -1,0 +1,31 @@
+Logger initialization test
+[2025-03-11 15:23:10] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250311.log
+[2025-03-11 15:23:10] INFO [APIServer] APIサーバー起動
+[2025-03-11 15:23:10] DEBUG [APIServer] ログシステム初期化完了
+[2025-03-11 15:23:10] DEBUG [APIServer] アプリケーション起動
+[2025-03-11 15:23:10] INFO [APIServer] Firestoreリスナー開始
+[2025-03-11 15:23:10] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-03-13 06:23:56] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-13 06:23:56] INFO [APIServer] JSONデータの変換を開始
+[2025-03-13 06:23:56] INFO [APIServer] データの変換を開始
+[2025-03-13 06:23:56] INFO [APIServer] データ変換完了
+[2025-03-13 06:23:56] INFO [APIServer] インスタンス化を開始
+[2025-03-13 06:23:56] INFO [APIServer] インスタンス化完了
+[2025-03-13 06:23:56] INFO [APIServer] 事前チェックを開始
+[2025-03-13 06:23:56] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-03-13 23:09:54] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-13 23:09:54] INFO [APIServer] JSONデータの変換を開始
+[2025-03-13 23:09:54] INFO [APIServer] データの変換を開始
+[2025-03-13 23:09:54] INFO [APIServer] データ変換完了
+[2025-03-13 23:09:54] INFO [APIServer] インスタンス化を開始
+[2025-03-13 23:09:54] INFO [APIServer] インスタンス化完了
+[2025-03-13 23:09:54] INFO [APIServer] 事前チェックを開始
+[2025-03-13 23:09:54] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-03-14 02:34:12] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-14 02:34:12] INFO [APIServer] JSONデータの変換を開始
+[2025-03-14 02:34:12] INFO [APIServer] データの変換を開始
+[2025-03-14 02:34:12] INFO [APIServer] データ変換完了
+[2025-03-14 02:34:12] INFO [APIServer] インスタンス化を開始
+[2025-03-14 02:34:12] INFO [APIServer] インスタンス化完了
+[2025-03-14 02:34:12] INFO [APIServer] 事前チェックを開始
+[2025-03-14 02:34:12] INFO [APIServer] 事前チェックでエラーが検出されました

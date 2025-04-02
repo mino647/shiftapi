@@ -337,68 +337,289 @@ class PatternLibrary:
                 if constraint.category != "曜日希望":
                     continue
 
-                # シフトタイプの正規化
-                shift_type = self.SHIFT_TYPE_MAPPING.get(str(constraint.times), str(constraint.times))
-                if shift_type not in self.SHIFT_TYPES:
-                    logger.warning(f"無効な勤務区分: {constraint.times}")
-                    continue
-
-                # 曜日の取得（"月曜日"→0, "火曜日"→1, ...）
-                weekday = "月火水木金土日".index(constraint.target.replace("曜日", ""))
-
-                # 対象日の特定（weekday()の値をそのまま使用）
-                weekday_array = [datetime(self.year, self.month, d+1).weekday() for d in range(self.days_in_month)]
-                target_days = []
-
-                if constraint.count == "全て":
-                    # その曜日の全ての日を対象とする
-                    target_days = [day for day in range(self.days_in_month) if weekday_array[day] == weekday]
-                else:
-                    # "第N"の数値を取得（"第一"→0, "第二"→1, ...）
-                    if not constraint.count:
-                        continue
-                    # 文字列を配列に分割して処理
-                    nth = ["第一", "第二", "第三", "第四", "第五"].index(constraint.count)
-                    
-                    # その曜日が出現する日付を順番に収集
-                    weekday_occurrences = [
-                        day + 1 for day in range(self.days_in_month)
-                        if datetime(self.year, self.month, day+1).weekday() == weekday
-                    ]
-                    
-                    # 指定された順番の曜日を追加（nth=0が第一に対応）
-                    if nth < len(weekday_occurrences):
-                        target_days = [weekday_occurrences[nth] - 1]  # 0-basedに戻す
-
-                if not target_days:
-                    logger.warning(
-                        f"対象の曜日が見つかりません: {constraint.count}{constraint.target}"
-                        f"（{self.year}年{self.month}月）"
-                    )
-                    continue
-
-                # 好き/嫌いの処理
-                is_aversion = (constraint.sub_category == "嫌悪")
+                # 出勤（早番/日勤/遅番のいずれか）の特別処理
+                is_working_shift = constraint.times == "出勤"
                 
-                if constraint.type == "必須":
-                    for day in target_days:
-                        if is_aversion:
-                            c = self.model.Add(self.shifts[(staff.name, day, shift_type)] == 0)
-                            c.WithName(f"【曜日希望_必須】{staff.name}: {day+1}日は{shift_type}を避ける")
-                        else:
-                            c = self.model.Add(self.shifts[(staff.name, day, shift_type)] == 1)
-                            c.WithName(f"【曜日希望_必須】{staff.name}: {day+1}日は{shift_type}")
-                else:  # 選好制約
-                    weight = self.constraint_weights["選好"]["曜日希望"]
-                    for day in target_days:
-                        if is_aversion:
-                            self.objective_terms.append(
-                                -self.shifts[(staff.name, day, shift_type)] * weight
-                            )
-                        else:
-                            self.objective_terms.append(
-                                self.shifts[(staff.name, day, shift_type)] * weight
-                            )
+                # 通常の処理（出勤以外の場合）
+                if not is_working_shift:
+                    # シフトタイプの正規化
+                    shift_type = self.SHIFT_TYPE_MAPPING.get(str(constraint.times), str(constraint.times))
+                    if shift_type not in self.SHIFT_TYPES:
+                        logger.warning(f"無効な勤務区分: {constraint.times}")
+                        continue
+
+                # 「土／日」の特殊処理
+                is_weekend = constraint.target == "土／日"
+                
+                if is_weekend:
+                    # 土曜日(5)と日曜日(6)のペアを検出
+                    weekend_pairs = []
+                    
+                    # 曜日配列を生成（0=月曜日, 1=火曜日, ..., 6=日曜日）
+                    weekday_array = [datetime(self.year, self.month, d+1).weekday() for d in range(self.days_in_month)]
+                    
+                    # 土曜日（5）の位置を全て取得
+                    saturday_indexes = [i for i, wd in enumerate(weekday_array) if wd == 5]
+                    
+                    # 各土曜日に対応する日曜日（翌日）が月内にあるかチェック
+                    for sat_idx in saturday_indexes:
+                        sun_idx = sat_idx + 1
+                        if sun_idx < self.days_in_month and weekday_array[sun_idx] == 6:
+                            weekend_pairs.append((sat_idx, sun_idx))
+                    
+                    # 「第N」または「全て」の処理
+                    target_pairs = []
+                    if constraint.count == "全て":
+                        # すべてのペアを対象にする
+                        target_pairs = weekend_pairs
+                    else:
+                        # 「第一」「第二」など、特定の週を対象にする
+                        try:
+                            nth = ["第一", "第二", "第三", "第四", "第五"].index(constraint.count)
+                            if nth < len(weekend_pairs):
+                                target_pairs = [weekend_pairs[nth]]
+                        except (ValueError, IndexError):
+                            logger.warning(f"無効な週指定: {constraint.count}")
+                            continue
+                    
+                    if not target_pairs:
+                        logger.warning(f"対象の土／日ペアが見つかりません: {constraint.count}{constraint.target}")
+                        continue
+                    
+                    # 好き/嫌いの処理
+                    is_aversion = (constraint.sub_category == "嫌悪")
+                    
+                    if constraint.type == "必須":
+                        # 各ペアに対して処理
+                        for sat_idx, sun_idx in target_pairs:
+                            if is_working_shift:
+                                # 出勤シフト（早番/日勤/遅番）の特別処理
+                                if is_aversion:
+                                    # 嫌悪：少なくとも1日は出勤しない（両方出勤はNG）
+                                    c = self.model.Add(
+                                        self.shifts[(staff.name, sat_idx, "▲")] + self.shifts[(staff.name, sat_idx, "日")] + self.shifts[(staff.name, sat_idx, "▼")] +
+                                        self.shifts[(staff.name, sun_idx, "▲")] + self.shifts[(staff.name, sun_idx, "日")] + self.shifts[(staff.name, sun_idx, "▼")] <= 5
+                                    )
+                                    c.WithName(f"【曜日希望_必須】{staff.name}: {sat_idx+1}日(土)or{sun_idx+1}日(日)は出勤しない")
+                                else:
+                                    # 愛好：少なくとも1日は出勤する
+                                    c = self.model.Add(
+                                        self.shifts[(staff.name, sat_idx, "▲")] + self.shifts[(staff.name, sat_idx, "日")] + self.shifts[(staff.name, sat_idx, "▼")] +
+                                        self.shifts[(staff.name, sun_idx, "▲")] + self.shifts[(staff.name, sun_idx, "日")] + self.shifts[(staff.name, sun_idx, "▼")] >= 1
+                                    )
+                                    c.WithName(f"【曜日希望_必須】{staff.name}: {sat_idx+1}日(土)or{sun_idx+1}日(日)は出勤")
+                            else:
+                                # 通常シフト（指定されたタイプ）
+                                if is_aversion:
+                                    # 嫌悪：少なくとも1日は指定シフトでない（両方指定シフトはNG）
+                                    c = self.model.Add(
+                                        self.shifts[(staff.name, sat_idx, shift_type)] + 
+                                        self.shifts[(staff.name, sun_idx, shift_type)] <= 1
+                                    )
+                                    c.WithName(f"【曜日希望_必須】{staff.name}: {sat_idx+1}日(土)or{sun_idx+1}日(日)は{shift_type}にしない")
+                                else:
+                                    # 愛好：少なくとも1日は指定シフトになる
+                                    c = self.model.Add(
+                                        self.shifts[(staff.name, sat_idx, shift_type)] + 
+                                        self.shifts[(staff.name, sun_idx, shift_type)] >= 1
+                                    )
+                                    c.WithName(f"【曜日希望_必須】{staff.name}: {sat_idx+1}日(土)or{sun_idx+1}日(日)は{shift_type}")
+                    else:
+                        # 選好制約
+                        weight = self.constraint_weights["選好"]["曜日希望"]
+                        
+                        # 各ペアに対して処理
+                        for sat_idx, sun_idx in target_pairs:
+                            if is_working_shift:
+                                # 出勤シフト（早番/日勤/遅番）の特別処理
+                                if is_aversion:
+                                    # 嫌悪：両方出勤の場合にペナルティ
+                                    both_working = self.model.NewBoolVar(f'both_working_{staff.name}_{sat_idx}_{sun_idx}')
+                                    
+                                    # 土曜日が出勤か
+                                    sat_working = self.model.NewBoolVar(f'sat_working_{staff.name}_{sat_idx}')
+                                    self.model.Add(
+                                        self.shifts[(staff.name, sat_idx, "▲")] + 
+                                        self.shifts[(staff.name, sat_idx, "日")] + 
+                                        self.shifts[(staff.name, sat_idx, "▼")] >= 1
+                                    ).OnlyEnforceIf(sat_working)
+                                    self.model.Add(
+                                        self.shifts[(staff.name, sat_idx, "▲")] + 
+                                        self.shifts[(staff.name, sat_idx, "日")] + 
+                                        self.shifts[(staff.name, sat_idx, "▼")] == 0
+                                    ).OnlyEnforceIf(sat_working.Not())
+                                    
+                                    # 日曜日が出勤か
+                                    sun_working = self.model.NewBoolVar(f'sun_working_{staff.name}_{sun_idx}')
+                                    self.model.Add(
+                                        self.shifts[(staff.name, sun_idx, "▲")] + 
+                                        self.shifts[(staff.name, sun_idx, "日")] + 
+                                        self.shifts[(staff.name, sun_idx, "▼")] >= 1
+                                    ).OnlyEnforceIf(sun_working)
+                                    self.model.Add(
+                                        self.shifts[(staff.name, sun_idx, "▲")] + 
+                                        self.shifts[(staff.name, sun_idx, "日")] + 
+                                        self.shifts[(staff.name, sun_idx, "▼")] == 0
+                                    ).OnlyEnforceIf(sun_working.Not())
+                                    
+                                    # 両方出勤の場合
+                                    self.model.AddBoolAnd([sat_working, sun_working]).OnlyEnforceIf(both_working)
+                                    self.model.AddBoolOr([sat_working.Not(), sun_working.Not()]).OnlyEnforceIf(both_working.Not())
+                                    
+                                    # ペナルティを加算
+                                    self.objective_terms.append(-both_working * weight)
+                                else:
+                                    # 愛好：少なくとも1日出勤で報酬
+                                    any_working = self.model.NewBoolVar(f'any_working_{staff.name}_{sat_idx}_{sun_idx}')
+                                    
+                                    # 土曜日か日曜日のいずれかが出勤
+                                    self.model.Add(
+                                        self.shifts[(staff.name, sat_idx, "▲")] + self.shifts[(staff.name, sat_idx, "日")] + self.shifts[(staff.name, sat_idx, "▼")] +
+                                        self.shifts[(staff.name, sun_idx, "▲")] + self.shifts[(staff.name, sun_idx, "日")] + self.shifts[(staff.name, sun_idx, "▼")] >= 1
+                                    ).OnlyEnforceIf(any_working)
+                                    self.model.Add(
+                                        self.shifts[(staff.name, sat_idx, "▲")] + self.shifts[(staff.name, sat_idx, "日")] + self.shifts[(staff.name, sat_idx, "▼")] +
+                                        self.shifts[(staff.name, sun_idx, "▲")] + self.shifts[(staff.name, sun_idx, "日")] + self.shifts[(staff.name, sun_idx, "▼")] == 0
+                                    ).OnlyEnforceIf(any_working.Not())
+                                    
+                                    # 報酬を加算
+                                    self.objective_terms.append(any_working * weight)
+                            else:
+                                # 通常シフト（指定されたタイプ）
+                                if is_aversion:
+                                    # 嫌悪：両方指定シフトの場合にペナルティ
+                                    both_shifts = self.model.NewBoolVar(f'both_{shift_type}_{staff.name}_{sat_idx}_{sun_idx}')
+                                    self.model.Add(
+                                        self.shifts[(staff.name, sat_idx, shift_type)] + 
+                                        self.shifts[(staff.name, sun_idx, shift_type)] == 2
+                                    ).OnlyEnforceIf(both_shifts)
+                                    self.model.Add(
+                                        self.shifts[(staff.name, sat_idx, shift_type)] + 
+                                        self.shifts[(staff.name, sun_idx, shift_type)] <= 1
+                                    ).OnlyEnforceIf(both_shifts.Not())
+                                    
+                                    # ペナルティを加算
+                                    self.objective_terms.append(-both_shifts * weight)
+                                else:
+                                    # 愛好：少なくとも1日指定シフトで報酬
+                                    any_shift = self.model.NewBoolVar(f'any_{shift_type}_{staff.name}_{sat_idx}_{sun_idx}')
+                                    self.model.Add(
+                                        self.shifts[(staff.name, sat_idx, shift_type)] + 
+                                        self.shifts[(staff.name, sun_idx, shift_type)] >= 1
+                                    ).OnlyEnforceIf(any_shift)
+                                    self.model.Add(
+                                        self.shifts[(staff.name, sat_idx, shift_type)] + 
+                                        self.shifts[(staff.name, sun_idx, shift_type)] == 0
+                                    ).OnlyEnforceIf(any_shift.Not())
+                                    
+                                    # 報酬を加算
+                                    self.objective_terms.append(any_shift * weight)
+                else:
+                    # 通常の曜日処理
+                    # 曜日の取得（"月曜日"→0, "火曜日"→1, ...）
+                    weekday = "月火水木金土日".index(constraint.target.replace("曜日", ""))
+                    
+                    # 対象日の特定（weekday()の値をそのまま使用）
+                    weekday_array = [datetime(self.year, self.month, d+1).weekday() for d in range(self.days_in_month)]
+                    target_days = []
+
+                    if constraint.count == "全て":
+                        # その曜日の全ての日を対象とする
+                        target_days = [day for day in range(self.days_in_month) if weekday_array[day] == weekday]
+                    else:
+                        # "第N"の数値を取得（"第一"→0, "第二"→1, ...）
+                        if not constraint.count:
+                            continue
+                        # 文字列を配列に分割して処理
+                        nth = ["第一", "第二", "第三", "第四", "第五"].index(constraint.count)
+                        
+                        # その曜日が出現する日付を順番に収集
+                        weekday_occurrences = [
+                            day + 1 for day in range(self.days_in_month)
+                            if datetime(self.year, self.month, day+1).weekday() == weekday
+                        ]
+                        
+                        # 指定された順番の曜日を追加（nth=0が第一に対応）
+                        if nth < len(weekday_occurrences):
+                            target_days = [weekday_occurrences[nth] - 1]  # 0-basedに戻す
+
+                    if not target_days:
+                        logger.warning(
+                            f"対象の曜日が見つかりません: {constraint.count}{constraint.target}"
+                            f"（{self.year}年{self.month}月）"
+                        )
+                        continue
+
+                    # 好き/嫌いの処理
+                    is_aversion = (constraint.sub_category == "嫌悪")
+                    
+                    if constraint.type == "必須":
+                        for day in target_days:
+                            if is_working_shift:  # 出勤の特別処理
+                                if is_aversion:
+                                    # 嫌悪：早番/日勤/遅番のいずれも入れない
+                                    c = self.model.Add(
+                                        self.shifts[(staff.name, day, "▲")] + 
+                                        self.shifts[(staff.name, day, "日")] + 
+                                        self.shifts[(staff.name, day, "▼")] == 0
+                                    )
+                                    c.WithName(f"【曜日希望_必須】{staff.name}: {day+1}日は出勤を避ける")
+                                else:
+                                    # 愛好：早番/日勤/遅番のいずれかが入る
+                                    c = self.model.Add(
+                                        self.shifts[(staff.name, day, "▲")] + 
+                                        self.shifts[(staff.name, day, "日")] + 
+                                        self.shifts[(staff.name, day, "▼")] >= 1
+                                    )
+                                    c.WithName(f"【曜日希望_必須】{staff.name}: {day+1}日は出勤")
+                            else:  # 通常の処理
+                                if is_aversion:
+                                    c = self.model.Add(self.shifts[(staff.name, day, shift_type)] == 0)
+                                    c.WithName(f"【曜日希望_必須】{staff.name}: {day+1}日は{shift_type}を避ける")
+                                else:
+                                    c = self.model.Add(self.shifts[(staff.name, day, shift_type)] == 1)
+                                    c.WithName(f"【曜日希望_必須】{staff.name}: {day+1}日は{shift_type}")
+                    else:  # 選好制約
+                        weight = self.constraint_weights["選好"]["曜日希望"]
+                        for day in target_days:
+                            if is_working_shift:  # 出勤の特別処理
+                                if is_aversion:
+                                    # 嫌悪：早番/日勤/遅番のいずれかが入るとペナルティ
+                                    is_working = self.model.NewBoolVar(f'is_working_{staff.name}_{day}')
+                                    self.model.Add(
+                                        self.shifts[(staff.name, day, "▲")] + 
+                                        self.shifts[(staff.name, day, "日")] + 
+                                        self.shifts[(staff.name, day, "▼")] >= 1
+                                    ).OnlyEnforceIf(is_working)
+                                    self.model.Add(
+                                        self.shifts[(staff.name, day, "▲")] + 
+                                        self.shifts[(staff.name, day, "日")] + 
+                                        self.shifts[(staff.name, day, "▼")] == 0
+                                    ).OnlyEnforceIf(is_working.Not())
+                                    self.objective_terms.append(-is_working * weight)
+                                else:
+                                    # 愛好：早番/日勤/遅番のいずれかが入ると報酬
+                                    is_working = self.model.NewBoolVar(f'is_working_{staff.name}_{day}')
+                                    self.model.Add(
+                                        self.shifts[(staff.name, day, "▲")] + 
+                                        self.shifts[(staff.name, day, "日")] + 
+                                        self.shifts[(staff.name, day, "▼")] >= 1
+                                    ).OnlyEnforceIf(is_working)
+                                    self.model.Add(
+                                        self.shifts[(staff.name, day, "▲")] + 
+                                        self.shifts[(staff.name, day, "日")] + 
+                                        self.shifts[(staff.name, day, "▼")] == 0
+                                    ).OnlyEnforceIf(is_working.Not())
+                                    self.objective_terms.append(is_working * weight)
+                            else:  # 通常の処理
+                                if is_aversion:
+                                    self.objective_terms.append(
+                                        -self.shifts[(staff.name, day, shift_type)] * weight
+                                    )
+                                else:
+                                    self.objective_terms.append(
+                                        self.shifts[(staff.name, day, shift_type)] * weight
+                                    )
 
         logger.debug("曜日希望制約の設定完了")
 

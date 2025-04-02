@@ -1,0 +1,381 @@
+Logger initialization test
+[2025-03-23 16:04:52] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250323.log
+[2025-03-23 16:04:52] INFO [APIServer] APIサーバー起動
+[2025-03-23 16:04:52] DEBUG [APIServer] ログシステム初期化完了
+[2025-03-23 16:04:52] DEBUG [APIServer] アプリケーション起動
+[2025-03-23 16:04:52] INFO [APIServer] Firestoreリスナー開始
+[2025-03-23 16:04:52] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-03-23 16:56:33] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 16:56:33] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 16:56:33] INFO [APIServer] データの変換を開始
+[2025-03-23 16:56:33] INFO [APIServer] データ変換完了
+[2025-03-23 16:56:33] INFO [APIServer] インスタンス化を開始
+[2025-03-23 16:56:33] INFO [APIServer] インスタンス化完了
+[2025-03-23 16:56:33] INFO [APIServer] 事前チェックを開始
+[2025-03-23 16:56:33] INFO [APIServer] 事前チェック完了
+[2025-03-23 16:56:42] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 19:04:07] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 19:04:07] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 19:04:07] INFO [APIServer] データの変換を開始
+[2025-03-23 19:04:07] INFO [APIServer] データ変換完了
+[2025-03-23 19:04:07] INFO [APIServer] インスタンス化を開始
+[2025-03-23 19:04:07] INFO [APIServer] インスタンス化完了
+[2025-03-23 19:04:07] INFO [APIServer] 事前チェックを開始
+[2025-03-23 19:04:07] INFO [APIServer] 事前チェック完了
+[2025-03-23 19:04:14] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 19:04:47] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 19:04:47] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 19:04:47] INFO [APIServer] データの変換を開始
+[2025-03-23 19:04:47] INFO [APIServer] データ変換完了
+[2025-03-23 19:04:47] INFO [APIServer] インスタンス化を開始
+[2025-03-23 19:04:47] INFO [APIServer] インスタンス化完了
+[2025-03-23 19:04:47] INFO [APIServer] 事前チェックを開始
+[2025-03-23 19:04:47] INFO [APIServer] 事前チェック完了
+[2025-03-23 19:05:23] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-23 19:06:22] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 19:06:23] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 19:06:23] INFO [APIServer] データの変換を開始
+[2025-03-23 19:06:23] INFO [APIServer] データ変換完了
+[2025-03-23 19:06:23] INFO [APIServer] インスタンス化を開始
+[2025-03-23 19:06:23] INFO [APIServer] インスタンス化完了
+[2025-03-23 19:06:23] INFO [APIServer] 事前チェックを開始
+[2025-03-23 19:06:23] INFO [APIServer] 事前チェック完了
+[2025-03-23 19:06:59] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-23 19:08:24] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 19:08:24] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 19:08:24] INFO [APIServer] データの変換を開始
+[2025-03-23 19:08:24] INFO [APIServer] データ変換完了
+[2025-03-23 19:08:24] INFO [APIServer] インスタンス化を開始
+[2025-03-23 19:08:24] INFO [APIServer] インスタンス化完了
+[2025-03-23 19:08:24] INFO [APIServer] 事前チェックを開始
+[2025-03-23 19:08:24] INFO [APIServer] 事前チェック完了
+[2025-03-23 19:09:01] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-23 20:03:28] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-03-23 20:03:28] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-03-23 20:03:28] DEBUG [APIServer] === データ変換開始 ===
+[2025-03-23 20:03:28] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-03-23 20:03:28] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-03-23 20:03:28] DEBUG [APIServer] インスタンス化完了
+[2025-03-23 20:03:28] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-03-23 20:03:28] DEBUG [APIServer] スタッフデータ数: 15
+[2025-03-23 20:03:28] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=9, consecutive_work_limit=6, weekday_staff=1.5, weekday_preference_level=None, sunday_staff=0.5, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='日勤', target='日勤', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='日勤', final='遅番', target='遅番', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='遅番', final='夜勤', target='夜勤', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='回避', count='遅番', final='早番', target='早番', weight=500, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='回避', count='日勤', final='早番', target='早番', weight=100, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='回避', count='遅番', final='日勤', target='日勤', weight=100, times='全員'), RuleConstraint(type='選好', category='日勤帯連勤', sub_category='回避', count='四連勤', final='以上', target='以上', weight=2001, times='全員'), RuleConstraint(type='必須', category='連休保証', sub_category='推奨', count='二連休', final='1回まで', target='1回まで', weight=50, times='全員'), RuleConstraint(type='必須', category='ペア重複', sub_category='回避', count='夜勤', final='3回', target='以上', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトバランス', sub_category='推奨', count='早番と遅番', final='早＋1', target='早＋1', weight=300, times='全員'), RuleConstraint(type='選好', category='シフトバランス', sub_category='推奨', count='早番と遅番', final='丁度', target='丁度', weight=300, times='全員'), RuleConstraint(type='必須', category='連続シフト', sub_category='回避', count='早番', final='3回', target='以上', weight=50, times='全員'), RuleConstraint(type='必須', category='連続シフト', sub_category='回避', count='遅番', final='3回', target='以上', weight=50, times='全員'), RuleConstraint(type='必須', category='連続シフト', sub_category='回避', count='夜勤', final='4回', target='以上', weight=50, times='全員'), RuleConstraint(type='選好', category='連続勤務', sub_category='回避', count='五連勤', final='以上', target='以上', weight=5001, times='全員')])
+[2025-03-23 20:03:28] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=4, search_time=30, entries=[ShiftEntry(staff_name='わた', day=2, shift_type='公', role='主任', is_part_time=False), ShiftEntry(staff_name='わた', day=3, shift_type='公', role='主任', is_part_time=False), ShiftEntry(staff_name='わた', day=4, shift_type='公', role='主任', is_part_time=False), ShiftEntry(staff_name='わた', day=8, shift_type='公', role='主任', is_part_time=False), ShiftEntry(staff_name='わた', day=11, shift_type='公', role='主任', is_part_time=False), ShiftEntry(staff_name='わた', day=19, shift_type='公', role='主任', is_part_time=False), ShiftEntry(staff_name='わた', day=20, shift_type='公', role='主任', is_part_time=False), ShiftEntry(staff_name='わた', day=21, shift_type='公', role='主任', is_part_time=False), ShiftEntry(staff_name='やま', day=1, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='やま', day=15, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='やま', day=17, shift_type='／', role='副主任', is_part_time=False), ShiftEntry(staff_name='やま', day=18, shift_type='×', role='副主任', is_part_time=False), ShiftEntry(staff_name='やま', day=19, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='やま', day=20, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='やま', day=21, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='やま', day=29, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='なーが', day=1, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='なーが', day=15, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='なーが', day=16, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='なーが', day=17, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='なーが', day=18, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='なーが', day=23, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たお', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たお', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たお', day=11, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たお', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たお', day=18, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たお', day=19, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たお', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たお', day=25, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たお', day=26, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ごと', day=1, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ごと', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ごと', day=4, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ごと', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ごと', day=10, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ごと', day=11, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ごと', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=1, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=3, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=4, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=6, shift_type='▲', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=7, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=8, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=9, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=11, shift_type='▲', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=13, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=18, shift_type='▲', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=19, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=20, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=21, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=25, shift_type='▲', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=26, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=27, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=28, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こばや', day=29, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='しん', day=11, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='しん', day=12, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='しん', day=13, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='しん', day=17, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='しん', day=18, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='しん', day=19, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くろ', day=9, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くろ', day=10, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=4, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=5, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=11, shift_type='▲', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=13, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=18, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=19, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=22, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=25, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=26, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=27, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やし', day=29, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='はや', day=2, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='はや', day=3, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='はや', day=4, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='はや', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='はや', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='はや', day=13, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='はや', day=18, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='はや', day=19, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='はや', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='はや', day=27, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='はや', day=29, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='かん', day=11, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='かん', day=12, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='かん', day=13, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='かね', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='かね', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こば', day=10, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こば', day=11, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こば', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=3, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=4, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=7, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=8, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=9, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=10, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=11, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=13, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=14, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やま', day=3, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='ちーば', day=1, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=16, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=17, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=18, shift_type='▼', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=23, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=2, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=3, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=4, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=7, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=8, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=9, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=10, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=11, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ちーば', day=13, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=1, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=26, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ハン', day=27, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='はや', day=1, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='かん', day=1, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='こば', day=1, shift_type='▼', role='一般職員', is_part_time=False), ShiftEntry(staff_name='しん', day=1, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='かね', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くろ', day=20, shift_type='▲', role='一般職員', is_part_time=False), ShiftEntry(staff_name='わた', day=15, shift_type='▲', role='主任', is_part_time=False), ShiftEntry(staff_name='かね', day=1, shift_type='▼', role='一般職員', is_part_time=False), ShiftEntry(staff_name='やま', day=2, shift_type='▼', role='副主任', is_part_time=False), ShiftEntry(staff_name='ハン', day=5, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='かね', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='かね', day=27, shift_type='公', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-03-23 20:04:04] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-23 20:04:04] INFO [APIServer] シフト生成成功
+[2025-03-23 20:04:58] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:04:58] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:04:58] INFO [APIServer] データの変換を開始
+[2025-03-23 20:04:58] INFO [APIServer] データ変換完了
+[2025-03-23 20:04:58] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:04:58] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:04:58] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:04:58] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:05:04] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:06:18] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:06:19] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:06:19] INFO [APIServer] データの変換を開始
+[2025-03-23 20:06:19] INFO [APIServer] データ変換完了
+[2025-03-23 20:06:19] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:06:19] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:06:19] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:06:19] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:06:27] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:07:35] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:07:35] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:07:35] INFO [APIServer] データの変換を開始
+[2025-03-23 20:07:35] INFO [APIServer] データ変換完了
+[2025-03-23 20:07:35] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:07:35] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:07:35] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:07:35] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:07:44] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:07:57] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:07:57] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:07:57] INFO [APIServer] データの変換を開始
+[2025-03-23 20:07:57] INFO [APIServer] データ変換完了
+[2025-03-23 20:07:57] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:07:57] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:07:57] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:07:57] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:08:05] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:14:08] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:14:08] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:14:08] INFO [APIServer] データの変換を開始
+[2025-03-23 20:14:08] INFO [APIServer] データ変換完了
+[2025-03-23 20:14:08] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:14:08] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:14:08] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:14:08] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-03-23 20:14:45] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:14:45] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:14:45] INFO [APIServer] データの変換を開始
+[2025-03-23 20:14:45] INFO [APIServer] データ変換完了
+[2025-03-23 20:14:45] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:14:45] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:14:45] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:14:45] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:15:21] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-23 20:17:22] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:17:22] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:17:22] INFO [APIServer] データの変換を開始
+[2025-03-23 20:17:22] INFO [APIServer] データ変換完了
+[2025-03-23 20:17:22] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:17:22] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:17:22] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:17:22] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:17:33] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:23:45] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:23:46] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:23:46] INFO [APIServer] データの変換を開始
+[2025-03-23 20:23:46] INFO [APIServer] データ変換完了
+[2025-03-23 20:23:46] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:23:46] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:23:46] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:23:46] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:23:57] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:24:15] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:24:15] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:24:15] INFO [APIServer] データの変換を開始
+[2025-03-23 20:24:15] INFO [APIServer] データ変換完了
+[2025-03-23 20:24:15] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:24:15] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:24:15] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:24:15] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:24:26] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:25:26] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:25:26] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:25:26] INFO [APIServer] データの変換を開始
+[2025-03-23 20:25:26] INFO [APIServer] データ変換完了
+[2025-03-23 20:25:26] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:25:26] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:25:26] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:25:26] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:25:37] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:26:00] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:26:00] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:26:00] INFO [APIServer] データの変換を開始
+[2025-03-23 20:26:00] INFO [APIServer] データ変換完了
+[2025-03-23 20:26:00] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:26:00] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:26:00] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:26:00] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:26:12] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:26:40] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:26:40] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:26:40] INFO [APIServer] データの変換を開始
+[2025-03-23 20:26:40] INFO [APIServer] データ変換完了
+[2025-03-23 20:26:40] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:26:40] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:26:40] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:26:40] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:26:51] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:36:18] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:36:19] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:36:19] INFO [APIServer] データの変換を開始
+[2025-03-23 20:36:19] INFO [APIServer] データ変換完了
+[2025-03-23 20:36:19] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:36:19] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:36:19] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:36:19] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:36:30] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:36:51] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:36:51] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:36:51] INFO [APIServer] データの変換を開始
+[2025-03-23 20:36:51] INFO [APIServer] データ変換完了
+[2025-03-23 20:36:51] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:36:51] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:36:51] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:36:51] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:37:02] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:42:41] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:42:41] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:42:41] INFO [APIServer] データの変換を開始
+[2025-03-23 20:42:41] INFO [APIServer] データ変換完了
+[2025-03-23 20:42:41] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:42:41] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:42:41] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:42:41] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:42:53] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:49:09] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:49:09] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:49:09] INFO [APIServer] データの変換を開始
+[2025-03-23 20:49:09] INFO [APIServer] データ変換完了
+[2025-03-23 20:49:09] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:49:09] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:49:09] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:49:09] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:49:21] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:49:37] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:49:37] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:49:37] INFO [APIServer] データの変換を開始
+[2025-03-23 20:49:37] INFO [APIServer] データ変換完了
+[2025-03-23 20:49:37] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:49:37] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:49:37] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:49:37] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-03-23 20:50:30] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:50:30] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:50:30] INFO [APIServer] データの変換を開始
+[2025-03-23 20:50:30] INFO [APIServer] データ変換完了
+[2025-03-23 20:50:30] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:50:30] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:50:30] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:50:30] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:50:42] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:50:55] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:50:55] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:50:55] INFO [APIServer] データの変換を開始
+[2025-03-23 20:50:55] INFO [APIServer] データ変換完了
+[2025-03-23 20:50:55] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:50:55] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:50:55] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:50:55] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-03-23 20:51:22] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:51:22] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:51:22] INFO [APIServer] データの変換を開始
+[2025-03-23 20:51:22] INFO [APIServer] データ変換完了
+[2025-03-23 20:51:22] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:51:22] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:51:22] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:51:22] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:51:35] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:52:40] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:52:40] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:52:40] INFO [APIServer] データの変換を開始
+[2025-03-23 20:52:40] INFO [APIServer] データ変換完了
+[2025-03-23 20:52:40] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:52:40] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:52:40] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:52:40] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:52:52] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 20:53:20] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 20:53:21] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 20:53:21] INFO [APIServer] データの変換を開始
+[2025-03-23 20:53:21] INFO [APIServer] データ変換完了
+[2025-03-23 20:53:21] INFO [APIServer] インスタンス化を開始
+[2025-03-23 20:53:21] INFO [APIServer] インスタンス化完了
+[2025-03-23 20:53:21] INFO [APIServer] 事前チェックを開始
+[2025-03-23 20:53:21] INFO [APIServer] 事前チェック完了
+[2025-03-23 20:53:33] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 21:14:19] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 21:14:19] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 21:14:19] INFO [APIServer] データの変換を開始
+[2025-03-23 21:14:19] INFO [APIServer] データ変換完了
+[2025-03-23 21:14:19] INFO [APIServer] インスタンス化を開始
+[2025-03-23 21:14:19] INFO [APIServer] インスタンス化完了
+[2025-03-23 21:14:19] INFO [APIServer] 事前チェックを開始
+[2025-03-23 21:14:19] INFO [APIServer] 事前チェック完了
+[2025-03-23 21:14:31] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 21:14:47] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 21:14:47] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 21:14:47] INFO [APIServer] データの変換を開始
+[2025-03-23 21:14:47] INFO [APIServer] データ変換完了
+[2025-03-23 21:14:47] INFO [APIServer] インスタンス化を開始
+[2025-03-23 21:14:47] INFO [APIServer] インスタンス化完了
+[2025-03-23 21:14:47] INFO [APIServer] 事前チェックを開始
+[2025-03-23 21:14:47] INFO [APIServer] 事前チェック完了
+[2025-03-23 21:14:58] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 21:18:07] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-03-23 21:18:07] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-03-23 21:18:07] DEBUG [APIServer] === データ変換開始 ===
+[2025-03-23 21:18:07] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-03-23 21:18:07] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-03-23 21:18:07] DEBUG [APIServer] インスタンス化完了
+[2025-03-23 21:18:07] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-03-23 21:18:07] DEBUG [APIServer] スタッフデータ数: 16
+[2025-03-23 21:18:07] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=6, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='日勤', final='遅番', target='遅番', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='遅番', final='夜勤', target='夜勤', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='回避', count='遅番', final='日勤', target='日勤', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='回避', count='日勤', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='回避', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='必須', category='シフトパターン', sub_category='回避', count='遅番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='回避', count='休み', final='夜勤', target='夜勤', weight=500, times='全員'), RuleConstraint(type='選好', category='連続勤務', sub_category='回避', count='五連勤', final='以上', target='以上', weight=3001, times='全員'), RuleConstraint(type='選好', category='日勤帯連勤', sub_category='回避', count='四連勤', final='以上', target='以上', weight=3001, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=200, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='回避', count='三連休', final='以上', target='以上', weight=1001, times='全員'), RuleConstraint(type='必須', category='連休保証', sub_category='推奨', count='二連休', final='1回まで', target='1回まで', weight=100, times='全員'), RuleConstraint(type='選好', category='ペア重複', sub_category='回避', count='早番', final='3回', target='以上', weight=50, times='全員'), RuleConstraint(type='必須', category='ペア重複', sub_category='回避', count='夜勤', final='3回', target='以上', weight=50, times='全員'), RuleConstraint(type='必須', category='連続シフト', sub_category='回避', count='早番', final='3回', target='以上', weight=50, times='全員'), RuleConstraint(type='必須', category='連続シフト', sub_category='回避', count='遅番', final='3回', target='以上', weight=50, times='全員'), RuleConstraint(type='必須', category='連続シフト', sub_category='回避', count='夜勤', final='3回', target='以上', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトバランス', sub_category='推奨', count='早番と遅番', final='丁度', target='丁度', weight=300, times='全員'), RuleConstraint(type='選好', category='シフトバランス', sub_category='推奨', count='早番と遅番', final='早＋1', target='早＋1', weight=300, times='全員')])
+[2025-03-23 21:18:07] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=4, search_time=20, entries=[ShiftEntry(staff_name='とり', day=1, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='とり', day=2, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='とり', day=3, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='とり', day=14, shift_type='／', role='副主任', is_part_time=False), ShiftEntry(staff_name='とり', day=15, shift_type='×', role='副主任', is_part_time=False), ShiftEntry(staff_name='とり', day=16, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='とり', day=17, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='くに', day=4, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くに', day=5, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くに', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くに', day=7, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くに', day=27, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くに', day=29, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろ', day=3, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろ', day=9, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろ', day=21, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='さく', day=1, shift_type='▲', role='一般職員', is_part_time=False), ShiftEntry(staff_name='さく', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='さく', day=10, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='さく', day=19, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='さく', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='さく', day=26, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひで', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひで', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひで', day=10, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひで', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひで', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='えみ', day=7, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='えみ', day=14, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='えみ', day=19, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='えみ', day=21, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='えみ', day=28, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='おか', day=1, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='おか', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='おか', day=11, shift_type='☆', role='一般職員', is_part_time=False), ShiftEntry(staff_name='おか', day=25, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=13, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=17, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=19, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=26, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=27, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=29, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くし', day=1, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くし', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くし', day=3, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くし', day=4, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くし', day=26, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たざと', day=22, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=22, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=23, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=24, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=25, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=26, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=27, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=28, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たけ', day=1, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たけ', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たけ', day=7, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たけ', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たけ', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たけ', day=29, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くさち', day=4, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くさち', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='きじ', day=1, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='きじ', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='きじ', day=3, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='きじ', day=7, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=1, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=4, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=11, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=13, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=17, shift_type='☆', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=23, shift_type='☆', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=22, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=28, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=19, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=26, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=27, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろこ', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろこ', day=8, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろこ', day=9, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろこ', day=19, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろこ', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろこ', day=21, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=29, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くさち', day=1, shift_type='公', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-03-23 21:18:10] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-23 21:18:10] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 21:18:20] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-03-23 21:18:20] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-03-23 21:18:20] DEBUG [APIServer] === データ変換開始 ===
+[2025-03-23 21:18:20] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-03-23 21:18:20] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-03-23 21:18:20] DEBUG [APIServer] インスタンス化完了
+[2025-03-23 21:18:20] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-03-23 21:18:20] DEBUG [APIServer] スタッフデータ数: 16
+[2025-03-23 21:18:20] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=10, consecutive_work_limit=6, weekday_staff=2.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='日勤', final='遅番', target='遅番', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='推奨', count='遅番', final='夜勤', target='夜勤', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='回避', count='遅番', final='日勤', target='日勤', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='回避', count='日勤', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='回避', count='早番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='必須', category='シフトパターン', sub_category='回避', count='遅番', final='早番', target='早番', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトパターン', sub_category='回避', count='休み', final='夜勤', target='夜勤', weight=500, times='全員'), RuleConstraint(type='選好', category='連続勤務', sub_category='回避', count='五連勤', final='以上', target='以上', weight=3001, times='全員'), RuleConstraint(type='選好', category='日勤帯連勤', sub_category='回避', count='四連勤', final='以上', target='以上', weight=3001, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='推奨', count='二連休', final='丁度', target='丁度', weight=200, times='全員'), RuleConstraint(type='選好', category='連続休暇', sub_category='回避', count='三連休', final='以上', target='以上', weight=1001, times='全員'), RuleConstraint(type='必須', category='連休保証', sub_category='推奨', count='二連休', final='1回まで', target='1回まで', weight=100, times='全員'), RuleConstraint(type='選好', category='ペア重複', sub_category='回避', count='早番', final='3回', target='以上', weight=50, times='全員'), RuleConstraint(type='必須', category='ペア重複', sub_category='回避', count='夜勤', final='3回', target='以上', weight=50, times='全員'), RuleConstraint(type='必須', category='連続シフト', sub_category='回避', count='早番', final='3回', target='以上', weight=50, times='全員'), RuleConstraint(type='必須', category='連続シフト', sub_category='回避', count='遅番', final='3回', target='以上', weight=50, times='全員'), RuleConstraint(type='必須', category='連続シフト', sub_category='回避', count='夜勤', final='3回', target='以上', weight=50, times='全員'), RuleConstraint(type='選好', category='シフトバランス', sub_category='推奨', count='早番と遅番', final='丁度', target='丁度', weight=300, times='全員'), RuleConstraint(type='選好', category='シフトバランス', sub_category='推奨', count='早番と遅番', final='早＋1', target='早＋1', weight=300, times='全員')])
+[2025-03-23 21:18:20] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=4, search_time=20, entries=[ShiftEntry(staff_name='とり', day=1, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='とり', day=2, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='とり', day=3, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='とり', day=14, shift_type='／', role='副主任', is_part_time=False), ShiftEntry(staff_name='とり', day=15, shift_type='×', role='副主任', is_part_time=False), ShiftEntry(staff_name='とり', day=16, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='とり', day=17, shift_type='公', role='副主任', is_part_time=False), ShiftEntry(staff_name='くに', day=4, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くに', day=5, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くに', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くに', day=7, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くに', day=27, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くに', day=29, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろ', day=3, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろ', day=9, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろ', day=21, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='さく', day=1, shift_type='▲', role='一般職員', is_part_time=False), ShiftEntry(staff_name='さく', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='さく', day=10, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='さく', day=19, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='さく', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='さく', day=26, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひで', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひで', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひで', day=10, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひで', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひで', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='えみ', day=7, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='えみ', day=14, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='えみ', day=19, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='えみ', day=21, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='えみ', day=28, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='おか', day=1, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='おか', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='おか', day=11, shift_type='☆', role='一般職員', is_part_time=False), ShiftEntry(staff_name='おか', day=25, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=13, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=17, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=19, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=26, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=27, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='すあん', day=29, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くし', day=1, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くし', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くし', day=3, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くし', day=4, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くし', day=26, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たざと', day=22, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=22, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=23, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=24, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=25, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=26, shift_type='／', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=27, shift_type='×', role='一般職員', is_part_time=False), ShiftEntry(staff_name='のぐち', day=28, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たけ', day=1, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たけ', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たけ', day=7, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たけ', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たけ', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='たけ', day=29, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くさち', day=4, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くさち', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='きじ', day=1, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='きじ', day=2, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='きじ', day=3, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='きじ', day=7, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=1, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=4, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=6, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=11, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=12, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=13, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=17, shift_type='☆', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=23, shift_type='☆', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=22, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=28, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=19, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=26, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=27, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろこ', day=5, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろこ', day=8, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろこ', day=9, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろこ', day=19, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろこ', day=20, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='ひろこ', day=21, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='あべ', day=29, shift_type='公', role='一般職員', is_part_time=False), ShiftEntry(staff_name='くさち', day=1, shift_type='公', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-03-23 21:18:45] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-23 21:18:45] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 21:19:13] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 21:19:13] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 21:19:13] INFO [APIServer] データの変換を開始
+[2025-03-23 21:19:13] INFO [APIServer] データ変換完了
+[2025-03-23 21:19:13] INFO [APIServer] インスタンス化を開始
+[2025-03-23 21:19:13] INFO [APIServer] インスタンス化完了
+[2025-03-23 21:19:13] INFO [APIServer] 事前チェックを開始
+[2025-03-23 21:19:13] INFO [APIServer] 事前チェック完了
+[2025-03-23 21:19:26] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-03-23 21:20:48] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 21:20:48] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 21:20:48] INFO [APIServer] データの変換を開始
+[2025-03-23 21:20:48] INFO [APIServer] データ変換完了
+[2025-03-23 21:20:48] INFO [APIServer] インスタンス化を開始
+[2025-03-23 21:20:48] INFO [APIServer] インスタンス化完了
+[2025-03-23 21:20:48] INFO [APIServer] 事前チェックを開始
+[2025-03-23 21:20:48] INFO [APIServer] 事前チェック完了
+[2025-03-23 21:21:15] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-23 21:23:00] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 21:23:00] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 21:23:00] INFO [APIServer] データの変換を開始
+[2025-03-23 21:23:00] INFO [APIServer] データ変換完了
+[2025-03-23 21:23:00] INFO [APIServer] インスタンス化を開始
+[2025-03-23 21:23:00] INFO [APIServer] インスタンス化完了
+[2025-03-23 21:23:00] INFO [APIServer] 事前チェックを開始
+[2025-03-23 21:23:00] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-03-23 21:23:50] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 21:23:50] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 21:23:50] INFO [APIServer] データの変換を開始
+[2025-03-23 21:23:50] INFO [APIServer] データ変換完了
+[2025-03-23 21:23:50] INFO [APIServer] インスタンス化を開始
+[2025-03-23 21:23:50] INFO [APIServer] インスタンス化完了
+[2025-03-23 21:23:50] INFO [APIServer] 事前チェックを開始
+[2025-03-23 21:23:50] INFO [APIServer] 事前チェック完了
+[2025-03-23 21:24:16] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-23 21:24:59] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 21:24:59] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 21:24:59] INFO [APIServer] データの変換を開始
+[2025-03-23 21:24:59] INFO [APIServer] データ変換完了
+[2025-03-23 21:24:59] INFO [APIServer] インスタンス化を開始
+[2025-03-23 21:24:59] INFO [APIServer] インスタンス化完了
+[2025-03-23 21:24:59] INFO [APIServer] 事前チェックを開始
+[2025-03-23 21:24:59] INFO [APIServer] 事前チェック完了
+[2025-03-23 21:25:25] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-23 21:27:21] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 21:27:21] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 21:27:21] INFO [APIServer] データの変換を開始
+[2025-03-23 21:27:21] INFO [APIServer] データ変換完了
+[2025-03-23 21:27:21] INFO [APIServer] インスタンス化を開始
+[2025-03-23 21:27:21] INFO [APIServer] インスタンス化完了
+[2025-03-23 21:27:21] INFO [APIServer] 事前チェックを開始
+[2025-03-23 21:27:21] INFO [APIServer] 事前チェック完了
+[2025-03-23 21:27:48] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-23 21:38:29] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 21:38:29] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 21:38:29] INFO [APIServer] データの変換を開始
+[2025-03-23 21:38:29] INFO [APIServer] データ変換完了
+[2025-03-23 21:38:29] INFO [APIServer] インスタンス化を開始
+[2025-03-23 21:38:29] INFO [APIServer] インスタンス化完了
+[2025-03-23 21:38:29] INFO [APIServer] 事前チェックを開始
+[2025-03-23 21:38:29] INFO [APIServer] 事前チェック完了
+[2025-03-23 21:38:56] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-23 21:45:15] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 21:45:15] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 21:45:15] INFO [APIServer] データの変換を開始
+[2025-03-23 21:45:15] INFO [APIServer] データ変換完了
+[2025-03-23 21:45:15] INFO [APIServer] インスタンス化を開始
+[2025-03-23 21:45:15] INFO [APIServer] インスタンス化完了
+[2025-03-23 21:45:15] INFO [APIServer] 事前チェックを開始
+[2025-03-23 21:45:15] INFO [APIServer] 事前チェック完了
+[2025-03-23 21:45:42] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-03-23 21:46:44] INFO [APIServer] シフト生成リクエストを受信
+[2025-03-23 21:46:44] INFO [APIServer] JSONデータの変換を開始
+[2025-03-23 21:46:44] INFO [APIServer] データの変換を開始
+[2025-03-23 21:46:44] INFO [APIServer] データ変換完了
+[2025-03-23 21:46:44] INFO [APIServer] インスタンス化を開始
+[2025-03-23 21:46:44] INFO [APIServer] インスタンス化完了
+[2025-03-23 21:46:44] INFO [APIServer] 事前チェックを開始
+[2025-03-23 21:46:44] INFO [APIServer] 事前チェック完了
+[2025-03-23 21:47:11] DEBUG [APIServer] === ソルバー実行完了 ===

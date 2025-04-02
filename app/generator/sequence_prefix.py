@@ -84,7 +84,10 @@ class SequencePrefix:
         staff_data_list: List[StaffData],
         shift_data: ShiftData
     ) -> bool:
-        """連続勤務制限のチェック"""
+        """連続勤務制限のチェック
+        
+        各スタッフのシフトデータを分析し、連続勤務制限を超える可能性がある場合にエラーを出す。
+        """
         for staff in staff_data_list:
             work_days = []
             remaining_holidays = staff.holiday_override or self.rule_data.holiday_count
@@ -111,24 +114,36 @@ class SequencePrefix:
             while i < len(work_days):
                 # 空欄または勤務を見つけた場合
                 if work_days[i] >= 0:  # 0:空欄 or 1:勤務
-                    consecutive_count = 0
-                    blank_count = 0
+                    # 区間内の勤務と空欄をカウント
+                    work_count_in_section = 0  # 区間内の総勤務数
+                    blank_count = 0  # 区間内の空欄数
                     start_day = i + 1  # 区間の開始日
                     
-                    # 連続する空欄または勤務をカウント
+                    # 実際の連続勤務カウント用の変数
+                    max_consecutive_days = 0  # 実際の最大連続勤務日数
+                    current_consecutive = 0  # 現在の連続勤務日数
+                    
+                    # 休み(-1)が出現するまで区間として処理
+                    section_start = i
                     while i < len(work_days) and work_days[i] >= 0:
-                        if work_days[i] == 0:
+                        if work_days[i] == 0:  # 空欄
                             blank_count += 1
-                        else:  # work_days[i] == 1
-                            consecutive_count += 1
+                            # 空欄が出現したら連続勤務カウントをリセット
+                            current_consecutive = 0
+                        else:  # 確定勤務
+                            work_count_in_section += 1
+                            # 連続勤務カウントを増やす
+                            current_consecutive += 1
+                            # 最大連続勤務日数を更新
+                            max_consecutive_days = max(max_consecutive_days, current_consecutive)
                         i += 1
                     
-                    total_span = blank_count + consecutive_count
+                    total_span = blank_count + work_count_in_section
                     
-                    # 連続勤務制限違反のチェック
-                    if consecutive_count > work_limit:
+                    # 実際の連続勤務日数が制限を超えているかチェック
+                    if max_consecutive_days > work_limit:
                         msg = (
-                            f"スタッフ「{staff.name}」に{consecutive_count}日の連続勤務があります。\n"
+                            f"スタッフ「{staff.name}」に{max_consecutive_days}日の連続勤務があります。\n"
                             f"（{start_day}日目から）"
                         )
                         logger.error(msg)
@@ -141,9 +156,9 @@ class SequencePrefix:
                         if needed_holidays > remaining_holidays:
                             msg = (
                                 f"スタッフ「{staff.name}」の{start_day}日目からの区間で連続勤務制限違反の可能性があります：\n"
-                                f"・区間長: {total_span}日（空欄{blank_count}日＋確定勤務{consecutive_count}日）\n"
+                                f"・区間長: {total_span}日（空欄{blank_count}日＋確定勤務{work_count_in_section}日）\n"
                                 f"・必要な休み日数: {needed_holidays}日\n"
-                                f"・残り休み日数: {remaining_holidays}日"
+                                f"・残り休日数: {remaining_holidays}日"
                             )
                             logger.error(msg)
                             write_notification(msg)

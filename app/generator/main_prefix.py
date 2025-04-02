@@ -18,6 +18,7 @@ from .mapping import (
 from .basic_prefix import BasicPrefix
 from .pattern_prefix import PatternPrefix
 from .sequence_prefix import SequencePrefix
+from .alternative_prefix import AlternativePrefix
 from ..firebase_client import write_notification
 
 class PrefixManager:
@@ -45,6 +46,7 @@ class PrefixManager:
         self.basic = BasicPrefix(year, month, rule_data)
         self.pattern = PatternPrefix(year, month, rule_data)
         self.sequence = SequencePrefix(year, month, rule_data)
+        self.alternative = AlternativePrefix(year, month, rule_data)
 
     def check_constraints(
         self,
@@ -78,6 +80,10 @@ class PrefixManager:
 
         # 連続性チェック
         if not self.sequence.check_constraints(staff_data_list, shift_data):
+            return False
+
+        # オルタナティブ制約チェック
+        if not self.alternative.check_constraints(staff_data_list, shift_data):
             return False
 
         return True
