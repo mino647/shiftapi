@@ -159,8 +159,15 @@ class PatternPrefix:
                         required_staff = self.rule_data.late_staff
                     elif shift_type == "夜勤":
                         required_staff = self.rule_data.night_staff
-                    elif shift_type == "明け":  # 明けの場合を明示的に追加
+                    elif shift_type == "明け":
                         required_staff = self.rule_data.night_staff
+                    elif shift_type == "出勤":
+                        # 早番・日勤・遅番の合計必要人数
+                        day_shift_staff = math.floor(
+                            self.rule_data.sunday_staff if weekday == 6
+                            else self.rule_data.weekday_staff
+                        )
+                        required_staff = self.rule_data.early_staff + day_shift_staff + self.rule_data.late_staff
                     elif shift_type in ["休み", "公休"]:
                         # 出勤必要人数を計算（日勤は曜日によって参照値が異なり、小数点切り捨て）
                         day_shift_staff = math.floor(
