@@ -311,6 +311,10 @@ class BasicLibrary:
                         
                         # 既存の選好制約の処理
                         elif constraint.type == "選好":
+                            # 最小シフト回数を取得
+                            min_shifts = stf.shift_counts[constraint.target]['min']
+                            
+                            # 実際のシフト回数を計算する変数
                             shift_count_var = self.model.NewIntVar(
                                 0, self.days_in_month, f'shift_count_{stf.name}_{normalized_type}'
                             )
@@ -320,9 +324,18 @@ class BasicLibrary:
                                     for d in range(self.days_in_month)
                                 )
                             )
+                            
+                            # 最小値を超えた部分のシフト回数を計算する変数
+                            excess_shifts = self.model.NewIntVar(
+                                0, self.days_in_month - min_shifts, 
+                                f'excess_shifts_{stf.name}_{normalized_type}'
+                            )
+                            self.model.Add(excess_shifts == shift_count_var - min_shifts)
+                            
+                            # 重みは最小値を超えた部分にのみ適用
                             weight = self.constraint_weights["選好"]["勤務希望"]
                             multiplier = 1 if constraint.sub_category == "愛好" else -1
-                            self.objective_terms.append(shift_count_var * weight * multiplier)
+                            self.objective_terms.append(excess_shifts * weight * multiplier)
 
     def add_underscore_penalty_to_objective(self):
         """アンダースコアシフトに対してペナルティを目的関数に追加"""

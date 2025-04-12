@@ -1,0 +1,72 @@
+Logger initialization test
+[2025-04-10 14:47:39] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250410.log
+[2025-04-10 14:47:39] INFO [APIServer] APIサーバー起動
+[2025-04-10 14:47:39] DEBUG [APIServer] ログシステム初期化完了
+[2025-04-10 14:47:39] DEBUG [APIServer] アプリケーション起動
+[2025-04-10 14:47:39] INFO [APIServer] Firestoreリスナー開始
+[2025-04-10 14:47:39] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-04-11 22:30:33] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-11 22:30:33] INFO [APIServer] JSONデータの変換を開始
+[2025-04-11 22:30:33] INFO [APIServer] データの変換を開始
+[2025-04-11 22:30:33] INFO [APIServer] データ変換完了
+[2025-04-11 22:30:33] INFO [APIServer] インスタンス化を開始
+[2025-04-11 22:30:33] INFO [APIServer] インスタンス化完了
+[2025-04-11 22:30:33] INFO [APIServer] 事前チェックを開始
+[2025-04-11 22:30:33] INFO [APIServer] 事前チェック完了
+[2025-04-11 22:30:34] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-04-11 22:30:46] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-11 22:30:46] INFO [APIServer] JSONデータの変換を開始
+[2025-04-11 22:30:46] INFO [APIServer] データの変換を開始
+[2025-04-11 22:30:46] INFO [APIServer] データ変換完了
+[2025-04-11 22:30:46] INFO [APIServer] インスタンス化を開始
+[2025-04-11 22:30:46] INFO [APIServer] インスタンス化完了
+[2025-04-11 22:30:46] INFO [APIServer] 事前チェックを開始
+[2025-04-11 22:30:46] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-04-11 22:31:07] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-11 22:31:07] INFO [APIServer] JSONデータの変換を開始
+[2025-04-11 22:31:07] INFO [APIServer] データの変換を開始
+[2025-04-11 22:31:07] INFO [APIServer] データ変換完了
+[2025-04-11 22:31:07] INFO [APIServer] インスタンス化を開始
+[2025-04-11 22:31:07] INFO [APIServer] インスタンス化完了
+[2025-04-11 22:31:07] INFO [APIServer] 事前チェックを開始
+[2025-04-11 22:31:07] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-04-11 22:31:27] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-04-11 22:31:27] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-04-11 22:31:27] DEBUG [APIServer] === データ変換開始 ===
+[2025-04-11 22:31:27] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-04-11 22:31:27] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-04-11 22:31:27] DEBUG [APIServer] インスタンス化完了
+[2025-04-11 22:31:27] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-04-11 22:31:27] DEBUG [APIServer] スタッフデータ数: 13
+[2025-04-11 22:31:27] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=8, consecutive_work_limit=5, weekday_staff=1.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[])
+[2025-04-11 22:31:27] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=1, search_time=5, entries=[ShiftEntry(staff_name='スタッフA', day=5, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=6, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=7, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=8, shift_type='／', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-04-11 22:31:27] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-04-11 22:31:27] WARNING [APIServer] シフト生成失敗（解なし）
+[2025-04-11 22:31:37] INFO [APIServer] デバッグ用シフト生成リクエストを受信
+[2025-04-11 22:31:37] INFO [APIServer] パースしたJSONデータのキー: dict_keys(['rule_data', 'shift_data', 'active_constraints', 'turbo_mode', 'weightData', 'staffData'])
+[2025-04-11 22:31:37] DEBUG [APIServer] === データ変換開始 ===
+[2025-04-11 22:31:37] DEBUG [APIServer] 変換後データ: dict_keys(['staffData', 'ruleData', 'shiftData', 'weightData'])
+[2025-04-11 22:31:37] DEBUG [APIServer] === インスタンス化開始 ===
+[2025-04-11 22:31:37] DEBUG [APIServer] インスタンス化完了
+[2025-04-11 22:31:37] DEBUG [APIServer] === ソルバー実行開始 ===
+[2025-04-11 22:31:37] DEBUG [APIServer] スタッフデータ数: 13
+[2025-04-11 22:31:37] DEBUG [APIServer] ルールデータ: RuleData(holiday_count=8, consecutive_work_limit=5, weekday_staff=1.5, weekday_preference_level=None, sunday_staff=1, sunday_preference_level=None, early_staff=2, late_staff=2, night_staff=2, weekday_reliability=None, sunday_reliability=None, preference_constraints=[])
+[2025-04-11 22:31:37] DEBUG [APIServer] シフトデータ: ShiftData(year=2025, month=1, search_time=5, entries=[ShiftEntry(staff_name='スタッフA', day=6, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=7, shift_type='日', role='一般職員', is_part_time=False), ShiftEntry(staff_name='スタッフA', day=8, shift_type='／', role='一般職員', is_part_time=False)], preference_entries=[])
+[2025-04-11 22:31:38] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-04-11 22:31:38] INFO [APIServer] シフト生成成功
+[2025-04-11 22:32:03] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-11 22:32:03] INFO [APIServer] JSONデータの変換を開始
+[2025-04-11 22:32:03] INFO [APIServer] データの変換を開始
+[2025-04-11 22:32:03] INFO [APIServer] データ変換完了
+[2025-04-11 22:32:03] INFO [APIServer] インスタンス化を開始
+[2025-04-11 22:32:03] INFO [APIServer] インスタンス化完了
+[2025-04-11 22:32:03] INFO [APIServer] 事前チェックを開始
+[2025-04-11 22:32:03] INFO [APIServer] 事前チェックでエラーが検出されました
+[2025-04-11 22:32:24] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-11 22:32:24] INFO [APIServer] JSONデータの変換を開始
+[2025-04-11 22:32:24] INFO [APIServer] データの変換を開始
+[2025-04-11 22:32:24] INFO [APIServer] データ変換完了
+[2025-04-11 22:32:24] INFO [APIServer] インスタンス化を開始
+[2025-04-11 22:32:24] INFO [APIServer] インスタンス化完了
+[2025-04-11 22:32:24] INFO [APIServer] 事前チェックを開始
+[2025-04-11 22:32:24] INFO [APIServer] 事前チェックでエラーが検出されました

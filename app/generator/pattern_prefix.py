@@ -163,17 +163,26 @@ class PatternPrefix:
                         required_staff = self.rule_data.night_staff
                     elif shift_type == "出勤":
                         # 早番・日勤・遅番の合計必要人数
-                        day_shift_staff = math.floor(
+                        day_shift_value = (
                             self.rule_data.sunday_staff if weekday == 6
                             else self.rule_data.weekday_staff
                         )
+                        # 日勤の必要人数：小数点以下がある場合は切り上げを使用
+                        if day_shift_value != math.floor(day_shift_value):
+                            day_shift_staff = math.ceil(day_shift_value)
+                        else:
+                            day_shift_staff = day_shift_value
+                            
                         required_staff = self.rule_data.early_staff + day_shift_staff + self.rule_data.late_staff
                     elif shift_type in ["休み", "公休"]:
-                        # 出勤必要人数を計算（日勤は曜日によって参照値が異なり、小数点切り捨て）
-                        day_shift_staff = math.floor(
+                        # 出勤必要人数を計算（日勤は曜日によって参照値が異なる）
+                        day_shift_value = (
                             self.rule_data.sunday_staff if weekday == 6
                             else self.rule_data.weekday_staff
                         )
+                        # 休み計算時は日勤を切り捨てる（最大の休み人数を確保するため）
+                        day_shift_staff = math.floor(day_shift_value)
+                            
                         total_required = (
                             self.rule_data.early_staff +  # 早番
                             day_shift_staff +  # 日勤（切り捨て）
@@ -182,10 +191,16 @@ class PatternPrefix:
                         )
                         required_staff = len(staff_data_list) - total_required
                     else:  # 日勤
-                        required_staff = math.floor(
+                        # 日勤は小数点があるので、切り上げた値より多い場合にエラーとする
+                        day_staff_value = (
                             self.rule_data.sunday_staff if weekday == 6
                             else self.rule_data.weekday_staff
                         )
+                        # 小数点以下がある場合は切り上げを上限とする
+                        if day_staff_value != math.floor(day_staff_value):
+                            required_staff = math.ceil(day_staff_value)
+                        else:
+                            required_staff = day_staff_value
 
                     if len(staff_set) > required_staff:
                         # エラーメッセージ用に分類して収集

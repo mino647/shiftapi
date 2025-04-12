@@ -1,0 +1,88 @@
+Logger initialization test
+[2025-04-12 02:06:18] INFO [APIServer] Logger initialized: C:\Users\daigo\Desktop\shift\api\logs\apidebug_20250412.log
+[2025-04-12 02:06:18] INFO [APIServer] APIサーバー起動
+[2025-04-12 02:06:18] DEBUG [APIServer] ログシステム初期化完了
+[2025-04-12 02:06:18] DEBUG [APIServer] アプリケーション起動
+[2025-04-12 02:06:18] INFO [APIServer] Firestoreリスナー開始
+[2025-04-12 02:06:18] INFO [APIServer] デバッグ用Firestoreリスナー開始
+[2025-04-12 02:06:32] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-12 02:06:32] INFO [APIServer] JSONデータの変換を開始
+[2025-04-12 02:06:32] INFO [APIServer] データの変換を開始
+[2025-04-12 02:06:32] INFO [APIServer] データ変換完了
+[2025-04-12 02:06:32] INFO [APIServer] インスタンス化を開始
+[2025-04-12 02:06:32] INFO [APIServer] インスタンス化完了
+[2025-04-12 02:06:32] INFO [APIServer] 事前チェックを開始
+[2025-04-12 02:06:32] INFO [APIServer] 事前チェック完了
+[2025-04-12 02:06:34] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-04-12 02:06:44] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-12 02:06:44] INFO [APIServer] JSONデータの変換を開始
+[2025-04-12 02:06:44] INFO [APIServer] データの変換を開始
+[2025-04-12 02:06:44] INFO [APIServer] データ変換完了
+[2025-04-12 02:06:44] INFO [APIServer] インスタンス化を開始
+[2025-04-12 02:06:44] INFO [APIServer] インスタンス化完了
+[2025-04-12 02:06:44] INFO [APIServer] 事前チェックを開始
+[2025-04-12 02:06:44] INFO [APIServer] 事前チェック完了
+[2025-04-12 02:06:45] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-04-12 02:06:54] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-12 02:06:54] INFO [APIServer] JSONデータの変換を開始
+[2025-04-12 02:06:54] INFO [APIServer] データの変換を開始
+[2025-04-12 02:06:54] INFO [APIServer] データ変換完了
+[2025-04-12 02:06:54] INFO [APIServer] インスタンス化を開始
+[2025-04-12 02:06:54] INFO [APIServer] インスタンス化完了
+[2025-04-12 02:06:54] INFO [APIServer] 事前チェックを開始
+[2025-04-12 02:06:54] INFO [APIServer] 事前チェック完了
+[2025-04-12 02:06:56] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-04-12 02:07:10] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-12 02:07:10] INFO [APIServer] JSONデータの変換を開始
+[2025-04-12 02:07:10] INFO [APIServer] データの変換を開始
+[2025-04-12 02:07:10] INFO [APIServer] データ変換完了
+[2025-04-12 02:07:10] INFO [APIServer] インスタンス化を開始
+[2025-04-12 02:07:10] INFO [APIServer] インスタンス化完了
+[2025-04-12 02:07:10] INFO [APIServer] 事前チェックを開始
+[2025-04-12 02:07:10] INFO [APIServer] 事前チェック完了
+[2025-04-12 02:07:11] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-04-12 02:07:27] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-12 02:07:27] INFO [APIServer] JSONデータの変換を開始
+[2025-04-12 02:07:27] INFO [APIServer] データの変換を開始
+[2025-04-12 02:07:27] INFO [APIServer] データ変換完了
+[2025-04-12 02:07:27] INFO [APIServer] インスタンス化を開始
+[2025-04-12 02:07:27] INFO [APIServer] インスタンス化完了
+[2025-04-12 02:07:27] INFO [APIServer] 事前チェックを開始
+[2025-04-12 02:07:27] INFO [APIServer] 事前チェック完了
+[2025-04-12 02:07:28] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-04-12 02:08:10] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-12 02:08:10] INFO [APIServer] JSONデータの変換を開始
+[2025-04-12 02:08:10] INFO [APIServer] データの変換を開始
+[2025-04-12 02:08:10] INFO [APIServer] データ変換完了
+[2025-04-12 02:08:10] INFO [APIServer] インスタンス化を開始
+[2025-04-12 02:08:10] INFO [APIServer] インスタンス化完了
+[2025-04-12 02:08:10] INFO [APIServer] 事前チェックを開始
+[2025-04-12 02:08:10] INFO [APIServer] 事前チェック完了
+[2025-04-12 02:08:12] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-04-12 03:33:38] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-12 03:33:38] INFO [APIServer] JSONデータの変換を開始
+[2025-04-12 03:33:38] INFO [APIServer] データの変換を開始
+[2025-04-12 03:33:38] INFO [APIServer] データ変換完了
+[2025-04-12 03:33:38] INFO [APIServer] インスタンス化を開始
+[2025-04-12 03:33:38] INFO [APIServer] インスタンス化完了
+[2025-04-12 03:33:38] INFO [APIServer] 事前チェックを開始
+[2025-04-12 03:33:38] INFO [APIServer] 事前チェック完了
+[2025-04-12 03:33:40] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-04-12 03:33:49] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-12 03:33:49] INFO [APIServer] JSONデータの変換を開始
+[2025-04-12 03:33:49] INFO [APIServer] データの変換を開始
+[2025-04-12 03:33:49] INFO [APIServer] データ変換完了
+[2025-04-12 03:33:49] INFO [APIServer] インスタンス化を開始
+[2025-04-12 03:33:49] INFO [APIServer] インスタンス化完了
+[2025-04-12 03:33:49] INFO [APIServer] 事前チェックを開始
+[2025-04-12 03:33:49] INFO [APIServer] 事前チェック完了
+[2025-04-12 03:33:51] DEBUG [APIServer] === ソルバー実行完了 ===
+[2025-04-12 03:34:15] INFO [APIServer] シフト生成リクエストを受信
+[2025-04-12 03:34:15] INFO [APIServer] JSONデータの変換を開始
+[2025-04-12 03:34:15] INFO [APIServer] データの変換を開始
+[2025-04-12 03:34:15] INFO [APIServer] データ変換完了
+[2025-04-12 03:34:15] INFO [APIServer] インスタンス化を開始
+[2025-04-12 03:34:15] INFO [APIServer] インスタンス化完了
+[2025-04-12 03:34:15] INFO [APIServer] 事前チェックを開始
+[2025-04-12 03:34:15] INFO [APIServer] 事前チェック完了
+[2025-04-12 03:34:16] DEBUG [APIServer] === ソルバー実行完了 ===
